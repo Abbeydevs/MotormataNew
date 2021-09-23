@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motormata - Experience the best car services in Nigeria.</title>
+
+  <!-- Fontawesome icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CDN link CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Bootstrap script -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/mediaqueries.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <section id="header">
+
+    <!-- SideNav -->
+    <div class="sidenav" id="sideNav">
+      <i onclick="closeNav()" class="closeBtn fas fa-times" onload="closeSideNav()"></i>
+      <a onclick="myFunction()" id="sideNav-link" class="nav-link sideNavLink service-link" type="button">Services <i
+        class="services-drop-down fas fa-chevron-down"></i></a>
+        <div id="sideNavHomeDropDown" class="drop-down-links2">
+            <a href="">Maintenance Repair</a>
+            <a href="">AutoCare Products & Parts</a>
+            <a href="">Insurance & Documents</a>
+        </div>
+      <a class="nav-link" href="#">FAQs</a>
+      <a class="nav-link" href="#">Contact</a>
+      <a href="signin.html"><button class="btn signin-side-navBtn">Sign in</button></a>
+      <a href="signup.html"><button class="btn signup-side-navBtn">Create account</button></a>
+    </div>
+
+    <!-- The main nav -->
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg sticky-top">
+        <a href="javascript:void(0)" class="openNavBtn" onclick="openNav()" ><i class="fas fa-bars"></i></a>
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="Motormata Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a onclick="myNewFunction()" class="nav-link service-link" type="button">Services <i
+                  class="services-drop-down fas fa-chevron-down"></i></a>
+            </li>
+            <!-- drop-down links -->
+            <div id="homeDropDown" class="drop-down-links">
+                <a href="">Maintenance Repair</a>
+                <a href="">AutoCare Products & Parts</a>
+                <a href="">Insurance & Documents</a>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cta">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <a href="signin.html"><button class="btn nav-signin-btn">Sign in</button></a>
+        <a href="signup.html"><button class="btn nav-createacct-btn">Create account</button></a>
+      </nav>
+
+      <div class="hero row">
+
+        <div class="hero-texts col-lg-4 col-md-4">
+          <h1 class="hero-title">
+            <span class="drive-green">Drive with</span>
+            <p class="txt-type" data-wait="3000" data-words='["Confidence", "Safety", "Assurance"]'></p>
+          </h1>
+          <p class="hero-paragraph">Experience the best car services in Nigeria.</p>
+        </div>
+        <img class="col-lg-8 col-md-8 hero-illustration" src="images/Hero-illustration.png" alt="">
+      </div>
+
+      <div class="reg-vehicle">
+        <h1 class="reg-text">Register your Vehicle</h1>
+        <i class="hero-car-icon fas fa-car"></i>
+        <input type="number" placeholder="Plate number">
+        <i class="hero-call-icon fas fa-phone-alt"></i>
+        <input type="tel" placeholder="Mobile number">
+        <button class="btn reg-veh-btn">Get Started</button>
+        <h1 class="join-us">Join our 30,000+ Happy Customers</h1>
+      </div>
+    </div>
+
+    <img class="hero-left-grn-circle" src="images/Left-circle.png" alt="">
+
+  </section>
+
+  <!-- Services section -->
+  <section id="services">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12 maintenance">
+        <a href="">
+          <div class="maintenance-container">
+            <h1 class="maintenance-title">Maintenance & Repair</h1>
+            <hr class="service-divider">
+            <ul>
+              <i class="periodic-check-icon fas fa-check"></i>
+              <li>Periodic Services</li>
+              <i class="ac-check-icon fas fa-check"></i>
+              <li>A/C Repair</li>
+              <i class="repair-check-icon fas fa-check"></i>
+              <li>Body Repair</li>
+              <i class="crepair-check-icon fas fa-check"></i>
+              <li>Custom Repair</li>
+            </ul>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 autocare">
+        <a href="#">
+          <div class="autocare-container">
+            <h1 class="autocare-title">Auto Care Products & Parts</h1>
+            <hr class="service-divider">
+            <ul>
+              <i class="periodic-check-icon fas fa-check"></i>
+              <li>Auto care Products</li>
+              <i class="ac-check-icon fas fa-check"></i>
+              <li>Battery</li>
+              <i class="repair-check-icon fas fa-check"></i>
+              <li>Tyres</li>
+              <i class="crepair-check-icon fas fa-check"></i>
+              <li>Replacement Parts</li>
+            </ul>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 insurance">
+        <a href="#">
+          <div class="insurance-container">
+            <h1 class="insurance-title">Insurance & Documents</h1>
+            <hr class="service-divider">
+            <ul>
+              <i class="periodic-check-icon fas fa-check"></i>
+              <li>Insurance</li>
+              <i class="ac-check-icon fas fa-check"></i>
+              <li>Registration</li>
+              <i class="repair-check-icon fas fa-check"></i>
+              <li>Renewal</li>
+              <i class="crepair-check-icon fas fa-check"></i>
+              <li>Ownership Transfer</li>
+            </ul>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Motormata Assurance -->
+  <section id="assurance">
+    <div class="motormata-assurance">
+      <h1 class="assurance-title">Motormata Assurance</h1>
+      <hr class="service-divider">
+      <ul>
+        <li>Upto ₦5,000,000 insurance protection by Leadway Insurance</li>
+        <li>Service per excellence</li>
+        <li>Service per excellence</li>
+        <li>Service per excellence</li>
+        <li class="hidden-element">Service with excellence always</li>
+        <li class="hidden-element">Service with excellence always</li>
+        <li class="hidden-element">Service with excellence always</li>
+      </ul>
+      <button class="btn assurance-readmore-btn" id="readMore_btn">Read more</button>
+    </div>
+  </section>
+
+  <!-- How We work -->
+  <section id="how-we-work">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12 abstract-image">
+        <img src="images/howWeWork.png" alt="">
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 how-we-work-texts">
+        <h1 class="col-lg-6 hw-we-wrk-title">How we work</h1>
+        <hr class="service-divider">
+        <ol>
+          <li class="ordered-list">Select your preferred car service online or call 09023456789
+            <ul>
+              <li>Schedule an appointment at your convenient date & time</li>
+            </ul>
+          </li>
+          <li class="ordered-list">Get an appointment for a Doorstep Service
+            <ul>
+              <li>Motormata in-house technicians service your car at your location</li>
+            </ul>
+          </li>
+          <li class="ordered-list">Relax
+            <ul>
+              <li>Relax and spent time on other things that matter</li>
+            </ul>
+          </li>
+          <li class="ordered-list">Refer and win
+            <ul>
+              <li>Earn upto ₦5,000 when you refer a friend. Your friend also earns ₦5,000.</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section id="reviews">
+    <h1 class="review-title">Reviews</h1>
+    <hr class="service-divider">
+    <div id="review-carousel" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-lg-5 first">
+              <img class="review-image" src="images/angel-reviewer.png" alt="reviewer-profile">
+              <span class="review-text">“I enjoyed using Motormata, they help me manage my car very well and I really
+                appreciate them for all they’ve done.” </span>
+              <p class="reviewer-name">Angel Baruwa</p>
+            </div>
+            <div class="col-lg-2"></div>
+            <div class="col-lg-5 the-guy second">
+              <img class="review-image sec-img" src="images/lekan-reviewer.png" alt="reviewer-profile">
+              <span class="review-text sec-text">“I enjoyed using Motormata, they help me manage my car very well and I
+                really
+                appreciate them for all they’ve done.” </span>
+              <p class="reviewer-name2">Lekan Baruwa</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-lg-5 the-lady first">
+              <img class="review-image" src="images/angel-reviewer.png" alt="reviewer-profile">
+              <span class="review-text">“I enjoyed using Motormata, they help me manage my car very well and I really
+                appreciate them for all they’ve done.” </span>
+              <p class="reviewer-name">Angel Baruwa</p>
+            </div>
+            <div class="col-lg-2"></div>
+            <div class="col-lg-5 second">
+              <img class="review-image sec-img" src="images/lekan-reviewer.png" alt="reviewer-profile">
+              <span class="review-text sec-text">“I enjoyed using Motormata, they help me manage my car very well and I
+                really
+                appreciate them for all they’ve done.” </span>
+              <p class="reviewer-name2">Lekan Baruwa</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <a class="carousel-control-prev" href="#review-carousel" role="button" data-slide="prev">
+        <i class="carousel-control-prev-icon fas fa-chevron-left"></i>
+      </a>
+      <a class="carousel-control-next" href="#review-carousel" role="button" data-slide="next">
+        <i class="carousel-control-next-icon fas fa-chevron-right"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Motormata Benefits -->
+  <section id="benefits">
+    <h1 class="benefit-title">Motormata Benefits</h1>
+    <hr class="service-divider">
+
+    <div class="row">
+
+      <div class="col-lg-6 col-md-12 col-sm-12 convinience">
+        <i class="benefit-icon c-icon far fa-thumbs-up"></i>
+        <h4 class="convinience-title">Convinience</h4>
+        <p class="convinience-paragraph">Doorstep service, Free pickup and dropoff. You don’t need to visit the workshop
+          if not necessary.</p>
+      </div>
+
+      <div class="col-lg-6 col-md-12 col-sm-12 affordable">
+        <i class="benefit-icon a-icon fas fa-coins"></i>
+        <h4 class="affordable-title">Affordable</h4>
+        <p class="affordable-paragraph">Doorstep service, Free pickup and dropoff. You don’t need to visit the workshop
+          if not necessary.</p>
+      </div>
+
+      <div class="col-lg-6 col-md-12 col-sm-12 transparent">
+        <i class="benefit-icon t-icon fas fa-binoculars"></i>
+        <h4 class="transparent-title">Transparent</h4>
+        <p class="transparent-paragraph">Doorstep service, Free pickup and dropoff. You don’t need to visit the workshop
+          if not necessary.</p>
+      </div>
+
+      <div class="col-lg-6 col-md-12 col-sm-12 quality">
+        <i class="benefit-icon q-icon fas fa-award"></i>
+        <h4 class="quality-title">Quality</h4>
+        <p class="quality-paragraph">Doorstep service, Free pickup and dropoff. You don’t need to visit the workshop
+          if not necessary.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Numbers section -->
+  <section id="numbers">
+    <div class="row">
+      <p class="col-lg-4 col-md-6 col-sm-6 service-number"><strong>100,000+</strong> Services rendered</p>
+      <p class="col-lg-4 col-md-6 col-sm-6 customers-number"><strong>30,000+</strong> Happy Customers</p>
+      <p class="col-lg-4 col-md-6 col-sm-6 rating-number"><strong>4.8 </strong>4.8 Ratings</p>
+    </div>
+  </section>
+
+  <!-- Download Section -->
+  <section id="download">
+    <div class="row">
+      <div class="col-lg-7 app-download">
+        <h1 class="download-title">App Coming soon</h1>
+        <img class="googlePlay" src="images/google-badge.png" alt="googleplay">
+        <img class="appStore" src="images/appstore-badge.png" alt="appstore">
+      </div>
+      <div class="col-lg-5 screenshot">
+        <img src="images/screen-shot.png" alt="App mockup">
+      </div>
+    </div>
+  </section>
+
+  <!-- Top technicians -->
+  <section id="technicians">
+    <h1 class="technician-title">Top Technicians</h1>
+    <hr class="service-divider">
+
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12 first-tech">
+        <img src="images/technician.png" alt="">
+
+        <div class="staff-content">
+          <h4 class="staff-name">Mike</h4>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <p class="experience">5 years Experience</p>
+        </div>
+
+      </div>
+
+      <div class="col-lg-6 col-md-6 col-sm-12 first-tech">
+        <img src="images/technician.png" alt="">
+
+        <div class="staff-content">
+          <h4 class="staff-name">Mike</h4>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <p class="experience">5 years Experience</p>
+        </div>
+
+      </div>
+
+      <div class="col-lg-6 col-md-6 col-sm-12 first-tech">
+        <img src="images/technician.png" alt="">
+
+        <div class="staff-content">
+          <h4 class="staff-name">Mike</h4>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <p class="experience">5 years Experience</p>
+        </div>
+
+      </div>
+
+      <div class="col-lg-6 col-md-6 col-sm-12 first-tech">
+        <img src="images/technician.png" alt="">
+
+        <div class="staff-content">
+          <h4 class="staff-name">Mike</h4>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <p class="experience">5 years Experience</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- Subscription section -->
+  <section id="subscription">
+    <h1 class="subscription-title">Subscribe</h1>
+    <input type="email" name="subscribe" id="sub" placeholder="Enter your email">
+    <button type="submit" class="btn subscribe-btn">Subscribe</button>
+  </section>
+
+  <!-- FAQs -->
+  <section id="faqs">
+    <h1 class="faq-title">FAQs</h1>
+    <div id="accordion">
+
+      <!-- First Card -->
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+              aria-controls="collapseOne">
+              <span>Can I have my car serviced at the comfort of my home?</span>
+            </button>
+            <i class="faq-drop-btn1 fas fa-chevron-down" data-toggle="collapse" data-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne"></i>
+          </h5>
+        </div>
+
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+            <span class="answer">Yes.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Card -->
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+              aria-expanded="false" aria-controls="collapseTwo">
+              <span>How often should I get my car serviced?</span>
+            </button>
+            <i class="faq-drop-btn2 fas fa-chevron-down" data-toggle="collapse" data-target="#collapseTwo"
+              aria-expanded="true" aria-controls="collapseTwo"></i>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body">
+            <span class="answer">Every 3 months or 5,000km, whichever comes first.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Third Card -->
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+              aria-expanded="false" aria-controls="collapseThree">
+              <span>Is inspection important?</span>
+            </button>
+            <i class="faq-drop-btn3 fas fa-chevron-down" data-toggle="collapse" data-target="#collapseThree"
+              aria-expanded="true" aria-controls="collapseThree"></i>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div class="card-body">
+            <span class="answer">Yes, inspection is important. It helps us identify the cause of your car issues so that we can recommended
+              the most appropriate fix. Inspection compromises of complete car health check-up followed by submission of
+              an inspection report on the status of the vehicle.Post evaluation of your car condition,the technician will
+              advice a course of action for the same. Post your approval of the quote your car will be repaired in a
+              Pitstop certified garage near you.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fourth Card -->
+      <div class="card">
+        <div class="card-header" id="headingFour">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+              aria-expanded="false" aria-controls="collapseFour">
+              <span>What type of engine oil will you use?
+              </button></span>
+            <i class="faq-drop-btn4 fas fa-chevron-down" data-toggle="collapse" data-target="#collapseFour"
+              aria-expanded="true" aria-controls="collapseFour"></i>
+          </h5>
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div class="card-body">
+            <span class="answer">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+              officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+              wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+              Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+              excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+              you probably haven't heard of them accusamus labore sustainable VHS.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fifth Card -->
+      <div class="card">
+        <div class="card-header" id="headingFive">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"
+              aria-expanded="false" aria-controls="collapseFive">
+              <span>Where will the service be done?</span>
+            </button>
+            <i class="faq-drop-btn5 fas fa-chevron-down" data-toggle="collapse" data-target="#collapseFive"
+              aria-expanded="true" aria-controls="collapseFive"></i>
+          </h5>
+        </div>
+        <div id="collapseFive" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div class="card-body">
+            <span class="answer">At the comfort of your home for most services while those that require heavy lifting will be done at the
+              workshop.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <section id="footer">
+
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6 footer-brand">
+        <img src="images/logo.png" alt="">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6  footer-about">
+        <h3 class="ft-about-title">About us</h3>
+        <ul>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Company</a></li>
+          <li><a href="#">Team</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6  footer-services">
+        <h3 class="ft-service-title">Our Services</h3>
+        <ul>
+          <li><a href="#">Periodic Services</a></li>
+          <li><a href="#">Body Repairs</a></li>
+          <li><a href="#">Insurance</a></li>
+          <li><a href="#">Car A/C</a></li>
+          <li><a href="#">Custom Services</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6  footer-legal">
+        <h3 class="ft-legal-title">Legal</h3>
+        <ul>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Copyrights -->
+  <section id="copyright">
+    <p class="copyright-content">&copy; Copyright Motormata 2021. All rights reserved | Website developed by
+      <a href="https://www.behance.net/abbeydev" target="_blank">Abbeydev</a>
+    </p>
+  </section>
+
+
+  <script src="index.js"></script>
+
+</body>
+
+</html>

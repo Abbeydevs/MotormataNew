@@ -1,0 +1,1079 @@
+
+/****************** IPAD DISPLAY **************************/
+
+/* 1024px display width */
+@media (max-width: 1024px) {
+    ul.navbar-nav {
+        margin: 0 2px;
+    }
+
+    .nav-item   {
+        padding: 0 40px;
+    }
+
+    .drop-down-links    {
+        position: absolute;
+        left: 14rem;
+    }
+
+    .drive-green {
+        font-size: 28px;
+    }
+
+    .hero-title   {
+        font-size: 42px;
+    }
+
+    .hero-paragraph {
+        font-size: 17px;
+    }
+
+    img.hero-illustration   {
+        max-width: 55%;
+        left: 120px;
+        top: 50px;
+    }
+
+    /* register your vehicle container */
+    .reg-vehicle    {
+        background-color: #fff;
+        width: 324px;
+        top: 20rem;
+        left: 4rem;
+    }
+
+    .reg-text   {
+        font-size: 18px;
+    }
+
+    .reg-vehicle input{
+        width: 260px;
+    }
+
+    .hero-car-icon  {
+        top: 93px;
+        left: 45px;
+    }
+    
+    .hero-call-icon {
+        position: absolute;
+        top: 155px;
+        left: 45px;
+        color: #9D9D9D;
+        font-size: 15px;
+    }
+
+    .reg-veh-btn   {
+        width: 260px;
+    }
+
+    h1.join-us  {
+        font-size: 14px;
+    }
+
+
+    /* Services section */
+    .maintenance-title, .autocare-title, .insurance-title  {
+        font-size: 18px;
+    }
+
+    .periodic-check-icon    {
+        top: 112px;
+    }
+
+    .ac-check-icon    {
+        top: 160px;
+    }
+    
+    .repair-check-icon    {
+        top: 207px;
+    }
+    
+    .crepair-check-icon    {
+        top: 255px;
+    }
+    
+    .service-divider    {
+        background-color: #53FF6E;
+        width: 70px;
+    }
+
+
+    /* Review Section */
+    .review-text  {
+        font-size: 10px;
+        top: 5px;
+        max-width: 300px;
+    }
+
+    .sec-text {
+        left: 2rem;
+    }
+
+    .review-image {
+        position: absolute;
+        left: 40px;
+        max-width: 80px;
+    }
+
+    .sec-img  {
+        left: -50px;
+    }
+
+    .reviewer-name    {
+        top: 0.6rem;
+        font-size: 12px;
+    }
+
+    .reviewer-name2   {
+        top: 0.6rem;
+        left: 2rem;
+        font-size: 12px;
+      }
+
+}
+
+/* 834px display width */
+@media (max-width: 834px) {
+
+    #sideNav    {
+        width: 40%;
+        background-color: rgb(255, 255, 255);
+        display: none;
+        overflow: hidden;
+        padding: 15% 0;
+        text-align: center;
+        position: fixed;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        z-index: 10;
+        box-shadow: 10px 8px 20px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    #sideNav a.nav-link:hover {
+        background-color: #f7f7f7;
+    }
+
+    .drop-down-links2    {
+        display: none;
+        background-color: #eee;
+        border-radius: 0;
+        position: relative;
+        top: -1rem;
+        left: 0;
+   
+    }
+
+    .drop-down-links2 a {
+        color: #9D9D9D;
+        padding: 15px 30px !important;
+        border-bottom: 1px solid #ddd;
+        text-decoration: none;
+    }
+
+    .drop-down-links2 a:last-child   {
+        border-bottom: none;
+    }
+    
+    #sideNavHomeDropDown a:hover  {
+        background-color: #97ffa6 !important;
+        color: #000;
+    }
+    
+    .show {
+        display: block;
+    } 
+
+    .nav-signin-btn {
+        display: none;
+    }
+
+    .nav-createacct-btn {
+        display: none;
+    }
+
+    .sticky-top {
+        background-color: #fff;
+        z-index: 3;
+    }
+
+    /* The menu Icon to open sidenav */
+    .openNavBtn {
+        display: block;
+        color: #000;
+        font-size: 1.3rem;
+        cursor: pointer;
+        position: absolute;
+        top: 1.5rem;
+        left: 43rem;
+        z-index: 3;
+    }
+
+    /* Hero */
+    .drive-green {
+        font-size: 23px;
+    }
+
+    .hero-title   {
+        font-size: 35px;
+        margin-bottom: 0;
+    }
+
+    .hero-title p  {
+        margin-bottom: 0;
+    }
+
+    .hero-paragraph {
+        font-size: 12px;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    /* register vehicle container */
+    .reg-vehicle    {
+        width: 250px;
+        top: 16rem;
+        left: 3rem;
+    }
+
+    .reg-text   {
+        font-size: 12px;
+    }
+    
+    .reg-vehicle input{
+        font-size: 12px;
+        width: 200px;
+        padding: 7px 20px 7px 40px;
+    }
+
+    .hero-car-icon  {
+        top: 72px;
+        left: 38px;
+        font-size: 15px;
+    }
+    
+    .hero-call-icon {
+        top: 117px;
+        left: 38px;
+        font-size: 13px;
+    }
+
+    .reg-veh-btn   {
+        width: 200px;
+        padding: 7px;
+        font-size: 13px;
+    }
+
+    h1.join-us  {
+        font-size: 10px;
+    }
+
+    /* How we work */
+    .abstract-image   {
+        right: 200px;
+        width: 10%;
+      }
+
+    /* Review Section */
+
+    .the-guy    {
+        display: none;
+    }
+
+    .the-lady   {
+        display: none;
+    }
+
+    .second {
+        position: relative;
+        left: 100px;
+    }
+
+    /* App download */
+    #download {
+        text-align: center;
+    }
+
+    .app-download {
+        margin-top: 5%;
+    }
+
+    .download-title {
+        margin-bottom: 5%;
+    }
+
+    #download img.googlePlay {
+        width: 200px;
+    }
+
+    #download img.appStore {
+        width: 176px;
+    }
+}
+
+/* 768px display width */
+@media (max-width: 768px) {
+    /* nav */
+    .openNavBtn {
+        left: 40rem;
+        z-index: 3;
+    }
+
+    .closeBtn   {
+        left: 17rem;
+    }
+
+    .signin-side-navBtn {
+        left: 0.5rem;
+    }
+    
+    .signup-side-navBtn {
+        top: 2rem;
+        left: 0.5rem;
+    }
+
+    /* Assurance */
+    .assurance-title    {
+        font-size: 30px;
+    }
+
+    .motormata-assurance li {
+        font-size: 20px;
+    }
+
+    /* How we work */
+    .abstract-image   {
+        right: 250px;
+        width: 10%;
+      }
+
+      .hw-we-wrk-title  {
+        font-size: 30px;
+    }
+
+    #how-we-work .ordered-list{
+        font-size: 15px;  
+      }
+
+    .ordered-list li{
+        font-size: 12px;
+    }
+
+    /* Review */
+    .review-title   {
+        font-size: 30px;
+    }
+
+    /* Benefits */
+    .benefit-title    {
+        font-size: 30px;
+    }
+
+    .benefit-icon {
+        top: 8px;
+        font-size: 15px;
+    }
+
+    /* Technicians */
+    .technician-title {
+        font-size: 30px;
+    }
+}
+
+/************************** MOBILE DISPLAY *****************/
+
+/* 415px display width */
+@media (max-width: 415px) {
+
+    body    {
+        text-align: center;
+    }
+
+    /* nav */
+    .openNavBtn {
+        left: 20rem;
+        z-index: 3;
+    }
+
+    #sideNav    {
+        width: 80%;
+    }
+
+    .signin-side-navBtn {
+        left: 5rem;
+    }
+    
+    .signup-side-navBtn {
+        top: 3.5rem;
+        left: -5.2rem;
+    }
+
+    /* Hero */
+    .drive-green {
+        font-size: 35px;
+    }
+
+    .hero-title   {
+        font-size: 48px;
+    }
+
+    img.hero-illustration   {
+        display: none;
+    }
+
+    .reg-vehicle    {
+        position: unset;
+        margin: 1% auto 15%;
+        width: 320px;
+    }
+
+    .reg-text   {
+        font-size: 20px;
+    }
+
+    .reg-vehicle input{
+        font-size: 12px;
+        width: 250px;
+        padding: 10px 10px 10px 40px;
+    }
+
+    .hero-car-icon  {
+        top: 348px;
+        left: 95px;
+        font-size: 12px;
+    }
+    
+    .hero-call-icon {
+        top: 405px;
+        left: 95px;
+        font-size: 13px;
+    }
+
+    .reg-veh-btn   {
+        width: 250px;
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    h1.join-us  {
+        font-size: 15px;
+    }
+
+    /* Services */
+    #services li {
+        text-align: left;
+        padding-left: 4.5rem;
+    }
+
+    .periodic-check-icon   {
+        left: 6rem;
+        top: 10.9rem;
+    }
+
+    .ac-check-icon  {
+        left: 6rem;
+        top: 13.9rem;
+    }
+
+    .repair-check-icon  {
+        left: 6rem;
+        top: 16.9rem;
+    }
+
+    .crepair-check-icon {
+        left: 6rem;
+        top: 7.9rem;
+    }
+    
+    .service-divider    {
+        margin: 5% auto 10%;
+        background-color: #53FF6E;
+        width: 70px;
+    }
+
+    /* Assurance */
+    .assurance-title    {
+        padding-top: 10%;
+        font-size: 30px;
+    }
+
+    .download-title {
+        font-size: 30px;
+        padding: 5%;
+    }
+
+    img.googlePlay  {
+        max-width: 130px;
+    }
+
+    img.appStore  {
+        max-width: 110px;
+    }
+
+    /* How we work */
+    .abstract-image {
+        position: unset;
+        margin: auto 0;
+        padding: 5%;
+      }
+
+    .abstract-image img  {
+        max-width: 330px;
+      }
+
+    /* Reviews */
+    .review-text  {
+        text-align: left;
+        width: 220px;
+        top: 10px;
+        left: 120px;
+    }
+
+    .sec-text {
+        left: 1.8rem;
+    }
+
+    .reviewer-name {
+        position: relative;
+        top: 20%;
+        left: -0.8rem;
+    }
+
+    .reviewer-name2 {
+        position: relative;
+        top: 20%;
+        left: -6.2rem;
+    }
+
+    /* Benefits */
+    #benefits {
+        padding: 3% 10% 4%;
+    }
+
+    .c-icon {
+        position: absolute;
+        left: 55px;
+        top: 5.6px;
+        font-size: 18px;
+    }
+
+    .a-icon {
+        position: absolute;
+        left: 58px;
+        top: 5.6px;
+        font-size: 18px;
+    }
+
+    .t-icon {
+        position: absolute;
+        left: 58px;
+        top: 5.6px;
+        font-size: 18px;
+    }
+
+    .q-icon {
+        position: absolute;
+        left: 85px;
+        top: 7px;
+        font-size: 18px;
+    }
+
+    .convinience, .affordable, .transparent, .quality  {
+        margin: 2% 5% 0;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    /* Subscribe */
+    #subscription   {
+        padding: 10% 7%;
+        text-align: center;
+    }
+
+    .subscription-title {
+        font-size: 2rem;
+        text-align: center;
+        padding: 0;
+    }
+
+    #subscription input {
+        width: 50%;
+        padding: 5px 10px;
+        outline: none;
+    }
+
+    .subscribe-btn    {
+        width: 40%;
+        padding: 5px 10px;
+        font-size: 1.2rem;
+    }
+
+    /* Technicians */
+    .technician-title {
+        text-align: center;
+    }
+
+    .first-tech img{
+        max-width: 20%;
+        margin-right: 5%;
+        position: relative;
+        top: -30px;
+    }
+
+    .staff-name {
+        font-size: 15px;
+        position: relative;
+        top: 0.4rem;
+    }
+
+    .experience {
+        font-size: 13px;
+    }
+
+    .staff-content i  {
+        font-size: 10px;
+        position: relative;
+        top: -0.2rem;
+    }
+
+    /* FAQs */
+    #faqs   {
+        text-align: left;
+    }
+
+    .faq-title    {
+        font-size: 30px;
+        padding-top: 40px;
+    }
+
+    .faq-drop-btn1, .faq-drop-btn2, .faq-drop-btn3, .faq-drop-btn4, .faq-drop-btn5 {
+        font-size: 0.7rem;
+        position: relative;
+        top: 0.2rem;
+    }
+
+    #headingOne, #headingTwo, #headingThree, #headingFour, #headingFive   {
+        padding: 0.5rem 0;
+    }
+
+    h5 span {
+        font-size: 0.7rem;
+    }
+
+    .answer {
+        font-size: 0.7rem;
+    }
+
+    /* Footer */
+    .footer-brand img{
+        margin: 5% auto;
+    }
+
+    .footer-brand i   {
+        padding: 0 8px 10%;
+        color: #9D9D9D;
+    }
+
+    .ft-about-title, .ft-service-title, .ft-legal-title {
+        padding: 6% 0 0;
+    }
+
+    #copyright  {
+        padding: 6% 5% 1%;
+    }
+
+    .copyright-content  {
+        font-size: 0.7rem;
+    }
+}
+
+/* 375px display width */
+@media (max-width: 375px) {
+    /* Nav */
+    .openNavBtn {
+        left: 18rem;
+        z-index: 3;
+    }
+
+    .signin-side-navBtn {
+        left: -0.1rem;
+    }
+    
+    .signup-side-navBtn {
+        top: 1rem;
+        left: -0.2rem;
+    }
+
+    /* Hero */
+    .hero-car-icon  {
+        top: 345px;
+        left: 5rem;
+    }
+    
+    .hero-call-icon {
+        top: 400px;
+        left: 5rem;
+        font-size: 13px;
+    }
+
+    /* Services */
+    .periodic-check-icon   {
+        left: 6rem;
+        top: 7.7rem;
+    }
+
+    .ac-check-icon  {
+        left: 6rem;
+        top: 10.7rem;
+    }
+
+    .repair-check-icon  {
+        left: 6rem;
+        top: 13.6rem;;
+    }
+
+    .crepair-check-icon {
+        left: 6rem;
+        top: 16.5rem;
+    }
+    
+    /* How we work */
+    .abstract-image {
+        position: unset;
+        margin: auto 0;
+        padding: 5%;
+      }
+
+    .abstract-image img  {
+        max-width: 330px;
+      }
+
+    /* Review */
+    .review-text  {
+        width: 220px;
+        top: 10px;
+        left: 110px;
+    }
+
+    .sec-img    {
+        left: -60px;
+    }
+
+    .sec-text {
+        left: 0.8rem;
+    }
+
+    .reviewer-name {
+        position: relative;
+        top: 20%;
+        left: -0.5rem;
+    }
+
+    .reviewer-name2 {
+        position: relative;
+        top: 20%;
+        left: -6.4rem;
+    }
+
+    /* FAQs */
+    h5 span {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 360px) {
+    /* Nav */
+    .closeBtn   {
+        left: 15rem;
+    }
+
+    /* Hero */
+    .hero-car-icon  {
+        top: 346px;
+        left: 70px;
+    }
+    
+    .hero-call-icon {
+        top: 400px;
+        left: 70px;
+        font-size: 10px;
+    }
+
+    /* Services */
+    #services li {
+        padding-left: 4rem;
+    }
+
+    .periodic-check-icon   {
+        left: 5rem;
+        top: 7.7rem;
+    }
+
+    .ac-check-icon  {
+        left: 5rem;
+        top: 10.7rem;
+    }
+
+    .repair-check-icon  {
+        left: 5rem;
+        top: 13.6rem;
+    }
+
+    .crepair-check-icon {
+        left: 5rem;
+        top: 16.7rem;
+    }
+
+    .maintenance-container, .autocare-container, .insurance-container    {
+        padding: 30px 10px;
+    }
+
+    /* How we work */
+    .abstract-image img  {
+        max-width: 320px;
+        margin: auto;
+        text-align: center;
+    }
+
+    /* Review Section */
+    .review-text  {
+        font-size: 10px;
+        width: 190px;
+        top: 4px;
+        left: 94px;
+    }
+
+    .sec-text {
+        left: -0.4rem;
+    }
+
+    .review-image {
+        top: 3px;
+        left: 40px;
+        max-width: 60px;
+    }
+
+    .sec-img  {
+        left: -60px;
+    }
+
+    .reviewer-name    {
+        top: 0.6rem;
+        left: -1.4rem;
+        font-size: 10px;
+    }
+
+    .reviewer-name2   {
+        top: 0.6rem;
+        left: -7.8rem;
+        font-size: 9px;
+    }
+
+    /* Subscribe */
+    .subscription-title {
+        font-size: 1.6rem;
+    }
+
+    #subscription input {
+        width: 50%;
+        padding: 5px 10px;
+        outline: none;
+        font-size: 0.7rem;
+    }
+
+    .subscribe-btn    {
+        width: 40%;
+        padding: 5px 10px;
+        font-size: 0.7rem;
+    }
+}
+
+/* 320px display width */
+@media (max-width: 320px) {
+    /* Nav */
+    .openNavBtn {
+        left: 16rem;
+        z-index: 3;
+    }
+
+    .closeBtn   {
+        left: 14rem;
+    }
+
+    /* Hero */
+    .drive-green {
+        font-size: 25px;
+    }
+
+    .hero-title   {
+        font-size: 35px;
+    }
+
+    .reg-vehicle    {
+        position: unset;
+        margin: 1% auto 15%;
+        width: 250px;
+    }
+
+    .reg-text   {
+        font-size: 15px;
+    }
+
+    .reg-vehicle input{
+        width: 200px;
+        padding: 10px 10px 10px 30px;
+    }
+
+    .hero-car-icon  {
+        top: 295px;
+        left: 70px;
+    }
+    
+    .hero-call-icon {
+        top: 346px;
+        left: 70px;
+        font-size: 10px;
+    }
+
+    .reg-veh-btn   {
+        width: 200px;
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    h1.join-us  {
+        font-size: 15px;
+    }
+
+    /* Services */
+    #services li {
+        padding-left: 2.5rem;
+    }
+
+    .periodic-check-icon   {
+        left: 3.7rem;
+        top: 7.4rem;
+    }
+
+    .ac-check-icon  {
+        left: 3.7rem;
+        top: 10.3rem;
+    }
+
+    .repair-check-icon  {
+        left: 3.7rem;
+        top: 13.3rem;
+    }
+
+    .crepair-check-icon {
+        left: 3.7rem;
+        top: 16.2rem;
+    }
+
+    .maintenance-container, .autocare-container, .insurance-container    {
+        padding: 30px 10px;
+    }
+
+    /* Assurance */
+    .assurance-title    {
+        padding-top: 10%;
+        font-size: 30px;
+    }
+
+    .motormata-assurance li {
+        font-size: 18px;
+    }
+
+    /* How we work */
+    .abstract-image {
+        position: unset;
+        margin: auto 0;
+    }
+
+    .abstract-image img  {
+        max-width: 270px;
+        margin: auto;
+        text-align: center;
+    }
+
+    /* Review Section */
+    .review-text  {
+        font-size: 7px;
+        width: 160px;
+        top: 10px;
+        left: 94px;
+    }
+
+    .sec-text {
+        left: -0.4rem;
+    }
+
+    .review-image {
+        top: 3px;
+        left: 40px;
+        max-width: 60px;
+    }
+
+    .sec-img  {
+        left: -60px;
+    }
+
+    .reviewer-name    {
+        top: 0.6rem;
+        font-size: 9px;
+    }
+
+    .reviewer-name2   {
+        top: 0.6rem;
+        left: -6.8rem;
+        font-size: 9px;
+    }
+
+    /* Benefits */
+    .c-icon {
+        left: 40px;
+    }
+
+    .a-icon {
+        left: 45px;
+    }
+
+    .t-icon {
+        left: 40px;
+    }
+
+    .q-icon {
+        left: 70px;
+    }
+
+    /* App download */
+    .screenshot img{
+        max-width: 250px;
+    }
+
+    /* Subscribe */
+    .subscription-title {
+        font-size: 1.6rem;
+    }
+
+    #subscription input {
+        width: 50%;
+        padding: 5px 10px;
+        outline: none;
+        font-size: 0.7rem;
+    }
+
+    .subscribe-btn    {
+        width: 40%;
+        padding: 5px 10px;
+        font-size: 0.7rem;
+    }
+
+    /* FAQs */
+    h5 span {
+        font-size: 0.5rem;
+    }
+}
+
+

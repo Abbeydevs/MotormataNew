@@ -1,0 +1,865 @@
+
+*   {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body    {
+    font-family: 'Raleway', sans-serif;
+    color: #000;
+    font-weight: 400;
+}
+
+/* Navbar toggler menu */
+.navbar-toggler {
+    display: none;
+}
+
+.container-fluid    {
+    padding: 2% 5% 0;
+}
+
+.sticky-top {
+    background-color: #fff;
+}
+
+ul.navbar-nav  {
+    margin: 0 20px;
+}
+
+.nav-item   {
+    padding: 0 50px;
+}
+
+.nav-item a.nav-link   {
+    color: #000;
+}
+
+.nav-item a.nav-link:hover   {
+    color: #bbb;
+}
+
+.nav-signin-btn, .signin-side-navBtn {
+    margin: 0 20px;
+    border: 1px solid #000;
+    background-color: transparent;
+    width: 85px;
+    border-radius: 3px;
+}
+
+.nav-signin-btn:hover, .signin-side-navBtn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.nav-createacct-btn, .signup-side-navBtn {
+    background-color: #53FF6E;
+}
+
+.nav-createacct-btn:hover, .signup-side-navBtn:hover {
+    background-color: #0fee31;
+}
+
+.services-drop-down {
+    padding-left: 0.2rem;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.service-link   {
+    cursor: pointer;
+}
+
+/* The main navbar Drop-down */
+.drop-down-links    {
+    display: none;
+    background-color: #ffffff;
+    border-radius: 5px;
+    position: absolute;
+    top: 4rem;
+    left: 28rem;
+    box-shadow: 0px 8px 16px 6px rgba(173, 173, 173, 0.2);
+    
+}
+
+.drop-down-links a {
+    display: block;
+    padding: 20px 30px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+    text-decoration: none;
+    color: #8C8C8C;
+}
+
+.drop-down-links a:last-child   {
+    border-bottom: none;
+}
+
+.drop-down-links a:hover  {
+    background-color: #97ffa6;
+    color: #000;
+}
+
+.showing {
+    display: block;
+}
+
+/* SideNav */
+#sideNav    {
+    width: 40%;
+    background-color: rgb(255, 255, 255);
+    display: none;
+    overflow: hidden;
+    padding: 15% 0;
+    text-align: center;
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    box-shadow: 10px 8px 20px 6px rgba(0, 0, 0, 0.2);
+}
+
+#sideNav a.nav-link {
+    color: #000;
+    padding: 10% 20px;
+    background-color: #fff;
+}
+
+.drop-down-links2 a {
+    display: block;
+    padding: 10% 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+
+#homeDropDown a:hover  {
+    background-color: #97ffa6 !important;
+    color: #000;
+}
+
+.closeBtn   {
+    position: absolute;
+    left: 18rem;
+    top: 2rem;
+    cursor: pointer;
+}
+
+.signin-side-navBtn {
+    width: 140px;
+    position: relative;
+    top: 0.5rem;
+    left: 5rem;
+}
+
+.signup-side-navBtn {
+    text-align: center;
+    position: relative;
+    top: 4rem;
+    left: -5.3rem;
+}
+
+.drop-down-links2   {
+    background-color: #fff;
+    position: relative;
+    margin: 0;
+    top: -30px;
+    display: none;
+}
+
+.openNavBtn {
+    display: none;
+}
+
+.openNavBtn:hover {
+    color: #000;
+}
+
+.showing {
+    display: block;
+}
+
+/* Hero */
+.hero   {
+    padding: 5% 1.3% 2%;
+}
+
+.drive-green {
+    color: #008937;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.hero-title   {
+    color: #000;
+    font-size: 72px;
+    font-weight: 600;
+}
+
+.hero-paragraph {
+    font-size: 24px;
+    color: #8C8C8C;
+}
+
+/* animation cursor */
+.txt-type > .txt {
+    border-right: 1px solid #2c2c2c;
+}
+
+img.hero-illustration   {
+    max-width: 55%;
+    position: relative;
+    left: 120px;
+    top: -20px;
+}
+
+/* register your vehicle container */
+.reg-vehicle    {
+    background-color: #fff;
+    width: 374px;
+    display: block;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    top: 27rem;
+    left: 5rem;
+    border-radius: 3px;
+    box-shadow: 1px 1px 10px rgb(179, 179, 179);
+    z-index: 1;
+}
+
+.reg-text   {
+    font-size: 24px;
+    margin: 3% 0 10%;
+}
+
+.reg-vehicle input{
+    display: block;
+    margin: 5% auto;
+    width: 327px;
+    padding: 10px 20px 10px 45px;
+    border-radius: 3px;
+    border: 1px solid #9D9D9D;
+}
+
+.hero-car-icon  {
+    position: absolute;
+    top: 104px;
+    left: 40px;
+    color: #9D9D9D;
+    font-size: 18px;
+}
+
+.hero-call-icon {
+    position: absolute;
+    top: 168px;
+    left: 40px;
+    color: #9D9D9D;
+    font-size: 18px;
+}
+
+.reg-veh-btn   {
+    background-color: #008937;
+    color: #fff;
+    width: 327px;
+    margin: 2%;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+h1.join-us  {
+    font-size: 24px;
+    margin: 6%;
+}
+
+.hero-left-grn-circle    {
+    position: absolute;
+    top: 40rem;
+    left: -7rem;
+}
+
+/* Services */
+#services   {
+    position: relative;
+    background-color: #ebebeb;
+    padding: 7% 7%;
+}
+
+#services a {
+    color: #000;
+}
+
+#services a:hover {
+    text-decoration: none;
+}
+
+#services li {
+    list-style: none;
+    margin-left: 20px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.maintenance-title, .autocare-title, .insurance-title  {
+    font-size: 24px;
+}
+
+.maintenance-container, .autocare-container, .insurance-container    {
+    background-color: #fff;
+    padding: 30px 20px;
+    margin: 10px auto;
+    max-width: 400px;
+    border-radius: 3px;
+}
+
+.periodic-check-icon    {
+    color: #53FF6E;
+    position: absolute;
+    top: 118px;
+}
+
+.ac-check-icon    {
+    color: #53FF6E;
+    position: absolute;
+    top: 165px;
+}
+
+.repair-check-icon    {
+    color: #53FF6E;
+    position: absolute;
+    top: 215px;
+}
+
+.crepair-check-icon    {
+    color: #53FF6E;
+    position: absolute;
+    top: 260px;
+}
+
+.service-divider    {
+    background-color: #53FF6E;
+    width: 70px;
+}
+
+
+/* Assurance */
+.motormata-assurance    {
+    background-image: url('/images/assurance-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5% 7%;
+}
+
+.assurance-title    {
+    font-size: 48px;
+}
+
+.motormata-assurance ul {
+    margin: 40px 0;
+}
+
+.motormata-assurance li {
+    padding: 10px 5px;
+    margin: 0 20px;
+    font-size: 24px;
+    list-style: none;
+}
+
+.motormata-assurance li::before {
+    content: "\2022";
+    color: #53FF6E;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
+
+  .assurance-readmore-btn   {
+      background-color: transparent;
+      border: 1px solid #000;
+      padding: 10px 30px;
+  }
+
+  .hidden-element   {
+      display: none;
+  }
+
+
+  /* How we work section */
+  #how-we-work  {
+      padding: 5% 7%;
+      background-color: #ebebeb;
+  }
+
+  .abstract-image   {
+    position: relative;
+    right: 100px;
+  }
+
+  #how-we-work ol{
+    margin: 10px 10px;    
+  }
+
+  #how-we-work .ordered-list{
+    padding: 10px 5px;
+    font-size: 18px;  
+  }
+
+  .how-we-work-texts    {
+      margin-top: 2%;
+  }
+
+  .hw-we-wrk-title  {
+      font-size: 48px;
+      max-width: 100%;
+      padding: 0;
+  }
+
+  .ordered-list li{
+      margin: 0 10px;
+      font-size: 14px;
+      list-style-type: disc;
+      color: #9D9D9D;
+  }
+
+
+  /* Review Section */
+  #reviews  {
+      padding: 5% 5%;
+  }
+
+  #review-carousel  {
+      padding: 5% 4%;
+  }
+
+  .carousel {
+      padding: 5% 0;
+  }
+
+  .carousel-inner   {
+    padding: 5% 0;
+}
+
+  .carousel-control-prev-icon {
+      color: #000;
+      position: absolute;
+      left: 10px;
+  }
+
+  .carousel-control-next-icon   {
+    color: #000;
+    position: absolute;
+    right: -6px;
+  }
+
+  .review-text  {
+      display: block;
+      font-size: 13px;
+      position: relative;
+      left: 130px;
+      bottom: 16px;
+      max-width: 350px;
+  }
+
+  .sec-text {
+      position: relative;
+      left: 1rem;
+  }
+
+  .review-image {
+      position: absolute;
+      bottom: 0;
+  }
+
+  .sec-img  {
+      position: absolute;
+      left: -100px;
+  }
+
+  .reviewer-name    {
+      position: relative;
+      left: 130px;
+      font-size: 15px;
+      color: #008937;
+      font-weight: 700;
+  }
+
+  .reviewer-name2   {
+    position: relative;
+    left: 20px;
+    font-size: 15px;
+    color: #008937;
+    font-weight: 700;
+  }
+
+
+  /* Benefits */
+
+  #benefits {
+      padding: 3% 7% 4%;
+      background-image: url('/images/benefit-bg.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  .benefit-title    {
+    color: #03471E;
+    font-size: 48px;
+    margin: 5% 0 1%;
+  }
+
+  .benefit-icon {
+      position: absolute;
+      left: -20px;
+      top: 2px;
+      font-size: 20px;
+  }
+
+  .convinience, .affordable, .transparent, .quality  {
+      margin: 5% 5% 0;
+      max-width: 30%;
+  }
+
+  .convinience-paragraph, .affordable-paragraph, .transparent-paragraph, .quality-paragraph {
+      font-size: 14px;
+      color: #6D6D6D;
+  }
+
+  /* numbers */ 
+  #numbers {
+      padding: 5% 7%;
+      text-align: center;
+  }
+
+  /* App download */
+  #download {
+      padding: 5% 7%;
+      background-color: #ebebeb;
+  }
+
+  .app-download {
+      margin-top: 15%;
+  }
+
+  /* Technicians */
+
+  #technicians  {
+      padding: 5% 7%;
+      text-align: center;
+  }
+
+  .technician-title {
+      font-size: 48px;
+      text-align: left;
+  }
+
+  .first-tech   {
+      margin-top: 8%;
+  }
+
+  .first-tech img{
+      max-width: 40%;
+      margin-right: 5%;
+      position: relative;
+      top: -30px;
+  }
+
+  .staff-content    {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .staff-content i  {
+      color: #FFC909;
+  }
+
+  .section-divider  {
+      background-color: #000;
+      width: 90%;
+      margin: auto;
+  }
+
+
+  /* Subscription */
+
+  #subscription {
+      padding: 5% 7%;
+      text-align: center;
+  }
+
+  .subscription-title   {
+      font-size: 48px;
+      text-align: left;
+      padding-left: 50px;
+  }
+
+  #subscription input {
+      width: 60%;
+      padding: 15px 25px;
+      margin: 5% 0;
+  }
+
+  .subscribe-btn    {
+      width: 30%;
+      padding: 10px 10px;
+      background-color: #000;
+      color: #fff;
+      font-size: 1.5rem;
+  }
+
+  /* FAQs */
+
+  #faqs {
+      padding: 5% 7%;
+      background-image: url('/images/faq-bg.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  #faqs img {
+      position: absolute;
+      top: 200px;
+      left: -10px;
+      z-index: 2;
+  }
+
+  .faq-title    {
+      margin: 0 0 5%;
+  }
+
+  #accordion .card {
+      background-color: transparent;
+      border: none;
+      box-shadow: none;
+  }
+
+  #headingOne, #headingTwo, #headingThree, #headingFour, #headingFive   {
+      background-color: #f0f0f0;
+  }
+
+  .faq-drop-btn1, .faq-drop-btn2, .faq-drop-btn3, .faq-drop-btn4, .faq-drop-btn5 {
+      float: right;
+      padding: 10px;
+      cursor: pointer;
+  }
+
+  #accordion .card .card-header h5 .btn-link {
+    color: #000;
+  }
+
+  #accordion .card .card-header h5 .btn-link:hover {
+    text-decoration: none;
+  }
+
+  /* Footer */
+
+  #footer   {
+      padding: 5% 7%;
+  }
+
+  .footer-brand img{
+      display: block;
+      margin-bottom: 10%;
+  }
+
+  .footer-brand i   {
+      padding: 8px;
+      color: #9D9D9D;
+  }
+
+  .footer-brand i:hover   {
+    color: #53FF6E;
+}
+
+.ft-about-title {
+    padding-bottom: 3%;
+}
+
+.footer-about li{
+    list-style-type: none;
+    padding-top: 3%;
+}
+
+.footer-about li a{
+    color: #9D9D9D;
+}
+
+.footer-about li a:hover{
+    color: #53FF6E;
+}
+
+.ft-service-title   {
+    padding-bottom: 3%;   
+}
+
+.footer-services li{
+    list-style-type: none;
+    padding-top: 3%;
+}
+
+.footer-services li a{
+    color: #9D9D9D;
+}
+
+.footer-services li a:hover{
+    color: #53FF6E;
+}
+
+.ft-legal-title  {
+    padding-bottom: 3%;   
+}
+
+.footer-legal li{
+    list-style-type: none;
+    padding-top: 3%;
+}
+
+.footer-legal li a{
+    color: #9D9D9D;
+}
+
+.footer-legal li a:hover{
+    color: #53FF6E;
+}
+
+/* Copyright */
+#copyright  {
+    padding: 3% 7% 1%;
+    background-color: #e6e6e6;
+    text-align: center;
+}
+
+.copyright-content  {
+    color: #7c7c7c;
+}
+
+.copyright-content a {
+    color: #000000;
+}
+
+
+
+/************************************************ Signup page ************************************************/
+
+#signup {
+    background-color: #97ffa6;
+    padding: 5% 7%;
+    height: 100vh
+}
+
+.signup-image   {
+    position: absolute;
+    left: 40rem;
+    width: 38rem;
+}
+
+.signup-container   {
+    background-color: #fff;
+    display: block;
+    width: 40%;
+    padding: 5% 3%;
+    margin-bottom: 5%;
+}
+
+.create-acct-title  {
+    font-size: 1rem;
+}
+
+.create-acct-paragraph  {
+    color: #6F6F6F;
+}
+
+.signup-container input  {
+    display: block;
+    width: 100%;
+    margin: 3% 0;
+    padding: 10px;
+}
+
+.create-acct-btn    {
+    padding: 10px 20px;
+    background-color: #53FF6E;
+    margin-top: -1rem;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+.create-acct-btn:hover   {
+    color: #fff;
+    background-color: #000000;
+}
+
+.already-have-acct  {
+    display: inline-block;
+    width: 190px;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    padding-left: 1rem;
+}
+
+.already-have-acct a {
+    color: #53FF6E;
+}
+
+.already-have-acct a:hover {
+    color: #00410a;
+    text-decoration: none;
+}
+
+.go-home-link   {
+    position: absolute;
+    left: 150px;
+    top: 40px;
+    color: black;
+}
+
+.go-home-link:hover  {
+    color: #aaa;
+    text-decoration: none;
+}
+
+/******************************************* Sign in *******************************************/
+.signin-divider {
+    width: 40%;
+    margin-top: 5%;
+    display: inline-block;
+    background-color: #000;
+}
+
+.signin-divider2 {
+    width: 40%;
+    margin-top: 5%;
+    float: right;
+    background-color: #000;
+}
+
+.signup-container span  {
+    position: relative;
+    top: -10px;
+    left: 25px;
+}
+
+.sign-with-email-btn    {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+.signin-acct-btn    {
+    padding: 10px 20px;
+    background-color: #53FF6E;
+    margin-top: -1rem;
+    font-size: 1rem;
+    display: inline-block;
+    width: 45%;
+}
+
+.signin-acct-btn:hover   {
+    color: #fff;
+    background-color: #000000;
+}
