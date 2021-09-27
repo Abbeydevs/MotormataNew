@@ -844,16 +844,26 @@ h1.join-us  {
 .sign-with-email-btn    {
     display: block;
     width: 100%;
-    margin-bottom: 30px;
+    margin: 5% 0;
     padding: 10px;
     background-color: #000;
     color: #fff;
+    text-decoration: none;
+}
+
+.sign-with-email-btn:hover    {
+    background-color: #646464;
+    color: rgb(255, 255, 255);
+}
+
+.signwithemaillink:hover  {
+    text-decoration: none;
 }
 
 .signin-acct-btn    {
     padding: 10px 20px;
     background-color: #53FF6E;
-    margin-top: -1rem;
+    margin: 1.5rem 0 1rem;
     font-size: 1rem;
     display: inline-block;
     width: 45%;
@@ -862,4 +872,33 @@ h1.join-us  {
 .signin-acct-btn:hover   {
     color: #fff;
     background-color: #000000;
+}
+
+.pass-forgot    {
+    float: right;
+    font-size: 0.7rem;
+    text-align: right;
+}
+
+.pass-forgot  a  {
+    color: #000;
+    text-decoration: none;
+}
+
+.pass-forgot  a:hover  {
+    color: rgb(78, 78, 78);
+}
+
+.dont-have-acct {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.dont-have-acct a {
+    color: #53FF6E;
+}
+
+.dont-have-acct a:hover {
+    color: #00410a;
+    text-decoration: none;
 }

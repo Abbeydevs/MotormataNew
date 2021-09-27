@@ -131,6 +131,70 @@
         font-size: 12px;
       }
 
+
+/********************************* Sign up ***************************/
+    #signup .container-fluid {
+        margin-top: 20%;
+    }
+
+    .signup-image   {
+        display: none;
+    }
+
+    .signup-container   {
+        padding: 10% 7%;
+        width: 100%;
+    }
+
+    .create-acct-title  {
+        font-size: 2rem;
+    }
+    
+    .create-acct-paragraph  {
+        color: #6F6F6F;
+        margin-bottom: 10%;
+    }
+
+    .signup-container input  {
+        margin: 3% 0;
+        padding: 10px;
+    }
+
+    .create-acct-btn    {
+        margin-top: 0.4rem;
+        font-size: 1rem;
+        display: inline-block;
+    }
+
+    .already-have-acct  {
+        text-align: right;
+        width: 50%;
+        font-size: 1rem;
+        float: right;
+    }
+
+    .go-home-link   {
+        left: 7.5rem;
+        top: 12rem;
+    }
+    
+    /*************************************** Sign in **********************************/
+    .signin-divider, .signin-divider2 {
+        width: 45%;
+    }
+    
+    .signup-container span  {
+        top: -10px;
+        left: 23px;
+    }
+
+    .sign-with-email-btn    {
+        margin: 5% 0;
+        padding: 10px;
+        background-color: #000;
+        color: #fff;
+    }
+
 }
 
 /* 834px display width */
@@ -309,6 +373,23 @@
 
     #download img.appStore {
         width: 176px;
+    }
+
+    /***************************** Sign up ************************************/
+    #signup .container-fluid {
+        margin-top: 30%;
+    }
+
+    .create-acct-title  {
+        font-size: 2rem;
+    }
+
+    .already-have-acct  {
+        width: 60%;
+    }
+
+    .go-home-link   {
+        left: 6rem;
     }
 }
 
@@ -686,6 +767,51 @@
     .copyright-content  {
         font-size: 0.7rem;
     }
+
+    /***************************** Sign up ************************************/
+    #signup {
+        padding: 5% 4%;
+        height: 100vh
+    }
+
+    .create-acct-title  {
+        font-size: 1.5rem;
+    }
+
+    .create-acct-paragraph  {
+        font-size: 0.9rem;
+    }
+
+    .create-acct-btn    {
+        background-color: #53FF6E;
+        display: block;
+        margin: 2rem auto 2rem;
+        width: 100%;
+    }
+    
+    .already-have-acct  {
+        display: block;
+        padding: 0;
+        text-align: center;
+        float: unset;
+        margin: auto;
+    }
+
+    .go-home-link   {
+        top: 5rem;
+        left: 3rem;
+    }
+
+    /********************************************** Sign in *******************************************/
+    .signin-acct-btn    {
+        width: 100%;
+        display: block;
+    }
+
+    .signup-container span  {
+        top: -10px;
+        left: 1px;
+    }
 }
 
 /* 375px display width */
@@ -887,6 +1013,45 @@
         padding: 5px 10px;
         font-size: 0.7rem;
     }
+
+    /***************************** Sign up ************************************/
+    #signup {
+        padding: 20% 2%;
+        height: 100vh
+    }
+
+    #signup .container-fluid {
+        margin-top: 2%;
+    }
+
+    .create-acct-title  {
+        font-size: 1rem;
+    }
+
+    .create-acct-paragraph  {
+        font-size: 0.6rem;
+    }
+
+    .signup-container input  {
+        padding: 5px;
+    }
+
+    .create-acct-btn    {
+        margin: 1rem auto 2rem;
+        width: 100%;
+        padding: 5px;
+    }
+    
+    .already-have-acct  {
+        float: unset;
+        margin: auto;
+        font-size: 0.7rem; 
+    }
+
+    .go-home-link   {
+        top: 2rem;
+        left: 3rem;
+    }
 }
 
 /* 320px display width */
@@ -1073,6 +1238,46 @@
     /* FAQs */
     h5 span {
         font-size: 0.5rem;
+    }
+
+
+    /***************************** Sign up ************************************/
+     #signup {
+        padding: 20% 2%;
+        height: 100vh
+    }
+
+    #signup .container-fluid {
+        margin-top: 2%;
+    }
+
+    .create-acct-title  {
+        font-size: 1rem;
+    }
+
+    .create-acct-paragraph  {
+        font-size: 0.6rem;
+    }
+
+    .signup-container input  {
+        padding: 5px;
+    }
+
+    .create-acct-btn    {
+        margin: 1rem auto 2rem;
+        width: 100%;
+        padding: 5px;
+    }
+    
+    .already-have-acct  {
+        float: unset;
+        margin: auto;
+        font-size: 0.7rem; 
+    }
+
+    .go-home-link   {
+        top: 2rem;
+        left: 3rem;
     }
 }
 
