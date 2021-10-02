@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Motormata - Experience the best car services in Nigeria.</title>
+  <title>Services - Insurance & Documents</title>
 
   <!-- Fontawesome icons -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -47,9 +47,9 @@
       <a onclick="myFunction()" id="sideNav-link" class="nav-link sideNavLink service-link" type="button">Services <i
           class="services-drop-down fas fa-chevron-down"></i></a>
       <div id="sideNavHomeDropDown" class="drop-down-links2">
-        <a href="">Maintenance Repair</a>
-        <a href="">AutoCare Products & Parts</a>
-        <a href="">Insurance & Documents</a>
+        <a href="maintenance_repair.html">Maintenance Repair</a>
+        <a href="autocare.html">AutoCare Products & Parts</a>
+        <a href="insurance.html">Insurance & Documents</a>
       </div>
       <a class="nav-link" href="#">FAQs</a>
       <a class="nav-link" href="#">Contact</a>
@@ -58,6 +58,7 @@
     </div>
 
     <!-- The main nav -->
+
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg sticky-top">
         <a href="javascript:void(0)" class="openNavBtn" onclick="openNav()"><i class="fas fa-bars"></i></a>
@@ -74,12 +75,11 @@
               <a onclick="myNewFunction()" class="nav-link service-link" type="button">Services <i
                   class="services-drop-down fas fa-chevron-down"></i></a>
             </li>
-
             <!-- drop-down links -->
             <div id="homeDropDown" class="drop-down-links">
-              <a href="">Maintenance Repair</a>
-              <a href="">AutoCare Products & Parts</a>
-              <a href="">Insurance & Documents</a>
+              <a href="maintenance_repair.html">Maintenance Repair</a>
+              <a href="autocare.html">AutoCare Products & Parts</a>
+              <a href="insurance.html">Insurance & Documents</a>
             </div>
             <li class="nav-item">
               <a class="nav-link" href="#pricing">FAQs</a>
@@ -92,201 +92,53 @@
         <a href="signin.html"><button class="btn nav-signin-btn">Sign in</button></a>
         <a href="signup.html"><button class="btn nav-createacct-btn">Create account</button></a>
       </nav>
-
-      <div class="hero row">
-
-        <div class="hero-texts col-lg-4 col-md-4">
-          <h1 class="hero-title">
-            <span class="drive-green">Drive with</span>
-            <p class="txt-type" data-wait="3000" data-words='["Confidence", "Safety", "Assurance"]'></p>
-          </h1>
-          <p class="hero-paragraph">Experience the best car services in Nigeria.</p>
-        </div>
-        <img class="col-lg-8 col-md-8 hero-illustration" src="images/Hero-illustration.png" alt="">
-
-        <div class="reg-vehicle">
-          <h1 class="reg-text">Register your Vehicle</h1>
-          <i class="hero-car-icon fas fa-car"></i>
-          <input type="number" placeholder="Plate number">
-          <i class="hero-call-icon fas fa-phone-alt"></i>
-          <input type="tel" placeholder="Mobile number">
-          <button class="btn reg-veh-btn">Get Started</button>
-          <h1 class="join-us">Join our 30,000+ Happy Customers</h1>
-        </div>
-
-      </div>
-
     </div>
-
-    <img class="hero-left-grn-circle" src="images/Left-circle.png" alt="">
 
   </section>
 
-  <!-- Services section -->
-  <section id="services">
-    <div class="row">
-      <div class="col-lg-4 col-md-6 col-sm-12 maintenance">
-        <a href="maintenance_repair.html">
-          <div class="maintenance-container">
-            <h1 class="maintenance-title">Maintenance & Repair</h1>
-            <hr class="service-divider">
-            <ul>
-              <i class="periodic-check-icon fas fa-check"></i>
-              <li>Periodic Services</li>
-              <i class="ac-check-icon fas fa-check"></i>
-              <li>A/C Repair</li>
-              <i class="repair-check-icon fas fa-check"></i>
-              <li>Body Repair</li>
-              <i class="crepair-check-icon fas fa-check"></i>
-              <li>Custom Repair</li>
-            </ul>
-          </div>
-        </a>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-12 autocare">
-        <a href="autocare.html">
-          <div class="autocare-container">
-            <h1 class="autocare-title">Auto Care Products & Parts</h1>
-            <hr class="service-divider">
-            <ul>
-              <i class="periodic-check-icon fas fa-check"></i>
-              <li>Auto care Products</li>
-              <i class="ac-check-icon fas fa-check"></i>
-              <li>Battery</li>
-              <i class="repair-check-icon fas fa-check"></i>
-              <li>Tyres</li>
-              <i class="crepair-check-icon fas fa-check"></i>
-              <li>Replacement Parts</li>
-            </ul>
-          </div>
-        </a>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-12 insurance">
-        <a href="insurance.html">
-          <div class="insurance-container">
-            <h1 class="insurance-title">Insurance & Documents</h1>
-            <hr class="service-divider">
-            <ul>
-              <i class="periodic-check-icon fas fa-check"></i>
-              <li>Insurance</li>
-              <i class="ac-check-icon fas fa-check"></i>
-              <li>Registration</li>
-              <i class="repair-check-icon fas fa-check"></i>
-              <li>Renewal</li>
-              <i class="crepair-check-icon fas fa-check"></i>
-              <li>Ownership Transfer</li>
-            </ul>
-          </div>
-        </a>
-      </div>
+  <!-- Hero-Video -->
+  <section id="hero-video">
+    <video loop muted autoplay preload="auto">
+      <source src="video/doc.mp4" type="video/mp4">
+      Your browser does not support the video tag. Use Chrome, Safari or Firefox. Get updated my guy.
+    </video>
+
+    <div class="hero-vid-caption">
+      <h1 class="hero-vid-title">Insurance & Documents</h1>
+      <p class="hero-vid-paragraph">Insurance | Registration | Renewal | Ownership Transfer</p>
     </div>
   </section>
 
-  <!-- Motormata Assurance -->
-  <section id="assurance">
-    <div class="motormata-assurance">
-      <h1 class="assurance-title">Motormata Assurance</h1>
+  <!-- Maintenance & Repair -->
+  <section id="maintenance-container">
+    <div class="mc-whiteBox">
+      <h1 class="mc-title">Insurance & Documents</h1>
       <hr class="service-divider">
-      <ul>
-        <li>Upto ₦5,000,000 insurance protection by Leadway Insurance</li>
-        <li>Service per excellence</li>
-        <li>Service per excellence</li>
-        <li>Service per excellence</li>
-        <li class="hidden-element">Service with excellence always</li>
-        <li class="hidden-element">Service with excellence always</li>
-        <li class="hidden-element">Service with excellence always</li>
-      </ul>
-      <button class="btn assurance-readmore-btn" id="readMore_btn">Read more</button>
-    </div>
-  </section>
-
-  <!-- How We work -->
-  <section id="how-we-work">
-    <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-12 abstract-image">
-        <img src="images/howWeWork.png" alt="">
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 how-we-work-texts">
-        <h1 class="col-lg-6 hw-we-wrk-title">How we work</h1>
-        <hr class="service-divider">
-        <ol>
-          <li class="ordered-list">Select your preferred car service online or call 09023456789
-            <ul>
-              <li>Schedule an appointment at your convenient date & time</li>
-            </ul>
-          </li>
-          <li class="ordered-list">Get an appointment for a Doorstep Service
-            <ul>
-              <li>Motormata in-house technicians service your car at your location</li>
-            </ul>
-          </li>
-          <li class="ordered-list">Relax
-            <ul>
-              <li>Relax and spent time on other things that matter</li>
-            </ul>
-          </li>
-          <li class="ordered-list">Refer and win
-            <ul>
-              <li>Earn upto ₦5,000 when you refer a friend. Your friend also earns ₦5,000.</li>
-            </ul>
-          </li>
-        </ol>
-      </div>
-    </div>
-  </section>
-
-  <!-- Reviews -->
-  <section id="reviews">
-    <h1 class="review-title">Reviews</h1>
-    <hr class="service-divider">
-    <div id="review-carousel" class="carousel slide" data-ride="false">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="row">
-            <div class="col-lg-5 first">
-              <img class="review-image" src="images/angel-reviewer.png" alt="reviewer-profile">
-              <span class="review-text">“I enjoyed using Motormata, they help me manage my car very well and I really
-                appreciate them for all they’ve done.” </span>
-              <p class="reviewer-name">Angel Baruwa</p>
-            </div>
-            <div class="col-lg-2"></div>
-            <div class="col-lg-5 the-guy second">
-              <img class="review-image sec-img" src="images/lekan-reviewer.png" alt="reviewer-profile">
-              <span class="review-text sec-text">“I enjoyed using Motormata, they help me manage my car very well and I
-                really
-                appreciate them for all they’ve done.” </span>
-              <p class="reviewer-name2">Lekan Baruwa</p>
-            </div>
-          </div>
+      <div class="row services-box">
+        <div class="col-lg-6 mc-period-services">
+          <span>Insurance</span>
+          <button class="btn p-service-box-btn">Select Car <i class="fas fa-plus"></i></button>
+            <i class="fas fa-chevron-down ps-select-car-drpdwn"></i>
         </div>
 
-        <div class="carousel-item">
-          <div class="row">
-            <div class="col-lg-5 the-lady first">
-              <img class="review-image" src="images/angel-reviewer.png" alt="reviewer-profile">
-              <span class="review-text">“I enjoyed using Motormata, they help me manage my car very well and I really
-                appreciate them for all they’ve done.” </span>
-              <p class="reviewer-name">Angel Baruwa</p>
-            </div>
-            <div class="col-lg-2"></div>
-            <div class="col-lg-5 second">
-              <img class="review-image sec-img" src="images/lekan-reviewer.png" alt="reviewer-profile">
-              <span class="review-text sec-text">“I enjoyed using Motormata, they help me manage my car very well and I
-                really
-                appreciate them for all they’ve done.” </span>
-              <p class="reviewer-name2">Lekan Baruwa</p>
-            </div>
-          </div>
+        <div class="col-lg-6 mc-ac-repair">
+          <span>Registration</span>
+          <button class="btn ac-btn">Select Car <i class="fas fa-plus"></i></button>
+          <i class="fas fa-chevron-down ps-select-car-drpdwn"></i>
         </div>
 
+        <div class="col-lg-6 mc-body-repair">
+          <span>Renewal</span>
+          <button class="btn br-btn">Select Car <i class="fas fa-plus"></i></button>
+          <i class="fas fa-chevron-down ps-select-car-drpdwn"></i>
+        </div>
 
+        <div class="col-lg-6 mc-custom-repair">
+          <span>Ownership Transfer</span>
+          <button class="btn cr-btn">Select Car <i class="fas fa-plus"></i></button>
+          <i class="fas fa-chevron-down ps-select-car-drpdwn"></i>
+        </div>
       </div>
-      <a class="carousel-control-prev" href="#review-carousel" role="button" data-slide="prev">
-        <i class="carousel-control-prev-icon fas fa-chevron-left"></i>
-      </a>
-      <a class="carousel-control-next" href="#review-carousel" role="button" data-slide="next">
-        <i class="carousel-control-next-icon fas fa-chevron-right"></i>
-      </a>
     </div>
   </section>
 
@@ -326,99 +178,6 @@
       </div>
     </div>
   </section>
-
-  <!-- Numbers section -->
-  <section id="numbers">
-    <div class="row">
-      <p class="col-lg-4 col-md-6 col-sm-6 service-number"><strong>100,000+</strong> Services rendered</p>
-      <p class="col-lg-4 col-md-6 col-sm-6 customers-number"><strong>30,000+</strong> Happy Customers</p>
-      <p class="col-lg-4 col-md-6 col-sm-6 rating-number"><strong>4.8 </strong>4.8 Ratings</p>
-    </div>
-  </section>
-
-  <!-- Download Section -->
-  <section id="download">
-    <div class="row">
-      <div class="col-lg-7 app-download">
-        <h1 class="download-title">App Coming soon</h1>
-        <img class="googlePlay" src="images/google-badge.png" alt="googleplay">
-        <img class="appStore" src="images/appstore-badge.png" alt="appstore">
-      </div>
-      <div class="col-lg-5 screenshot">
-        <img src="images/screen-shot.png" alt="App mockup">
-      </div>
-    </div>
-  </section>
-
-  <!-- Top technicians -->
-  <section id="technicians">
-    <h1 class="technician-title">Top Technicians</h1>
-    <hr class="service-divider">
-
-    <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-12 first-tech">
-        <img src="images/technician.png" alt="">
-
-        <div class="staff-content">
-          <h4 class="staff-name">Mike</h4>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <p class="experience">5 years Experience</p>
-        </div>
-
-      </div>
-
-      <div class="col-lg-6 col-md-6 col-sm-12 first-tech">
-        <img src="images/technician.png" alt="">
-
-        <div class="staff-content">
-          <h4 class="staff-name">Mike</h4>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <p class="experience">5 years Experience</p>
-        </div>
-
-      </div>
-
-      <div class="col-lg-6 col-md-6 col-sm-12 first-tech">
-        <img src="images/technician.png" alt="">
-
-        <div class="staff-content">
-          <h4 class="staff-name">Mike</h4>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <p class="experience">5 years Experience</p>
-        </div>
-
-      </div>
-
-      <div class="col-lg-6 col-md-6 col-sm-12 first-tech">
-        <img src="images/technician.png" alt="">
-
-        <div class="staff-content">
-          <h4 class="staff-name">Mike</h4>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <p class="experience">5 years Experience</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <hr class="section-divider">
 
   <!-- Subscription section -->
   <section id="subscription">

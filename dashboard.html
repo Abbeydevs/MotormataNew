@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Experience the best car services in Nigeria.</title>
+
+    <!-- Fontawesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CDN link CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Bootstrap script -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+    <!-- Dashboard navbar -->
+    <section id="dash-nav">
+        <h2 class="userName">Emmanuel Adesanya</h2>
+        <div class="userIcons">
+            <a href="#" data-toggle="tooltip" data-placement="top" title="messages">
+                <i class="fas fa-comment-alt"></i>
+            </a>
+            <a href="#" data-toggle="tooltip" data-placement="top" title="profile">
+                <i class="fas fa-user"></i>
+            </a>
+            <a href="#" data-toggle="tooltip" data-placement="top" title="Sign out">
+                <i class="fas fa-sign-out-alt"></i>
+            </a>        
+        </div>
+    </section>
+
+    <!-- My Car section -->
+    <section id="dash-myCar">
+        <div class="mycar-top-content">
+            <h1 class="mycar-top-title">My Car</h1>
+            <button class="btn mycar-btn">Renew Papers</button>
+            <button class="btn mycar-btn2">Add Car <i class="fas fa-plus"></i></button>
+        </div>
+
+        <div class="dash-mycar-details">
+            <h4 class="car-name">Toyota Corolla</h4>
+            <button class="btn">Details &nbsp;&nbsp;<i class="fas fa-caret-down"></i></button>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section id="dash-history">
+        <div class="history-top-content">
+            <h1 class="history-top-title">History/Transactions</h1>
+        </div>
+        <div class="history-main-contents">
+            <button class="btn history-btn">Last Month <i class="fas fa-caret-down"></i></button>
+            <div class="htry-btry-change">
+                <h4 class="history-battery-change-title">Battery Change</h4>
+                <i class="fas fa-caret-down"></i>
+            </div>
+            <div class="htry-oil-change">
+                <h4 class="history-battery-change-title">Oil Change</h4>
+                <i class="fas fa-caret-down"></i>
+            </div>
+            <div class="htry-body-repair">
+                <h4 class="history-body-repair-title">Body Repair</h4>
+                <i class="fas fa-caret-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommendations -->
+    <section id="dash-recommendations">
+        <div class="recom-top-content">
+            <h1 class="recom-top-content-title">Recommendations</h1>
+            <div class="recom-main-contents">
+                <div class="recom-btry-change">
+                    <h4 class="recom-btry-change-title">Battery Change</h4>
+                    <button class="btn">Book now</button>
+                </div>
+                <div class="recom-oil-change">
+                    <h4 class="recom-oil-change-title">Oil Change</h4>
+                    <button class="btn">Book now</button>
+                </div>
+                <div class="recom-ac-service">
+                    <h4 class="recom-ac-service-title">Body Repair</h4>
+                    <button class="btn">Book now</button>
+                </div>
+                <div class="recom-tyre-change">
+                    <h4 class="recom-tyre-change-title">Body Repair</h4>
+                    <button class="btn">Book now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Car Parts Section -->
+    <section id="dash-carParts">
+        <div class="carparts-top-content">
+            <h1 class="carparts-top-content-title">Your Car Parts</h1>
+            <div class="carparts-main-contents">
+                <div class="carparts-btry">
+                    <h4 class="carparts-btry-title">Battery (2m Capacity)</h4>
+                    <span class="newLabel">New</span>
+                    <button class="btn">Details <i class="fas fa-caret-down"></i></button>
+                </div>
+                <div class="carparts-tyres">
+                    <h4 class="carparts-oil-title">Oil Change</h4>
+                    <button class="btn">Details <i class="fas fa-caret-down"></i></button>
+                </div>
+                <div class="carparts-bumper">
+                    <h4 class="carparts-bumper-title">Bumper</h4>
+                    <button class="btn">Details <i class="fas fa-caret-down"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Due Services section -->
+    <section id="dash-dueServices">
+        <div class="dueservice-top-contents">
+            <h1 class="dueservice-title">Due Services</h1>
+        </div>
+        <div class="row">
+            <div class="dueservice-duedate-content col-lg-6">
+                <p class="car-service-duedate">Car Servicing due in 5 days</p>
+                <div class="duedate-cirlce-chart">
+                    <h1 class="duedate-circle-chart-title">5</h1>
+                    <span>days</span>
+                </div>
+            </div>
+
+            <!-- other Services -->
+            <div class="dash-other-services col-lg-6">
+                <h3 class="dash-other-services-title">Other Services</h3>
+                <div class="dash-paper-renewal">
+                    <h1 class="paper-renewal-title">Paper Renewal</h1>
+                    <div class="d-p-renewal-content">
+                        <p class="d-p-renewal-title">Next renewal date</p>
+                        <p class="renewal-date">Sept. 20, 2024</p>
+                    </div>
+                </div>
+    
+                <div class="dash-car-tyres">
+                    <h1 class="dash-car-tyres-title">Car Tyres</h1>
+                    <div class="dash-car-tyres-content">
+                        <p class="dash-car-tyres-title2">Expiry Date</p>
+                        <p class="renewal-date">Sept. 20, 2022</p>
+                    </div>
+                </div>
+    
+                <div class="dash-break-pad">
+                    <h1 class="dash-break-pad-title">Break Pad</h1>
+                    <div class="dash-break-pad-content">
+                        <p class="dash-break-pad-title2">Next renewal date</p>
+                        <p class="renewal-date">Sept. 20, 2025</p>
+                    </div>
+                </div>
+    
+                <button class="btn">Check all</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <section id="dash-footer">
+        <footer class="dash-footer-copyrights">
+            <p class="dash-copyrights">&copy; Copyrights 2021. All Rights reserved.</p>
+        </footer>
+    </section>
+
+    <script>$('[data-toggle="tooltip"]').tooltip()</script>
+</body>
+
+</html>
