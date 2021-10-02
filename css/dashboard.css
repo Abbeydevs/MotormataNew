@@ -1,0 +1,402 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#dash-nav   {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    width: 100%;
+    padding: 2% 4%;
+    display: flex;
+    box-shadow: 0px 8px 16px 6px rgba(236, 236, 236, 0.2);
+    z-index: 1;
+}
+
+.userName   {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.userIcons  {
+    display: flex;
+    margin-left: auto;
+}
+
+.userIcons a i {
+    font-size: 1.3rem;
+    padding: 0 2rem;
+    color: #555;
+    cursor: pointer;
+}
+
+.userIcons a i:hover {
+    color: #53FF6E;
+}
+
+/* My Car section */
+#dash-myCar {
+    padding: 9% 4% 0;
+}
+
+.mycar-top-content  {
+    display: flex;
+}
+
+.mycar-top-title    {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.mycar-btn {
+    background-color: #000;
+    color: #fff;
+    margin-left: auto;
+}
+
+.mycar-btn:hover{
+    background-color: #444;
+}
+
+.mycar-btn2  {
+    background-color: #53FF6E;
+    color: #000;
+    margin-left: 1%;
+    padding: 10px 20px;
+}
+
+.mycar-btn2:hover  {
+    background-color: #09e62a;
+}
+
+.dash-mycar-details {
+    margin: 2% 0;
+    border: 1px solid #9d9d9d;
+    border-radius: 10px;
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dash-mycar-details .car-name   {
+    font-size: 1.5rem;
+}
+
+.dash-mycar-details button  {
+    padding: 10px 30px;
+    background-color: #53FF6E;
+}
+
+/* History Section */
+#dash-history   {
+    padding: 2% 4%;
+}
+
+.history-top-title    {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.history-main-contents  {
+    margin: 2% 0;
+    border: 1px solid #9d9d9d;
+    border-radius: 10px;
+    padding: 1.2rem 2rem;
+}
+
+.history-btn    {
+    background-color: transparent;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    margin: 1% 0 0;
+}
+
+.htry-btry-change   {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ececec;
+    margin: 4% 0;
+}
+
+.htry-oil-change   {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ececec;
+    margin: 4% 0;
+}
+
+.htry-body-repair  {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ececec;
+    margin: 4% 0;
+}
+
+/* Recommendations */
+#dash-recommendations   {
+    padding: 2% 4%;
+}
+
+.recom-top-content-title    {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.recom-main-contents  {
+    margin: 2% 0;
+    border: 1px solid #9d9d9d;
+    border-radius: 10px;
+    padding: 1.2rem 2rem;
+}
+
+.recom-btry-change   {
+    border-bottom: 1px solid #ececec;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 1% 0;
+}
+
+.recom-oil-change   {
+    border-bottom: 1px solid #ececec;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 1% 0;
+}
+
+.recom-ac-service   {
+    border-bottom: 1px solid #ececec;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 1% 0;
+}
+
+.recom-tyre-change   {
+    border-bottom: 1px solid #ececec;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 1% 0;
+}
+
+.recom-main-contents button {
+    background-color: #53FF6E;
+    padding: 10px 30px;
+}
+
+/* Car parts */
+#dash-carParts  {
+    padding: 2% 4%;
+}
+
+.carparts-top-content-title    {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.carparts-main-contents  {
+    margin: 2% 0;
+    border: 1px solid #9d9d9d;
+    border-radius: 10px;
+    padding: 1.2rem 2rem;
+}
+
+.carparts-btry   {
+    border-bottom: 1px solid #ececec;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 1% 0;
+}
+
+.carparts-btry span {
+    position: absolute;
+    left: 21rem;
+    background-color: red;
+    padding: 0.2rem 1rem;
+    color: #fff;
+}
+
+.carparts-tyres   {
+    border-bottom: 1px solid #ececec;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 1% 0;
+}
+
+.carparts-bumper   {
+    border-bottom: 1px solid #ececec;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 1% 0;
+}
+
+.carparts-main-contents button {
+    background-color: #53FF6E;
+    padding: 10px 30px;
+}
+
+/* Due Services */
+#dash-dueServices   {
+    padding: 2% 4%;
+}
+
+.dueservice-title   {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 3%;
+}
+
+.dueservice-duedate-content {
+    border: 1px solid #9d9d9d;
+    max-width: 40%;
+    border-radius: 10px;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.duedate-cirlce-chart   {
+    border: 5px solid #ccc;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.duedate-circle-chart-title {
+    font-size: 10rem;
+}
+
+.dash-other-services    {
+    border: 1px solid #9d9d9d;
+    max-width: 40%;
+    margin-left: auto;
+    border-radius: 10px;
+}
+
+.dash-other-services    {
+    padding: 3% 5%;
+}
+
+.dash-other-services-title  {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.dash-paper-renewal {
+    margin: 10% 0;
+}
+
+.paper-renewal-title {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.d-p-renewal-content    {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(247, 247, 247);
+    /* box-shadow: 0px 8px 16px 6px rgba(126, 126, 126, 0.2); */
+    padding: 10px 20px;
+    margin: 3% 0;
+}
+
+.d-p-renewal-title  {
+    margin: auto 0;
+}
+
+.renewal-date   {
+    color: #888;
+    margin: auto 0;
+}
+
+
+
+/* Car Tyres */
+.dash-car-tyres {
+    margin: 10% 0;
+}
+
+.dash-car-tyres-title {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.dash-car-tyres-content    {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(247, 247, 247);
+    /* box-shadow: 0px 8px 16px 6px rgba(126, 126, 126, 0.2); */
+    padding: 10px 20px;
+    margin: 3% 0;
+}
+
+.dash-car-tyres-title2  {
+    margin: auto 0;
+}
+
+.renewal-date   {
+    color: #888;
+    margin: auto 0;
+}
+
+
+
+/* Break Pad */
+.dash-break-pad {
+    margin: 10% 0;
+}
+
+.dash-break-pad-title {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.dash-break-pad-content    {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(247, 247, 247);
+    /* box-shadow: 0px 8px 16px 6px rgba(126, 126, 126, 0.2); */
+    padding: 10px 20px;
+    margin: 3% 0;
+}
+
+.dash-break-pad-title2  {
+    margin: auto 0;
+}
+
+.renewal-date   {
+    color: #888;
+    margin: auto 0;
+}
+
+.dash-other-services button {
+    margin: auto;
+    color: #fff;
+    background-color: #000;
+}
+
+
+/* Footer */
+#dash-footer    {
+    background-color: #ebebeb;
+    padding: 1% 5%;
+}
+
+.dash-footer-copyrights {
+    text-align: center;
+}
+
+#dash-footer footer p{
+    margin: auto;
+    color: #777;
+}

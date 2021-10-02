@@ -491,6 +491,14 @@
     }
 
     /* Hero */
+
+    .hero   {
+        background-image: url('/images/phone-bg.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     .drive-green {
         font-size: 35px;
     }
