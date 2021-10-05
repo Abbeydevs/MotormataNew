@@ -41,17 +41,20 @@
 
     <!-- Dashboard navbar -->
     <section id="dash-nav">
+        <a href="#">
+            <img src="images/user-profile.png" alt="">
+        </a>
         <h2 class="userName">Emmanuel Adesanya</h2>
         <div class="userIcons">
             <a href="#" data-toggle="tooltip" data-placement="top" title="messages">
                 <i class="fas fa-comment-alt"></i>
             </a>
-            <a href="#" data-toggle="tooltip" data-placement="top" title="profile">
-                <i class="fas fa-user"></i>
+            <a href="#" data-toggle="tooltip" data-placement="top" title="My Cart">
+                <i class="fas fa-shopping-bag"></i>
             </a>
             <a href="index.html" data-toggle="tooltip" data-placement="top" title="Sign out">
                 <i class="fas fa-sign-out-alt"></i>
-            </a>        
+            </a>
         </div>
     </section>
 
@@ -65,7 +68,55 @@
 
         <div class="dash-mycar-details">
             <h4 class="car-name">Toyota Corolla</h4>
-            <button class="btn">Details &nbsp;&nbsp;<i class="fas fa-caret-down"></i></button>
+            <button class="btn" onclick="openModal()">Details &nbsp;&nbsp;<i class="fas fa-caret-down"></i></button>
+        </div>
+
+        <div class="transaprent-modal">
+            <div class="modal-container scroller">
+                <i class="fas fa-times modal-close" onclick="closeModal()"></i>
+                <h1 class="car-name">Toyota Corolla</h1>
+                <p class="car-type">2021 Corolla L CVT</p>
+                <img src="images/toyota.png" alt="">
+
+                <div class="car-elements">
+                    <div class="row">
+                        <div class="element1 col-lg-4">
+                            <h5 class="type1">Engine</h5>
+                            <p class="car-desc">4 Cylinder Engine</p>
+                        </div>
+                        <div class="element2 col-lg-4">
+                            <h5 class="type2">Transmission</h5>
+                            <p class="car-desc">Automatic</p>
+                        </div>
+                        <div class="element3 col-lg-4">
+                            <h5 class="type3">Colors</h5>
+                            <div class="color-containers">
+                                <div class="color-box1"></div>
+                                <div class="color-box2"></div>
+                                <div class="color-box3"></div>
+                                <div class="color-box4"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-divider"></div>
+
+                    <div class="row">
+                        <div class="element4 col-lg-4">
+                            <h5 class="type1">Battery Type</h5>
+                            <p class="car-desc">4 Cylinder Engine</p>
+                        </div>
+                        <div class="element5 col-lg-4">
+                            <h5 class="type2">Brakes</h5>
+                            <p class="car-desc">4 - Wheel ABS</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="modal-footer">
+                    <p class="date-serviced">Motormata Engineers Started working on this Car since August 12, 2021</p>
+                </div> -->
+            </div>
         </div>
     </section>
 
@@ -75,15 +126,70 @@
             <h1 class="history-top-title">History/Transactions</h1>
         </div>
         <div class="history-main-contents">
-            <button class="btn history-btn">Last Month <i class="fas fa-caret-down"></i></button>
+
+
+            <div class="select-box">
+                <div class="options-container">
+                    <div class="option">
+                        <input type="radio" class="radio" id="today" name="category">
+                        <label for="today">Today</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" class="radio" id="lastweek" name="category">
+                        <label for="lastweek">Last Week</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" class="radio" id="lastmonth" name="category">
+                        <label for="lastmonth">Last Month</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" class="radio" id="thisyear" name="category">
+                        <label for="thisyear">This Year</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" class="radio" id="alltime" name="category">
+                        <label for="alltime">All time</label>
+                    </div>
+                </div>
+                <div class="selected">
+                    Last month <i class="fas fa-caret-down"></i>
+                </div>
+            </div>
+
             <div class="htry-btry-change">
                 <h4 class="history-battery-change-title">Battery Change</h4>
-                <i class="fas fa-caret-down"></i>
+                <i class="collapsible-icon fas fa-caret-down" onclick="dissolveContainerDetails()" ;></i>
+                <i class="collapsible-icon-close fas fa-caret-up" onclick="closeContainerDetails()" ;></i>
             </div>
+
+            <!-- Battery Change Contents -->
+            <div class="content battery-change-box">
+                <p class="btc-box-date">September 21, 2021</p>
+                <div class="done-transaction-box">
+                    <h5 class="done-transaction">Battery Change</h5>
+                    <span class="transaction-price">N30,000.00</span>
+                </div>
+
+                <div class="product">
+                    <h5 class="product-name">Battery Type</h5>
+                    <span class="product-type">Rocket Car Battery - Korea Original - 12v/75ah</span>
+                </div>
+
+                <div class="status">
+                    <h5 class="transaction-status">Status</h5>
+                    <span class="transaction-update">Completed</span>
+                </div>
+            </div>
+
             <div class="htry-oil-change">
                 <h4 class="history-battery-change-title">Oil Change</h4>
                 <i class="fas fa-caret-down"></i>
             </div>
+
             <div class="htry-body-repair">
                 <h4 class="history-body-repair-title">Body Repair</h4>
                 <i class="fas fa-caret-down"></i>
@@ -98,8 +204,24 @@
             <div class="recom-main-contents">
                 <div class="recom-btry-change">
                     <h4 class="recom-btry-change-title">Battery Change</h4>
-                    <button class="btn">Book now</button>
+                    <button class="btn" onclick="openRecommendationModal()">Book now</button>
                 </div>
+
+                <div class="dash-recommendation-modal">
+                    <div class="dash-recommendation-modal-container scroller">
+                        <i class="fas fa-times recom-modal-close" onclick="closeRecommendationModal()"></i>
+                        <div class="recom-product">
+                            <h1 class="product-recommended">Buy new Battery</h1>
+                            <button class="btn recom-cart-btn">Add to Cart</button>
+                        </div>
+                        <div class="recom-divider"></div>
+                        <div class="recom-product">
+                            <h1 class="product-recommended">Fix Current Battery</h1>
+                            <button class="btn recom-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="recom-oil-change">
                     <h4 class="recom-oil-change-title">Oil Change</h4>
                     <button class="btn">Book now</button>
@@ -124,15 +246,38 @@
                 <div class="carparts-btry">
                     <h4 class="carparts-btry-title">Battery (2m Capacity)</h4>
                     <span class="newLabel">New</span>
-                    <button class="btn">Details <i class="fas fa-caret-down"></i></button>
+                    <button class="btn battry-detail-btn" onclick="openDetails();">Details <i
+                            class="fas fa-caret-down"></i></button>
+                    <button class="btn closeDetail-btn" onclick="closeDetails();">Close <i
+                            class="fas fa-times"></i></button>
                 </div>
+
+                <!-- Details Container hidden -->
+                <div class="carPart-container">
+                    <div class="product1">
+                        <div class="left-alignment">
+                            <h5 class="product-name">Name</h5>
+                            <p class="product">Battery (2m Capacity)</p>
+                        </div>
+                        <div class="middle-alignment">
+                            <h5 class="product-type">Type</h5>
+                            <p class="product">Rocket Car Battery - Korea Original - 12v/75ah</p>
+                        </div>
+                        <div class="right-alignment">
+                            <h5 class="product-amount">Amount</h5>
+                            <p class="product">&#8358; 28,200.00</p>
+                        </div>
+                    </div>
+                    <button class="btn product-details-btn">Add to Cart</button>
+                </div>
+
                 <div class="carparts-tyres">
                     <h4 class="carparts-oil-title">Oil Change</h4>
-                    <button class="btn">Details <i class="fas fa-caret-down"></i></button>
+                    <button class="btn oil-detail-btn">Details <i class="fas fa-caret-down"></i></button>
                 </div>
                 <div class="carparts-bumper">
                     <h4 class="carparts-bumper-title">Bumper</h4>
-                    <button class="btn">Details <i class="fas fa-caret-down"></i></button>
+                    <button class="btn bumper-detail-btn">Details <i class="fas fa-caret-down"></i></button>
                 </div>
             </div>
         </div>
@@ -143,44 +288,59 @@
         <div class="dueservice-top-contents">
             <h1 class="dueservice-title">Due Services</h1>
         </div>
-        <div class="row">
-            <div class="dueservice-duedate-content col-lg-6">
-                <p class="car-service-duedate">Car Servicing due in 5 days</p>
-                <div class="duedate-cirlce-chart">
-                    <h1 class="duedate-circle-chart-title">5</h1>
-                    <span>days</span>
+
+        <div class="dueservice-duedate-content">
+            <div class="day-remain">
+                <h3 class="car-service-duedate">Remaining days to due date</h3>
+            </div>
+            <div class="countdown">
+                <div class="container-day">
+                    <h3 class="day">Time</h3>
+                    <p>Day</p>
+                </div>
+                <div class="container-hour">
+                    <h3 class="hour">Time</h3>
+                    <p>hour</p>
+                </div>
+                <div class="container-minute">
+                    <h3 class="minute">Time</h3>
+                    <p>minutes</p>
+                </div>
+                <div class="container-second">
+                    <h3 class="second">Time</h3>
+                    <p>seconds</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- other Services -->
+        <div class="dash-other-services">
+            <h3 class="dash-other-services-title">Other Services</h3>
+            <div class="dash-paper-renewal">
+                <h1 class="paper-renewal-title">Paper Renewal</h1>
+                <div class="d-p-renewal-content">
+                    <p class="d-p-renewal-title">Next renewal date</p>
+                    <p class="renewal-date">Sept. 20, 2024</p>
                 </div>
             </div>
 
-            <!-- other Services -->
-            <div class="dash-other-services col-lg-6">
-                <h3 class="dash-other-services-title">Other Services</h3>
-                <div class="dash-paper-renewal">
-                    <h1 class="paper-renewal-title">Paper Renewal</h1>
-                    <div class="d-p-renewal-content">
-                        <p class="d-p-renewal-title">Next renewal date</p>
-                        <p class="renewal-date">Sept. 20, 2024</p>
-                    </div>
+            <div class="dash-car-tyres">
+                <h1 class="dash-car-tyres-title">Car Tyres</h1>
+                <div class="dash-car-tyres-content">
+                    <p class="dash-car-tyres-title2">Expiry Date</p>
+                    <p class="renewal-date">Sept. 20, 2022</p>
                 </div>
-    
-                <div class="dash-car-tyres">
-                    <h1 class="dash-car-tyres-title">Car Tyres</h1>
-                    <div class="dash-car-tyres-content">
-                        <p class="dash-car-tyres-title2">Expiry Date</p>
-                        <p class="renewal-date">Sept. 20, 2022</p>
-                    </div>
-                </div>
-    
-                <div class="dash-break-pad">
-                    <h1 class="dash-break-pad-title">Break Pad</h1>
-                    <div class="dash-break-pad-content">
-                        <p class="dash-break-pad-title2">Next renewal date</p>
-                        <p class="renewal-date">Sept. 20, 2025</p>
-                    </div>
-                </div>
-    
-                <button class="btn">Check all</button>
             </div>
+
+            <div class="dash-break-pad">
+                <h1 class="dash-break-pad-title">Break Pad</h1>
+                <div class="dash-break-pad-content">
+                    <p class="dash-break-pad-title2">Next renewal date</p>
+                    <p class="renewal-date">Sept. 20, 2025</p>
+                </div>
+            </div>
+
+            <button class="btn">Check all</button>
         </div>
     </section>
 
@@ -192,6 +352,7 @@
     </section>
 
     <script>$('[data-toggle="tooltip"]').tooltip()</script>
+    <script src="dashboard.js"></script>
 </body>
 
 </html>

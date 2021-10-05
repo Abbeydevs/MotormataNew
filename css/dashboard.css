@@ -14,13 +14,20 @@
     z-index: 1;
 }
 
+#dash-nav img {
+    padding: 0 30px;
+    cursor: pointer;
+}
+
 .userName   {
     font-size: 1.5rem;
     font-weight: 600;
+    margin: auto 0;
 }
 
 .userIcons  {
     display: flex;
+    margin: auto 0;
     margin-left: auto;
 }
 
@@ -34,6 +41,7 @@
 .userIcons a i:hover {
     color: #53FF6E;
 }
+
 
 /* My Car section */
 #dash-myCar {
@@ -80,6 +88,7 @@
 }
 
 .dash-mycar-details .car-name   {
+    margin: auto 0;
     font-size: 1.5rem;
 }
 
@@ -87,6 +96,7 @@
     padding: 10px 30px;
     background-color: #53FF6E;
 }
+
 
 /* History Section */
 #dash-history   {
@@ -112,6 +122,77 @@
     margin: 1% 0 0;
 }
 
+.select-box {
+    display: flex;
+    width: 150px;
+    flex-direction: column;
+}
+
+.selected{
+    background: transparent;
+    border: 1px solid #555;
+    border-radius: 5px;
+    position: relative;
+    order: 0;
+    margin-bottom: 10px;
+}
+
+.selected i{
+    position: absolute;
+    top: 16px;
+    left: 7.5rem;
+}
+
+.select-box .options-container  {
+    background: #eee;
+    max-height: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.4s;
+    border-radius: 5px;
+    overflow: hidden;
+    order: 1;
+}
+
+.select-box .options-container.active  {
+    max-height: 200px;
+    opacity: 1;
+    overflow-y: scroll;
+}
+
+.select-box .options-container.active + .selected i {
+    transform: rotateX(180deg);
+    top: 17px;
+}
+
+.select-box .options-container::-webkit-scrollbar  {
+    width: 0;
+    scrollbar-width: 1px;
+    border-radius: 0 5px 5px 0;
+}
+
+.select-box .options-container{
+    scrollbar-width: none;
+    scrollbar-color: #eee #fff;
+}
+
+.select-box .option, .selected  {
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+.select-box .option:hover  {
+    background: #ddd;
+}
+
+.select-box label {
+    cursor: pointer;
+}
+
+.select-box .option .radio {
+    display: none;
+}
+
 .htry-btry-change   {
     display: flex;
     justify-content: space-between;
@@ -132,6 +213,65 @@
     border-bottom: 1px solid #ececec;
     margin: 4% 0;
 }
+
+
+/* The hidden box */
+.htry-btry-change i{
+    cursor: pointer;
+    transition: all 00ms ease-in-out;
+}
+
+.htry-btry-change i.collapsible-icon-close{
+    cursor: pointer;
+    transition: all 00ms ease-in-out;
+    display: none;
+}
+
+.battery-change-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 10px #ddd;
+    position: relative;
+    top: -3rem;
+    display: none;
+}
+
+.battery-change-box .btc-box-date   {
+    color: #aaa;
+}
+
+.battery-change-box .done-transaction-box   {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+}
+
+.battery-change-box h5.done-transaction {
+    font-weight: 600;
+}
+
+.battery-change-box .product h5.product-name{
+    font-weight: 600;
+}
+
+.battery-change-box .product {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+}
+
+.battery-change-box .status {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+}
+
+.transaction-status {
+    margin: auto 0;
+    font-weight: 600;
+}
+
 
 /* Recommendations */
 #dash-recommendations   {
@@ -187,6 +327,52 @@
     padding: 10px 30px;
 }
 
+/* Recommendation modal */
+.dash-recommendation-modal    {
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    width: 100%;
+    padding: 50px;
+    z-index: 10;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 300ms ease-in-out;
+}
+
+.dash-recommendation-modal-container    {
+    background-color: #fff;
+    padding: 40px;
+    margin: 2rem;
+    position: relative;
+    top: 4rem;
+    border-radius: 5px;
+}
+
+.recom-modal-close  {
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.recom-product  {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+.product-recommended    {
+    font-size: 1.5rem;
+    margin: auto 0;
+}
+
+.recom-divider  {
+    border-bottom: 1px solid #eee;
+}
+
 /* Car parts */
 #dash-carParts  {
     padding: 2% 4%;
@@ -236,9 +422,45 @@
     margin: 1% 0;
 }
 
-.carparts-main-contents button {
+.battry-detail-btn, .oil-detail-btn, .bumper-detail-btn {
     background-color: #53FF6E;
     padding: 10px 30px;
+}
+
+/* Car Parts Details */
+.carPart-container  {
+    background-color: #fff;
+    padding: 50px;
+    position: relative;
+    top: -1rem;
+    display: none;
+    box-shadow: 0 10px 10px 2px rgba(170, 170, 170, 0.2);
+}
+
+.product1   {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.product-name, .product-type, .product-amount {
+    font-weight: 600;
+}
+
+.product-details-btn    {
+    margin-top: 5rem;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 30px;
+    margin: 5rem 0 0 58.5rem;
+}
+
+.closeDetail-btn   {
+    background-color: #f00;
+    color: #fff;
+    padding: 10px 10px;
+    width: 100px;
+    display: none;
 }
 
 /* Due Services */
@@ -254,32 +476,34 @@
 
 .dueservice-duedate-content {
     border: 1px solid #9d9d9d;
-    max-width: 40%;
+    max-width: 100%;
     border-radius: 10px;
-    padding: 3rem 2rem;
+    padding: 2rem 2rem;
     text-align: center;
 }
 
-.duedate-cirlce-chart   {
-    border: 5px solid #ccc;
-    width: 50%;
-    height: 50%;
-    border-radius: 50%;
-    margin: auto;
+.day-remain h3 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
 }
 
-.duedate-circle-chart-title {
-    font-size: 10rem;
+.countdown  {
+    display: flex;
+    justify-content: space-around;
 }
 
+.day, .hour, .minute, .second {
+    font-size: 3rem;
+}
+
+
+
+/* Other Services */
 .dash-other-services    {
     border: 1px solid #9d9d9d;
-    max-width: 40%;
-    margin-left: auto;
+    max-width: 100%;
+    margin: 5rem 0;
     border-radius: 10px;
-}
-
-.dash-other-services    {
     padding: 3% 5%;
 }
 
@@ -290,7 +514,7 @@
 }
 
 .dash-paper-renewal {
-    margin: 10% 0;
+    margin: 5% 0;
 }
 
 .paper-renewal-title {
@@ -318,10 +542,9 @@
 }
 
 
-
 /* Car Tyres */
 .dash-car-tyres {
-    margin: 10% 0;
+    margin: 5% 0;
 }
 
 .dash-car-tyres-title {
@@ -352,7 +575,7 @@
 
 /* Break Pad */
 .dash-break-pad {
-    margin: 10% 0;
+    margin: 5% 0;
 }
 
 .dash-break-pad-title {
@@ -383,6 +606,12 @@
     margin: auto;
     color: #fff;
     background-color: #000;
+    width: 200px;
+    padding: 10px;
+}
+
+.dash-other-services button:hover {
+    background-color: #222;
 }
 
 
@@ -399,4 +628,129 @@
 #dash-footer footer p{
     margin: auto;
     color: #777;
+}
+
+
+/* Dashboard Modal */
+.transaprent-modal  {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    width: 100%;
+    padding: 50px;
+    z-index: 10;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 1000ms ease-out;
+}
+
+
+.modal-container    {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 80%;
+    height: 85vh;
+    margin: auto;
+    text-align: center;
+    overflow-y: scroll;
+    padding: 50px;
+    transition: all 500ms ease-in-out;
+}
+
+.scroller{
+    scrollbar-width: none;
+    scrollbar-color: #eee #fff;
+}
+
+.scroller::-webkit-scrollbar {
+    width: 8px;
+    background: #fff;
+    border-radius: 0 50px 50px 0;
+}
+
+.scroller::-webkit-scrollbar-thumb {
+    width: 8px;
+    background: #eee;
+}
+
+.modal-close    {
+    margin: -1rem 0rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: fixed;
+    right: 15rem;
+    transition: all 300ms ease-in-out;    
+}
+
+.modal-close:hover   {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #555;
+}
+
+.modal-container .car-name  {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #545454;
+}
+
+.modal-container img    {
+    width: 300px;
+    padding: 20px;
+}
+
+.element1 .type1, .element2 .type2, .element3 .type3, .element4 .type1, .element5 .type2   {
+    font-weight: 600;
+}
+
+.color-containers   {
+    display: flex;
+}
+
+.color-box1 {
+    background-color: #486361;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 105px;
+}
+
+.color-box2 {
+    background-color: #E7E7E7;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 110px;
+}
+
+.color-box3 {
+    background-color: #C4C4C4;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 115px;
+}
+
+.color-box4 {
+    background-color: #000;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 120px;
+}
+
+.modal-divider  {
+    background-color: #000;
+    color: #000;
+    height: 1px;
+    margin: 2rem auto;
+    width: 80%;
+}
+
+.modal-footer   {
+    text-align: center;
+    margin: auto;
+    display: block;
+    margin: 2rem;
 }

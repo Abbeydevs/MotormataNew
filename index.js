@@ -109,4 +109,4 @@ function closeNav() {
     document.getElementById("sideNav").style.display = "none";
 }
 
-closeNav();
+
