@@ -1,3 +1,95 @@
+/*********************************************** Bigger Display ********************************/
+/* 1500px display width */
+@media (max-width: 1500px) {
+  /********************************** Maintenance & Repair *****************************/
+    #hero-video {
+        height: 100vh;
+    }
+
+    #hero-video::after  {
+        height: 100%;
+        top: 14%;
+    }
+
+    #hero-video video{
+        height: 100%;
+        top: 14%;
+    }
+
+    /* The Service Modal */
+    .basic-service, .standard-service  {
+        padding: 30px 60px;
+        top: 79rem;
+        left: 9rem;
+    }
+
+    .basic-service .bs-title, .standard-service .standard-service-title {
+        margin-left: 2rem;
+    }
+
+    .basic-service i, .standard-service i {
+        top: 2.2rem;
+        left: 25rem;
+    }
+
+    .basic-service i:first-child, .standard-service i:first-child   {
+        top: 2.2rem;
+        left: 2rem;
+    }
+
+    .basic-service hr.service-divider, .standard-service hr.service-divider   {
+        left: 2rem;
+    }
+    
+    /* AC Service */
+    .ac-basic-service, .ac-standard-service {
+        padding: 30px 60px;
+        top: 79rem;
+        left: 45rem;
+    }
+
+    .ac-basic-service .abs-title, .ac-standard-service .ac-standard-service-title {
+        margin-left: 2rem;
+     }
+
+    .ac-basic-service i:first-child, .ac-standard-service i:first-child   {
+        top: 2.2rem;
+    }
+
+    .ac-basic-service hr.service-divider, .ac-standard-service hr.service-divider   {
+        left: 2rem;
+    }
+
+    /* Added to cart container */
+    .added-to-cart-container    {
+        top: 85rem;
+        left: 23rem;
+    }
+}
+
+/* 1300px display width */
+@media (max-width: 1300px) {
+    /********************************** Maintenance & Repair *****************************/
+
+    /* The Service Modal */
+    .basic-service, .standard-service  {
+        top: 71.7rem;
+        left: 6rem;
+    }
+    
+    /* AC Service */
+    .ac-basic-service, .ac-standard-service {
+        padding: 30px 60px;
+        top: 71.7rem;
+        left: 38rem;
+    }
+
+    /* Added to cart container */
+    .added-to-cart-container    {
+        top: 78rem;
+        left: 20rem;
+    }
+}
 
 /****************** IPAD DISPLAY **************************/
 
@@ -195,6 +287,74 @@
         color: #fff;
     }
 
+    /********************************** Maintenance & Repair *****************************/
+    #hero-video {
+        height: 50vh;
+    }
+
+    #hero-video::after  {
+        height: 50%;
+        top: 7%;
+    }
+
+    #hero-video video{
+        height: 50%;
+        top: 7%;
+    }
+
+    /* The Service Modal */
+    .basic-service, .standard-service  {
+        padding: 30px;
+        top: 62.8rem;
+        left: 5rem;
+    }
+
+    .basic-service .bs-title, .standard-service .standard-service-title {
+        margin-left: 2rem;
+    }
+
+    .basic-service i, .standard-service i {
+        top: 2.2rem;
+        left: 22rem;
+    }
+
+    .basic-service i:first-child, .standard-service i:first-child   {
+        top: 2.2rem;
+        left: 2rem;
+    }
+
+    .basic-service hr.service-divider, .standard-service hr.service-divider   {
+        left: 2rem;
+    }
+
+    /* AC Service */
+    .ac-basic-service, .ac-standard-service {
+        padding: 30px;
+        top: 62.8rem;
+        left: 30rem;
+    }
+
+    .ac-basic-service .abs-title, .ac-standard-service .ac-standard-service-title {
+        margin-left: 2rem;
+     }
+
+     .ac-basic-service i, .ac-standard-service i {
+        top: 2.2rem;
+        left: 21rem;
+    }
+
+    .ac-basic-service i:first-child, .ac-standard-service i:first-child   {
+        top: 2.2rem;
+    }
+
+    .ac-basic-service hr.service-divider, .ac-standard-service hr.service-divider   {
+        left: 2rem;
+    }
+
+    /* Added to cart container */
+    .added-to-cart-container    {
+        left: 12rem;
+    }
 }
 
 /* 834px display width */
@@ -391,6 +551,142 @@
     .go-home-link   {
         left: 6rem;
     }
+
+    /********************************** Maintenance & Repair *****************************/
+    #hero-video::after  {
+        top: 9%;
+    }
+
+    #hero-video video{
+        top: 9%;
+    }
+
+    .mc-whiteBox    {
+        background-color: rgb(243, 243, 243);
+        box-shadow: 1px 1px 20px 6px rgba(170, 170, 170, 0.2);
+        padding: 10px 50px;
+        border-radius: 5px;
+        font-size: 0.9rem;
+    }
+
+    .p-service-box-btn, .ac-btn, .br-btn, .cr-btn {
+        font-size: 0.8rem;
+    }
+
+    /* The Service Modal */
+    .basic-service, .standard-service  {
+        padding: 30px;
+        top: 50.8rem;
+        left: 3.5rem;
+    }
+
+    .basic-service .bs-title, .standard-service .standard-service-title {
+        font-size: 0.8rem;
+        margin-left: 2rem;
+    }
+
+    .basic-service i, .standard-service i {
+        top: 1.9rem;
+        left: 14.5rem;
+    }
+
+    .basic-service i:first-child, .standard-service i:first-child   {
+        top: 1.9rem;
+    }
+
+    .basic-service hr.service-divider, .standard-service hr.service-divider   {
+        left: 2rem;
+        width: 30px;
+    }
+
+    .basic-service ul li, .standard-service ul li  {
+        padding: 5px;
+        font-size: 0.6rem;
+    }
+
+    .basic-service button.btn, .standard-service button.btn  {
+        margin: 0 1.5rem;
+        padding: 5px 10px;
+        font-size: 0.6rem;
+    }
+
+    /* AC Service */
+    .ac-basic-service, .ac-standard-service {
+        padding: 30px;
+        top: 50.8rem;
+        left: 22.5rem;
+    }
+
+    .ac-basic-service .abs-title, .ac-standard-service .ac-standard-service-title {
+        font-size: 0.8rem;
+        margin-left: 2rem;
+     }
+
+     .ac-basic-service i, .ac-standard-service i {
+        top: 1.9rem;
+        left: 14.5rem;
+    }
+
+    .ac-basic-service i:first-child, .ac-standard-service i:first-child   {
+        top: 1.9rem;
+    }
+
+    .ac-basic-service hr.service-divider, .ac-standard-service hr.service-divider   {
+        left: 2rem;
+        width: 30px;
+    }
+
+    .ac-basic-service ul, .ac-standard-service ul {
+        margin-left: 1.7rem;
+    }
+
+    .ac-basic-service ul li, .ac-standard-service ul li  {
+        padding: 5px;
+        font-size: 0.6rem;
+    }
+
+    .ac-basic-service button.btn, .ac-standard-service button.btn  {
+        margin: 0 1.5rem;
+        padding: 5px 10px;
+        font-size: 0.6rem
+    }
+
+    /* Added to cart container */
+    .added-to-cart-container    {
+        width: 30rem;
+        top: 50rem;
+        left: 8rem;
+    }
+
+    .added-to-cart-container i  {
+        font-size: 2rem;
+    }
+
+    .added-to-cart-container p.atc-texts {
+        font-size: 1.5rem;
+    }
+
+    .added-to-cart-container button {
+        margin: 1rem 0 3rem;
+    }
+
+    .added-to-cart-container button.atc-checkout-btn {
+        font-size: 0.8rem;
+        padding: 8px 20px;
+    }
+
+    .added-to-cart-container button.atc-checkout-btn:hover {
+        padding: 8px 20px;
+    }
+
+    .added-to-cart-container button.atc-back-btn {
+        font-size: 0.8rem;
+        padding: 8px 20px;
+    }
+
+    .added-to-cart-container button.atc-back-btn:hover {
+        padding: 8px 20px;
+    }
 }
 
 /* 768px display width */
@@ -429,7 +725,7 @@
         width: 10%;
       }
 
-      .hw-we-wrk-title  {
+    .hw-we-wrk-title  {
         font-size: 30px;
     }
 
@@ -460,12 +756,151 @@
     .technician-title {
         font-size: 30px;
     }
+
+
+    /********************************** Maintenance & Repair *****************************/
+    #hero-video::after  {
+        top: 9%;
+    }
+
+    #hero-video video{
+        top: 9%;
+    }
+
+    .mc-whiteBox    {
+        background-color: rgb(243, 243, 243);
+        box-shadow: 1px 1px 20px 6px rgba(170, 170, 170, 0.2);
+        padding: 10px 50px;
+        border-radius: 5px;
+        font-size: 0.9rem;
+    }
+
+    .p-service-box-btn, .ac-btn, .br-btn, .cr-btn {
+        font-size: 0.8rem;
+    }
+
+    /* The Service Modal */
+    .basic-service, .standard-service  {
+        padding: 30px;
+        top: 50.8rem;
+        left: 2rem;
+    }
+
+    .basic-service .bs-title, .standard-service .standard-service-title {
+        font-size: 0.8rem;
+        margin-left: 2rem;
+    }
+
+    .basic-service i, .standard-service i {
+        top: 1.9rem;
+        left: 14.5rem;
+    }
+
+    .basic-service i:first-child, .standard-service i:first-child   {
+        top: 1.9rem;
+    }
+
+    .basic-service hr.service-divider, .standard-service hr.service-divider   {
+        left: 2rem;
+        width: 30px;
+    }
+
+    .basic-service ul li, .standard-service ul li  {
+        padding: 5px;
+        font-size: 0.6rem;
+    }
+
+    .basic-service button.btn, .standard-service button.btn  {
+        margin: 0 1.5rem;
+        padding: 5px 10px;
+        font-size: 0.6rem;
+    }
+
+    /* AC Service */
+    .ac-basic-service, .ac-standard-service {
+        padding: 30px;
+        top: 50.8rem;
+        left: 20rem;
+    }
+
+    .ac-basic-service .abs-title, .ac-standard-service .ac-standard-service-title {
+        font-size: 0.8rem;
+        margin-left: 2rem;
+     }
+
+     .ac-basic-service i, .ac-standard-service i {
+        top: 1.9rem;
+        left: 14.5rem;
+    }
+
+    .ac-basic-service i:first-child, .ac-standard-service i:first-child   {
+        top: 1.9rem;
+    }
+
+    .ac-basic-service hr.service-divider, .ac-standard-service hr.service-divider   {
+        left: 2rem;
+        width: 30px;
+    }
+
+    .ac-basic-service ul, .ac-standard-service ul {
+        margin-left: 1.7rem;
+    }
+
+    .ac-basic-service ul li, .ac-standard-service ul li  {
+        padding: 5px;
+        font-size: 0.6rem;
+    }
+
+    .ac-basic-service button.btn, .ac-standard-service button.btn  {
+        margin: 0 1.5rem;
+        padding: 5px 10px;
+        font-size: 0.6rem
+    }
+
+    /* Added to cart container */
+    .added-to-cart-container    {
+        width: 30rem;
+        top: 50rem;
+        left: 8rem;
+    }
+
+    .added-to-cart-container i  {
+        font-size: 2rem;
+    }
+
+    .added-to-cart-container p.atc-texts {
+        font-size: 1.5rem;
+    }
+
+    .added-to-cart-container button {
+        margin: 1rem 0 3rem;
+    }
+
+    .added-to-cart-container button.atc-checkout-btn {
+        font-size: 0.8rem;
+        padding: 8px 20px;
+    }
+
+    .added-to-cart-container button.atc-checkout-btn:hover {
+        padding: 8px 20px;
+    }
+
+    .added-to-cart-container button.atc-back-btn {
+        font-size: 0.8rem;
+        padding: 8px 20px;
+    }
+
+    .added-to-cart-container button.atc-back-btn:hover {
+        padding: 8px 20px;
+    }
+    
+
 }
 
 /************************** MOBILE DISPLAY *****************/
 
-/* 415px display width */
-@media (max-width: 415px) {
+/* 428px display width */
+@media (max-width: 430px) {
 
     body    {
         text-align: center;
@@ -473,7 +908,7 @@
 
     /* nav */
     .openNavBtn {
-        left: 20rem;
+        left: 22rem;
         z-index: 3;
     }
 
@@ -491,13 +926,6 @@
     }
 
     /* Hero */
-    .hero   {
-        background-image: url('/images/phone-bg.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
     .drive-green {
         font-size: 35px;
     }
@@ -819,6 +1247,674 @@
         top: -10px;
         left: 1px;
     }
+
+    /********************************** Maintenance & Repair *****************************/ 
+    #hero-video::after  {
+        top: 11.5%;
+    }
+
+    #hero-video video{
+        top: 11.5%;
+    }
+
+    .hero-vid-caption   {
+        font-size: 0.8rem;
+    }
+
+    .hero-vid-caption h1  {
+        font-size: 2rem;
+    }
+
+    .mc-whiteBox    {
+        padding: auto;
+        width: 100%;
+    }
+
+    h1.mc-title   {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+    }
+
+    .services-box   {
+        margin: auto; 
+    }
+    
+    .mc-period-services, .mc-ac-repair, .mc-body-repair, .mc-custom-repair {
+        max-width: 100%;
+    }
+
+    .mc-period-services span {
+        text-align: left;
+        width: 60px;
+    }
+
+    .p-service-box-btn, .ac-btn, .br-btn, .cr-btn {
+        font-size: 0.8rem;
+        margin: auto;
+    }
+
+    /* The Service Modal */
+    .basic-service, .standard-service  {
+        top: 43.8rem;
+        left: 1.4rem;
+    }
+
+    .basic-service .bs-title, .standard-service .standard-service-title {
+        font-size: 1rem;
+        margin: auto;
+    }
+
+    .basic-service i, .standard-service i {
+        top: 1.9rem;
+        left: 15.7rem;
+    }
+
+    .basic-service i:first-child, .standard-service i:first-child   {
+        top: 1.9rem;
+        left: 1.5rem;
+    }
+
+    .basic-service hr.service-divider, .standard-service hr.service-divider   {
+        position: unset;
+        margin: 0.3rem auto;
+    }
+
+    .basic-service ul li, .standard-service ul li  {
+        padding: 5px;
+        font-size: 0.7rem;
+        text-align: left;
+    }
+
+    .basic-service button.btn, .standard-service button.btn  {
+        margin: 0 1.5rem;
+        padding: 5px 20px;
+        font-size: 0.9rem;
+    }
+
+    /* AC Service */
+    .ac-basic-service, .ac-standard-service {
+        top: 49.8rem;
+        left: 1.4rem;
+    }
+
+    .ac-basic-service .abs-title, .ac-standard-service .ac-standard-service-title {
+        font-size: 1rem;
+        margin: auto;
+     }
+
+     .ac-basic-service i, .ac-standard-service i {
+        top: 1.9rem;
+        left: 15.7rem;
+    }
+
+    .ac-basic-service i:first-child, .ac-standard-service i:first-child   {
+        top: 1.9rem;
+        left: 1.5rem;
+    }
+
+    .ac-basic-service hr.service-divider, .ac-standard-service hr.service-divider   {
+        position: unset;
+        margin: 0.3rem auto;
+    }
+
+    .ac-basic-service ul li, .ac-standard-service ul li  {
+        padding: 5px;
+        font-size: 0.7rem;
+        text-align: left;
+    }
+
+    .ac-basic-service button.btn, .ac-standard-service button.btn  {
+        margin: 0 1.5rem;
+        padding: 5px 20px;
+        font-size: 0.9rem;
+    }
+
+    /* Added to cart container */
+    .added-to-cart-container    {
+        width: 250px;
+        top: 50rem;
+        left: 6rem;
+    }
+
+    .added-to-cart-container i  {
+        font-size: 2rem;
+    }
+
+    .added-to-cart-container p.atc-texts {
+        font-size: 1rem;
+    }
+
+    .added-to-cart-container button {
+        margin: 1rem 0 0;
+    }
+
+    .added-to-cart-container button.atc-checkout-btn {
+        font-size: 0.8rem;
+        padding: 8px 50px;
+    }
+
+    .added-to-cart-container button.atc-checkout-btn:hover {
+        padding: 8px 50px;
+    }
+
+    .added-to-cart-container button.atc-back-btn {
+        font-size: 0.8rem;
+        padding: 8px 17px;
+    }
+
+    .added-to-cart-container button.atc-back-btn:hover {
+        padding: 8px 17px;
+    }
+
+}
+
+/* 415px display width */
+@media (max-width: 415px) {
+
+    body    {
+        text-align: center;
+    }
+
+    /* nav */
+    .openNavBtn {
+        left: 20rem;
+        z-index: 3;
+    }
+
+    #sideNav    {
+        width: 80%;
+    }
+
+    .signin-side-navBtn {
+        left: 5rem;
+    }
+    
+    .signup-side-navBtn {
+        top: 3.5rem;
+        left: -5.2rem;
+    }
+
+    /* Hero */
+    .drive-green {
+        font-size: 35px;
+    }
+
+    .hero-title   {
+        font-size: 48px;
+    }
+
+    img.hero-illustration   {
+        display: none;
+    }
+
+    .reg-vehicle    {
+        position: unset;
+        margin: 1% auto 15%;
+        width: 320px;
+    }
+
+    .reg-text   {
+        font-size: 20px;
+    }
+
+    .reg-vehicle input{
+        font-size: 12px;
+        width: 250px;
+        padding: 10px 10px 10px 40px;
+    }
+
+    .hero-car-icon  {
+        top: 348px;
+        left: 95px;
+        font-size: 12px;
+    }
+    
+    .hero-call-icon {
+        top: 405px;
+        left: 95px;
+        font-size: 13px;
+    }
+
+    .reg-veh-btn   {
+        width: 250px;
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    h1.join-us  {
+        font-size: 15px;
+    }
+
+    /* Services */
+    #services li {
+        text-align: left;
+        padding-left: 4.5rem;
+    }
+
+    .periodic-check-icon   {
+        left: 6rem;
+        top: 10.9rem;
+    }
+
+    .ac-check-icon  {
+        left: 6rem;
+        top: 13.9rem;
+    }
+
+    .repair-check-icon  {
+        left: 6rem;
+        top: 16.9rem;
+    }
+
+    .crepair-check-icon {
+        left: 6rem;
+        top: 7.9rem;
+    }
+    
+    .service-divider    {
+        margin: 5% auto 10%;
+        background-color: #53FF6E;
+        width: 70px;
+    }
+
+    /* Assurance */
+    .assurance-title    {
+        padding-top: 10%;
+        font-size: 30px;
+    }
+
+    .download-title {
+        font-size: 30px;
+        padding: 5%;
+    }
+
+    img.googlePlay  {
+        max-width: 130px;
+    }
+
+    img.appStore  {
+        max-width: 110px;
+    }
+
+    /* How we work */
+    .abstract-image {
+        position: unset;
+        margin: auto 0;
+        padding: 5%;
+      }
+
+    .abstract-image img  {
+        max-width: 330px;
+      }
+
+    /* Reviews */
+    .review-text  {
+        text-align: left;
+        width: 220px;
+        top: 10px;
+        left: 120px;
+    }
+
+    .sec-text {
+        left: 1.8rem;
+    }
+
+    .reviewer-name {
+        position: relative;
+        top: 20%;
+        left: -0.8rem;
+    }
+
+    .reviewer-name2 {
+        position: relative;
+        top: 20%;
+        left: -6.2rem;
+    }
+
+    /* Benefits */
+    #benefits {
+        padding: 3% 10% 4%;
+    }
+
+    .c-icon {
+        position: absolute;
+        left: 55px;
+        top: 5.6px;
+        font-size: 18px;
+    }
+
+    .a-icon {
+        position: absolute;
+        left: 58px;
+        top: 5.6px;
+        font-size: 18px;
+    }
+
+    .t-icon {
+        position: absolute;
+        left: 58px;
+        top: 5.6px;
+        font-size: 18px;
+    }
+
+    .q-icon {
+        position: absolute;
+        left: 85px;
+        top: 7px;
+        font-size: 18px;
+    }
+
+    .convinience, .affordable, .transparent, .quality  {
+        margin: 2% 5% 0;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    /* Subscribe */
+    #subscription   {
+        padding: 10% 7%;
+        text-align: center;
+    }
+
+    .subscription-title {
+        font-size: 2rem;
+        text-align: center;
+        padding: 0;
+    }
+
+    #subscription input {
+        width: 50%;
+        padding: 5px 10px;
+        outline: none;
+    }
+
+    .subscribe-btn    {
+        width: 40%;
+        padding: 5px 10px;
+        font-size: 1.2rem;
+    }
+
+    /* Technicians */
+    .technician-title {
+        text-align: center;
+    }
+
+    .first-tech img{
+        max-width: 20%;
+        margin-right: 5%;
+        position: relative;
+        top: -30px;
+    }
+
+    .staff-name {
+        font-size: 15px;
+        position: relative;
+        top: 0.4rem;
+    }
+
+    .experience {
+        font-size: 13px;
+    }
+
+    .staff-content i  {
+        font-size: 10px;
+        position: relative;
+        top: -0.2rem;
+    }
+
+    /* FAQs */
+    #faqs   {
+        text-align: left;
+    }
+
+    .faq-title    {
+        font-size: 30px;
+        padding-top: 40px;
+    }
+
+    .faq-drop-btn1, .faq-drop-btn2, .faq-drop-btn3, .faq-drop-btn4, .faq-drop-btn5 {
+        font-size: 0.7rem;
+        position: relative;
+        top: 0.2rem;
+    }
+
+    #headingOne, #headingTwo, #headingThree, #headingFour, #headingFive   {
+        padding: 0.5rem 0;
+    }
+
+    h5 span {
+        font-size: 0.7rem;
+    }
+
+    .answer {
+        font-size: 0.7rem;
+    }
+
+    /* Footer */
+    .footer-brand img{
+        margin: 5% auto;
+    }
+
+    .footer-brand i   {
+        padding: 0 8px 10%;
+        color: #9D9D9D;
+    }
+
+    .ft-about-title, .ft-service-title, .ft-legal-title {
+        padding: 6% 0 0;
+    }
+
+    #copyright  {
+        padding: 6% 5% 1%;
+    }
+
+    .copyright-content  {
+        font-size: 0.7rem;
+    }
+
+    /***************************** Sign up ************************************/
+    #signup {
+        padding: 5% 4%;
+        height: 100vh
+    }
+
+    .create-acct-title  {
+        font-size: 1.5rem;
+    }
+
+    .create-acct-paragraph  {
+        font-size: 0.9rem;
+    }
+
+    .create-acct-btn    {
+        background-color: #53FF6E;
+        display: block;
+        margin: 2rem auto 2rem;
+        width: 100%;
+    }
+    
+    .already-have-acct  {
+        display: block;
+        padding: 0;
+        text-align: center;
+        float: unset;
+        margin: auto;
+    }
+
+    .go-home-link   {
+        top: 5rem;
+        left: 3rem;
+    }
+
+    /********************************************** Sign in *******************************************/
+    .signin-acct-btn    {
+        width: 100%;
+        display: block;
+    }
+
+    .signup-container span  {
+        top: -10px;
+        left: 1px;
+    }
+
+    /********************************** Maintenance & Repair *****************************/ 
+    #hero-video::after  {
+        top: 11.5%;
+    }
+
+    #hero-video video{
+        top: 11.5%;
+    }
+
+    .hero-vid-caption   {
+        font-size: 0.8rem;
+    }
+
+    .hero-vid-caption h1  {
+        font-size: 2rem;
+    }
+
+    .mc-whiteBox    {
+        padding: auto;
+        width: 100%;
+    }
+
+    h1.mc-title   {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+    }
+
+    .services-box   {
+        margin: auto; 
+    }
+    
+    .mc-period-services, .mc-ac-repair, .mc-body-repair, .mc-custom-repair {
+        max-width: 100%;
+    }
+
+    .mc-period-services span {
+        text-align: left;
+        width: 60px;
+    }
+
+    .p-service-box-btn, .ac-btn, .br-btn, .cr-btn {
+        font-size: 0.8rem;
+        margin: auto;
+    }
+
+    /* The Service Modal */
+    .basic-service, .standard-service  {
+        top: 34.8rem;
+        left: 0.4rem;
+    }
+
+    .basic-service .bs-title, .standard-service .standard-service-title {
+        font-size: 1rem;
+        margin: auto;
+    }
+
+    .basic-service i, .standard-service i {
+        top: 1.9rem;
+        left: 14.4rem;
+    }
+
+    .basic-service i:first-child, .standard-service i:first-child   {
+        top: 1.9rem;
+        left: 1.5rem;
+    }
+
+    .basic-service hr.service-divider, .standard-service hr.service-divider   {
+        position: unset;
+        margin: 0.3rem auto;
+    }
+
+    .basic-service ul li, .standard-service ul li  {
+        padding: 5px;
+        font-size: 0.7rem;
+        text-align: left;
+    }
+
+    .basic-service button.btn, .standard-service button.btn  {
+        margin: 0 1.5rem;
+        padding: 5px 20px;
+        font-size: 0.9rem;
+    }
+
+    /* AC Service */
+    .ac-basic-service, .ac-standard-service {
+        top: 39.8rem;
+        left: 0.4rem;
+    }
+
+    .ac-basic-service .abs-title, .ac-standard-service .ac-standard-service-title {
+        font-size: 1rem;
+        margin: auto;
+     }
+
+     .ac-basic-service i, .ac-standard-service i {
+        top: 1.9rem;
+        left: 14.4rem;
+    }
+
+    .ac-basic-service i:first-child, .ac-standard-service i:first-child   {
+        top: 1.9rem;
+        left: 1.5rem;
+    }
+
+    .ac-basic-service hr.service-divider, .ac-standard-service hr.service-divider   {
+        position: unset;
+        margin: 0.3rem auto;
+    }
+
+    .ac-basic-service ul li, .ac-standard-service ul li  {
+        padding: 5px;
+        font-size: 0.7rem;
+        text-align: left;
+    }
+
+    .ac-basic-service button.btn, .ac-standard-service button.btn  {
+        margin: 0 1.5rem;
+        padding: 5px 20px;
+        font-size: 0.9rem;
+    }
+
+    /* Added to cart container */
+    .added-to-cart-container    {
+        width: 250px;
+        top: 40rem;
+        left: 4rem;
+    }
+
+    .added-to-cart-container i  {
+        font-size: 2rem;
+    }
+
+    .added-to-cart-container p.atc-texts {
+        font-size: 1rem;
+    }
+
+    .added-to-cart-container button {
+        margin: 1rem 0 0;
+    }
+
+    .added-to-cart-container button.atc-checkout-btn {
+        font-size: 0.8rem;
+        padding: 8px 50px;
+    }
+
+    .added-to-cart-container button.atc-checkout-btn:hover {
+        padding: 8px 50px;
+    }
+
+    .added-to-cart-container button.atc-back-btn {
+        font-size: 0.8rem;
+        padding: 8px 17px;
+    }
+
+    .added-to-cart-container button.atc-back-btn:hover {
+        padding: 8px 17px;
+    }
+
 }
 
 /* 375px display width */
@@ -913,6 +2009,83 @@
     h5 span {
         font-size: 0.6rem;
     }
+
+    /********************************** Maintenance & Repair *****************************/ 
+    #hero-video::after  {
+        top: 13%;
+    }
+
+    #hero-video video{
+        top: 13%;
+    }
+
+    .hero-vid-caption   {
+        font-size: 0.6rem;
+    }
+
+    .hero-vid-caption h1  {
+        font-size: 1rem;
+    }
+
+    .mc-whiteBox    {
+        padding: 10px 30px;
+        width: 100%;
+    }
+
+    /* The Service Modal */
+    .basic-service, .standard-service  {
+        top: 31.8rem;
+        left: 0.1rem;
+    }
+
+    .basic-service .bs-title, .standard-service .standard-service-title {
+        font-size: 0.8rem;
+    }
+
+    .basic-service i, .standard-service i {
+        font-size: 0.9rem;
+        top: 2rem;
+        left: 12.4rem;
+    }
+
+    .basic-service i:first-child, .standard-service i:first-child   {
+        top: 2rem;
+        left: 1.5rem;
+    }
+
+    .basic-service ul li, .standard-service ul li  {
+        padding: 3px;
+        font-size: 0.6rem;
+    }
+
+    /* AC Service */
+    .ac-basic-service, .ac-standard-service {
+        top: 36.8rem;
+        left: 0.1rem;
+    }
+
+    .ac-basic-service .abs-title, .ac-standard-service .ac-standard-service-title {
+        font-size: 0.8rem;
+     }
+
+     .ac-basic-service i, .ac-standard-service i {
+        font-size: 0.9rem;
+        top: 2rem;
+        left: 12.4rem;;
+    }
+
+    .ac-basic-service i:first-child, .ac-standard-service i:first-child   {
+        top: 2rem;
+        left: 1.5rem;
+    }
+
+    /* Added to cart container */
+    .added-to-cart-container    {
+        width: 250px;
+        top: 40rem;
+        left: 2.5rem;
+    }
+
 }
 
 @media (max-width: 360px) {

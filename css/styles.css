@@ -496,7 +496,6 @@ h1.join-us  {
 
 
   /* Benefits */
-
   #benefits {
       padding: 3% 7% 4%;
       background-image: url('/images/benefit-bg.png');
@@ -583,7 +582,6 @@ h1.join-us  {
 
 
   /* Subscription */
-
   #subscription {
       padding: 5% 7%;
       text-align: center;
@@ -610,7 +608,6 @@ h1.join-us  {
   }
 
   /* FAQs */
-
   #faqs {
       padding: 5% 7%;
       background-image: url('/images/faq-bg.png');
@@ -654,7 +651,6 @@ h1.join-us  {
   }
 
   /* Footer */
-
   #footer   {
       padding: 5% 7%;
   }
@@ -742,7 +738,6 @@ h1.join-us  {
 
 
 /************************************************ Signup page ************************************************/
-
 #signup {
     background-color: #97ffa6;
     padding: 5% 7%;
@@ -876,7 +871,7 @@ h1.join-us  {
 
 .pass-forgot    {
     float: right;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     text-align: right;
 }
 
@@ -905,7 +900,6 @@ h1.join-us  {
 
 
 /********************************* Maintenance & Repair ***********************************/
-
 #hero-video {
     background-color: #fff;
     width: 100%;
@@ -921,7 +915,7 @@ h1.join-us  {
     content: '';
     position: absolute;
     z-index: 2;
-    top: 13.9%;
+    top: 16.9%;
     left: 0;
     background: rgba(0, 0, 0, 0.7);
 }
@@ -930,7 +924,7 @@ h1.join-us  {
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 13.9%;
+    top: 16.9%;
     left: 0;
     z-index: 1;
     object-fit: cover;
@@ -973,24 +967,209 @@ h1.join-us  {
 .mc-period-services, .mc-ac-repair, .mc-body-repair, .mc-custom-repair {
     border-bottom: 1px solid #9D9D9D;
     display: flex;
-    align-items: stretch;
     justify-content: space-between;
     padding: 1rem 0;
     max-width: 40%;
     margin: 5% auto;
 }
 
-.ps-select-car-drpdwn   {
-    color: #9D9D9D;
-    cursor: pointer;
+.mc-period-services span, .mc-ac-repair span, .mc-body-repair span, .mc-custom-repair span {
+    margin: auto 0;
 }
 
-.p-service-box-btn, .ac-btn, .br-btn, .cr-btn    {
-    position: absolute;
-    top: 0.5rem;
-    left: 17rem;
+.ps-select-car-drpdwn, .ps-select-car-drop-up  {
+    color: #9D9D9D;
+    cursor: pointer;
+    margin: auto 0;
+}
+
+.ps-select-car-drop-up  {
+    display: none;
 }
 
 .p-service-box-btn:hover, .ac-btn:hover, .br-btn:hover, .cr-btn:hover {
     background-color: #97ffa6;
+}
+
+/* The Service Modal */
+/* Periodic Service */
+.service-container  {
+    display: flex;
+}
+
+/* Basic Service & Standard Service */
+.basic-service, .standard-service  {
+    background-color: #fff;
+    padding: 30px 60px;
+    margin: 50px;
+    border-radius: 5px;
+    position: absolute;
+    top: 64.1rem;
+    left: 8rem;
+    display: none;
+    z-index: 2;
+}
+
+.basic-service .bs-title, .standard-service .standard-service-title {
+   font-size: 1.3rem;
+   margin-left: 0.7rem;
+}
+
+.basic-service i, .standard-service i {
+    font-size: 1.3rem;
+    position: absolute;
+    top: 2.4rem;
+    left: 25rem;
+    cursor: pointer;
+}
+
+.basic-service i:first-child, .standard-service i:first-child   {
+    position: absolute;
+    top: 2.4rem;
+    left: 2rem;
+    cursor: pointer;
+}
+
+.basic-service hr.service-divider, .standard-service hr.service-divider   {
+    position: relative;
+    top: -0.5rem;
+    left: 0.8rem;
+}
+
+.basic-service ul, .standard-service ul {
+    margin-left: 1.7rem;
+}
+
+.basic-service ul li, .standard-service ul li  {
+    padding: 10px;
+}
+
+.basic-service button.btn, .standard-service button.btn  {
+    background-color: #53FF6E;
+    margin: 1rem 0;
+    padding: 10px 30px;
+}
+
+.basic-service button.btn:hover, .standard-service button.btn:hover  {
+    background-color: #000;
+    color: #fff;
+}
+
+
+/* AC Service */
+/* Periodic Service */
+.ac-service-container  {
+    display: flex;
+}
+
+/* Basic Service & Standard Service */
+.ac-basic-service, .ac-standard-service {
+    background-color: #fff;
+    padding: 30px 60px;
+    margin: 50px;
+    border-radius: 5px;
+    position: absolute;
+    top: 64.1rem;
+    left: 41rem;
+    display: none;
+    z-index: 2;
+}
+
+.ac-basic-service .abs-title, .ac-standard-service .ac-standard-service-title {
+   font-size: 1.3rem;
+   margin-left: 0.7rem;
+}
+
+.ac-basic-service i, .ac-standard-service i {
+    font-size: 1.3rem;
+    position: absolute;
+    top: 2.4rem;
+    left: 25rem;
+    cursor: pointer;
+}
+
+.ac-basic-service i:first-child, .ac-standard-service i:first-child   {
+    position: absolute;
+    top: 2.4rem;
+    left: 2rem;
+    cursor: pointer;
+}
+
+.ac-basic-service hr.service-divider, .ac-standard-service hr.service-divider   {
+    position: relative;
+    top: -0.5rem;
+    left: 0.8rem;
+}
+
+.ac-basic-service ul, .ac-standard-service ul {
+    margin-left: 1.7rem;
+}
+
+.ac-basic-service ul li, .ac-standard-service ul li  {
+    padding: 10px;
+}
+
+.ac-basic-service button.btn, .ac-standard-service button.btn  {
+    background-color: #53FF6E;
+    margin: 1rem 0;
+    padding: 10px 30px;
+}
+
+.ac-basic-service button.btn:hover, .ac-standard-service button.btn:hover  {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Added to cart container */
+.added-to-cart-container    {
+    background-color: #fff;
+    padding: 20px 50px;
+    text-align: center;
+    width: 40rem;
+    margin: auto;
+    position: absolute;
+    top: 70rem;
+    left: 20rem;
+    border-radius: 5px;
+    box-shadow: 10px 10px 80px rgb(211, 211, 211);
+    display: none;
+    z-index: 2;
+}
+
+.added-to-cart-container i  {
+    font-size: 4rem;
+    margin: 1rem 2rem;
+    color: #53FF6E;
+}
+
+.added-to-cart-container p.atc-texts {
+    font-size: 3rem;
+}
+
+.added-to-cart-container button {
+    margin: 2rem 0.5rem 3rem;
+}
+
+.added-to-cart-container button.atc-checkout-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 30px;
+}
+
+.added-to-cart-container button.atc-checkout-btn:hover {
+    background-color: rgb(153, 153, 153);
+    color: #fff;
+    padding: 10px 30px;
+}
+
+.added-to-cart-container button.atc-back-btn {
+    background-color: red;
+    color: #fff;
+    padding: 10px 30px;
+}
+
+.added-to-cart-container button.atc-back-btn:hover {
+    background-color: rgb(100, 0, 0);
+    color: #fff;
+    padding: 10px 30px;
 }

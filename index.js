@@ -94,7 +94,7 @@ window.onclick = function (event) {
 }
 
 
-function myFunction() {    
+function myFunction() {
     document.getElementById("sideNavHomeDropDown").style.display = "block";
 }
 
@@ -108,5 +108,6 @@ function openNav() {
 function closeNav() {
     document.getElementById("sideNav").style.display = "none";
 }
+
 
 

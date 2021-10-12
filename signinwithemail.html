@@ -33,31 +33,35 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
 </head>
 
 <body>
 
     <!-- Header -->
-        <section id="signup">
-            <a class="go-home-link" href="index.html"><i class="fas fa-chevron-left"></i> &nbsp; Go home</a>
-            <div class="container-fluid">
-                <img class="signup-image" src="images/Hero-illustration.png" alt="">
-                <div class="signup-container">
-                    <form action="">
-                        <h4 class="create-acct-title">Sign in to your account</h4>
-                        <p class="create-acct-paragraph">Fill the form below to sign in</p>
-                        <input type="email" name="Email" id="email" placeholder="Email address" required>
-                        <input type="password" name="password" id="password" placeholder="Password" required>
-                        <hr class="signin-divider">
-                        <span>Or</span>
-                        <hr class="signin-divider2">
-                        <a href="signin.html"><button type="button" class="btn sign-with-email-btn">Sign in with phone number</button></a>
-                        <button type="submit" class="btn signin-acct-btn">Sign in</button>
-                        <p class="already-have-acct"><a href="signup.html">Create account</a> if you don't have an account.</p>
-                    </form>
-                </div>
+    <section id="signup">
+        <a class="go-home-link" href="index.html"><i class="fas fa-chevron-left"></i> &nbsp; Go home</a>
+        <div class="container-fluid">
+            <img class="signup-image" src="images/Hero-illustration.png" alt="">
+            <div class="signup-container">
+                <form action="">
+                    <h4 class="create-acct-title">Sign in to your account</h4>
+                    <p class="create-acct-paragraph">Fill the form below to sign in</p>
+                    <input type="email" name="Email" id="email" placeholder="Email address" required>
+                    <input type="password" name="password" id="password" placeholder="Password" required>
+                    <p class="pass-forgot"><a href="#">Forgot Password?</a></p>
+                    <button type="submit" class="btn signin-acct-btn">Sign in</button>
+                    <hr class="signin-divider">
+                    <span>Or</span>
+                    <hr class="signin-divider2">
+                    <a href="signin.html"><button type="button" class="btn sign-with-email-btn">Sign in with phone
+                            number</button></a>
+                    <p class="dont-have-acct"><a href="signup.html">Create account</a> if you don't have an account.
+                    </p>
+                </form>
             </div>
-        </section>
+        </div>
+    </section>
 </body>
 
 </html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Experience the best car services in Nigeria.</title>
+
+    <!-- Fontawesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CDN link CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Bootstrap script -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+    <!-- Dashboard navbar -->
+    <section id="dash-nav">
+        <a href="profile.html">
+            <img src="images/user-profile.png" alt="">
+        </a>
+        <h2 class="userName">Emmanuel Adesanya</h2>
+        <div class="userIcons">
+            <a href="#" data-toggle="tooltip" data-placement="top" title="messages">
+                <i class="fas fa-comment-alt"></i>
+            </a>
+            <a href="#" data-toggle="tooltip" data-placement="top" title="My Cart">
+                <i class="fas fa-shopping-bag"></i>
+            </a>
+            <a href="index.html" data-toggle="tooltip" data-placement="top" title="Sign out">
+                <i class="fas fa-sign-out-alt"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart-title">
+        <h1 class="cart-title">Invoice #9456798</h1>
+    </section>
+
+    <section class="order-details">
+        <div class="order-details-left">
+            <div class="order-table-title">
+                <p class="order-service">Description</p>
+                <p class="order-price">Amount</p>
+            </div>
+
+            <div class="order-product">
+                <p class="order-basic-service">Basic Service</p>
+                <p class="basic-service-price">&#8358;20,000</p>
+            </div>
+
+            <div class="order-product">
+                <p class="order-basic-service">Battery</p>
+                <p class="basic-service-price">&#8358;20,000</p>
+            </div>
+            
+            <section class="checkout-billing-details">
+                <p class="billing-name"><strong>Name:</strong> Emmanuel Adesanya</p>
+                <p class="billing-address"><strong>Address:</strong> 5, Akinsanya Street, Agbowo, UI, Ibadan</p>
+                <p class="billing-shipping-address"><strong>Shipping Address:</strong> <i class="fas fa-edit"></i> 5, Akinsanya
+                    Street, Agbowo, UI, Ibadan</p>
+
+            </section>
+        </div>
+
+        <div class="order-summary">
+            <h1 class="total-amount-order">&#8358;40,000</h1>
+            <button class="btn paystack">Pay with Paystack</button>
+            <button class="btn paga">Pay with Paga</button>
+            <button class="btn flutterwave">Pay with Flutterwave</button>
+            <button class="btn transfer">Bank transfer</button>
+        </div>
+    </section>
+
+
+    
+
+    <!-- Footer section -->
+    <section id="dash-footer">
+        <footer class="dash-footer-copyrights">
+            <p class="dash-copyrights">&copy; Copyrights 2021. All Rights reserved.</p>
+        </footer>
+    </section>
+
+    
+    <script src="dashboard.js"></script>
+    <script>$('[data-toggle="tooltip"]').tooltip()</script>
+</body>
+
+</html>

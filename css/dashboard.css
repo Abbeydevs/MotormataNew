@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-#dash-nav   {
+#dash-nav {
     background-color: rgb(255, 255, 255);
     position: fixed;
     width: 100%;
@@ -19,13 +19,13 @@
     cursor: pointer;
 }
 
-.userName   {
+.userName {
     font-size: 1.5rem;
     font-weight: 600;
     margin: auto 0;
 }
 
-.userIcons  {
+.userIcons {
     display: flex;
     margin: auto 0;
     margin-left: auto;
@@ -42,17 +42,16 @@
     color: #53FF6E;
 }
 
-
 /* My Car section */
 #dash-myCar {
     padding: 9% 4% 0;
 }
 
-.mycar-top-content  {
+.mycar-top-content {
     display: flex;
 }
 
-.mycar-top-title    {
+.mycar-top-title {
     font-size: 2rem;
     font-weight: 600;
 }
@@ -63,18 +62,18 @@
     margin-left: auto;
 }
 
-.mycar-btn:hover{
+.mycar-btn:hover {
     background-color: #444;
 }
 
-.mycar-btn2  {
+.mycar-btn2 {
     background-color: #53FF6E;
     color: #000;
     margin-left: 1%;
     padding: 10px 20px;
 }
 
-.mycar-btn2:hover  {
+.mycar-btn2:hover {
     background-color: #09e62a;
 }
 
@@ -87,35 +86,77 @@
     justify-content: space-between;
 }
 
-.dash-mycar-details .car-name   {
+.dash-mycar-details .car-name {
     margin: auto 0;
     font-size: 1.5rem;
 }
 
-.dash-mycar-details button  {
+.dash-mycar-details button {
     padding: 10px 30px;
     background-color: #53FF6E;
 }
 
+/* Car Type Modal */
+.car-transparent-bg {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+
+.addCar-modal   {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 6rem auto;
+    background-color: #ebebeb;
+    padding: 50px;
+    border-radius: 5px;
+}
+
+.addCar-modal select {
+    padding: 10px 20px;
+    margin-bottom: 40px;
+}
+
+.car-type-btn   {
+    margin-top: 1rem;
+    width: 150px;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 0;
+}
+.car-type-clsBtn    {
+    color: #fff;
+    font-size: 2rem;
+    position: absolute;
+    top: 2rem;
+    left: 80rem;
+    cursor: pointer;
+}
 
 /* History Section */
-#dash-history   {
+#dash-history {
     padding: 2% 4%;
 }
 
-.history-top-title    {
+.history-top-title {
     font-size: 2rem;
     font-weight: 600;
 }
 
-.history-main-contents  {
+.history-main-contents {
     margin: 2% 0;
     border: 1px solid #9d9d9d;
     border-radius: 10px;
     padding: 1.2rem 2rem;
 }
 
-.history-btn    {
+.history-btn {
     background-color: transparent;
     border: 1px solid #000;
     padding: 10px 20px;
@@ -128,7 +169,7 @@
     flex-direction: column;
 }
 
-.selected{
+.selected {
     background: transparent;
     border: 1px solid #555;
     border-radius: 5px;
@@ -137,13 +178,13 @@
     margin-bottom: 10px;
 }
 
-.selected i{
+.selected i {
     position: absolute;
     top: 16px;
     left: 7.5rem;
 }
 
-.select-box .options-container  {
+.select-box .options-container {
     background: #eee;
     max-height: 0;
     width: 100%;
@@ -154,34 +195,34 @@
     order: 1;
 }
 
-.select-box .options-container.active  {
+.select-box .options-container.active {
     max-height: 200px;
     opacity: 1;
     overflow-y: scroll;
 }
 
-.select-box .options-container.active + .selected i {
+.select-box .options-container.active+.selected i {
     transform: rotateX(180deg);
     top: 17px;
 }
 
-.select-box .options-container::-webkit-scrollbar  {
+.select-box .options-container::-webkit-scrollbar {
     width: 0;
     scrollbar-width: 1px;
     border-radius: 0 5px 5px 0;
 }
 
-.select-box .options-container{
+.select-box .options-container {
     scrollbar-width: none;
     scrollbar-color: #eee #fff;
 }
 
-.select-box .option, .selected  {
+.select-box .option, .selected {
     padding: 12px 24px;
     cursor: pointer;
 }
 
-.select-box .option:hover  {
+.select-box .option:hover {
     background: #ddd;
 }
 
@@ -193,35 +234,35 @@
     display: none;
 }
 
-.htry-btry-change   {
+.htry-btry-change {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #ececec;
     margin: 4% 0;
 }
 
-.htry-oil-change   {
+.htry-oil-change {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #ececec;
     margin: 4% 0;
 }
 
-.htry-body-repair  {
+.htry-body-repair {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #ececec;
     margin: 4% 0;
 }
-
 
 /* The hidden box */
-.htry-btry-change i{
+
+.htry-btry-change i {
     cursor: pointer;
     transition: all 00ms ease-in-out;
 }
 
-.htry-btry-change i.collapsible-icon-close{
+.htry-btry-change i.collapsible-icon-close {
     cursor: pointer;
     transition: all 00ms ease-in-out;
     display: none;
@@ -237,11 +278,11 @@
     display: none;
 }
 
-.battery-change-box .btc-box-date   {
+.battery-change-box .btc-box-date {
     color: #aaa;
 }
 
-.battery-change-box .done-transaction-box   {
+.battery-change-box .done-transaction-box {
     display: flex;
     justify-content: space-between;
     margin: 1.5rem 0;
@@ -251,7 +292,7 @@
     font-weight: 600;
 }
 
-.battery-change-box .product h5.product-name{
+.battery-change-box .product h5.product-name {
     font-weight: 600;
 }
 
@@ -272,25 +313,25 @@
     font-weight: 600;
 }
 
-
 /* Recommendations */
-#dash-recommendations   {
+
+#dash-recommendations {
     padding: 2% 4%;
 }
 
-.recom-top-content-title    {
+.recom-top-content-title {
     font-size: 2rem;
     font-weight: 600;
 }
 
-.recom-main-contents  {
+.recom-main-contents {
     margin: 2% 0;
     border: 1px solid #9d9d9d;
     border-radius: 10px;
     padding: 1.2rem 2rem;
 }
 
-.recom-btry-change   {
+.recom-btry-change {
     border-bottom: 1px solid #ececec;
     padding: 20px 0;
     display: flex;
@@ -298,7 +339,7 @@
     margin: 1% 0;
 }
 
-.recom-oil-change   {
+.recom-oil-change {
     border-bottom: 1px solid #ececec;
     padding: 20px 0;
     display: flex;
@@ -306,7 +347,7 @@
     margin: 1% 0;
 }
 
-.recom-ac-service   {
+.recom-ac-service {
     border-bottom: 1px solid #ececec;
     padding: 20px 0;
     display: flex;
@@ -314,7 +355,7 @@
     margin: 1% 0;
 }
 
-.recom-tyre-change   {
+.recom-tyre-change {
     border-bottom: 1px solid #ececec;
     padding: 20px 0;
     display: flex;
@@ -328,7 +369,8 @@
 }
 
 /* Recommendation modal */
-.dash-recommendation-modal    {
+
+.dash-recommendation-modal {
     background-color: rgba(0, 0, 0, 0.1);
     height: 100vh;
     width: 100%;
@@ -341,7 +383,7 @@
     transition: all 300ms ease-in-out;
 }
 
-.dash-recommendation-modal-container    {
+.dash-recommendation-modal-container {
     background-color: #fff;
     padding: 40px;
     margin: 2rem;
@@ -350,7 +392,7 @@
     border-radius: 5px;
 }
 
-.recom-modal-close  {
+.recom-modal-close {
     position: absolute;
     right: 2rem;
     top: 1.5rem;
@@ -358,39 +400,40 @@
     font-size: 2rem;
 }
 
-.recom-product  {
+.recom-product {
     display: flex;
     justify-content: space-between;
     margin: 2rem;
 }
 
-.product-recommended    {
+.product-recommended {
     font-size: 1.5rem;
     margin: auto 0;
 }
 
-.recom-divider  {
+.recom-divider {
     border-bottom: 1px solid #eee;
 }
 
 /* Car parts */
-#dash-carParts  {
+
+#dash-carParts {
     padding: 2% 4%;
 }
 
-.carparts-top-content-title    {
+.carparts-top-content-title {
     font-size: 2rem;
     font-weight: 600;
 }
 
-.carparts-main-contents  {
+.carparts-main-contents {
     margin: 2% 0;
     border: 1px solid #9d9d9d;
     border-radius: 10px;
     padding: 1.2rem 2rem;
 }
 
-.carparts-btry   {
+.carparts-btry {
     border-bottom: 1px solid #ececec;
     padding: 20px 0;
     display: flex;
@@ -406,7 +449,7 @@
     color: #fff;
 }
 
-.carparts-tyres   {
+.carparts-tyres {
     border-bottom: 1px solid #ececec;
     padding: 20px 0;
     display: flex;
@@ -414,7 +457,7 @@
     margin: 1% 0;
 }
 
-.carparts-bumper   {
+.carparts-bumper {
     border-bottom: 1px solid #ececec;
     padding: 20px 0;
     display: flex;
@@ -428,7 +471,8 @@
 }
 
 /* Car Parts Details */
-.carPart-container  {
+
+.carPart-container {
     background-color: #fff;
     padding: 50px;
     position: relative;
@@ -437,7 +481,7 @@
     box-shadow: 0 10px 10px 2px rgba(170, 170, 170, 0.2);
 }
 
-.product1   {
+.product1 {
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -447,7 +491,7 @@
     font-weight: 600;
 }
 
-.product-details-btn    {
+.product-details-btn {
     margin-top: 5rem;
     background-color: #000;
     color: #fff;
@@ -455,7 +499,7 @@
     margin: 5rem 0 0 58.5rem;
 }
 
-.closeDetail-btn   {
+.closeDetail-btn {
     background-color: #f00;
     color: #fff;
     padding: 10px 10px;
@@ -464,11 +508,12 @@
 }
 
 /* Due Services */
-#dash-dueServices   {
+
+#dash-dueServices {
     padding: 2% 4%;
 }
 
-.dueservice-title   {
+.dueservice-title {
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 3%;
@@ -487,7 +532,7 @@
     margin-bottom: 3rem;
 }
 
-.countdown  {
+.countdown {
     display: flex;
     justify-content: space-around;
 }
@@ -496,18 +541,16 @@
     font-size: 3rem;
 }
 
-
-
 /* Other Services */
-.dash-other-services    {
+.dash-other-services {
     border: 1px solid #9d9d9d;
     max-width: 100%;
-    margin: 5rem 0;
+    margin: 2rem 0;
     border-radius: 10px;
     padding: 3% 5%;
 }
 
-.dash-other-services-title  {
+.dash-other-services-title {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 600;
@@ -522,7 +565,7 @@
     font-size: 1rem;
 }
 
-.d-p-renewal-content    {
+.d-p-renewal-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -532,17 +575,17 @@
     margin: 3% 0;
 }
 
-.d-p-renewal-title  {
+.d-p-renewal-title {
     margin: auto 0;
 }
 
-.renewal-date   {
+.renewal-date {
     color: #888;
     margin: auto 0;
 }
 
-
 /* Car Tyres */
+
 .dash-car-tyres {
     margin: 5% 0;
 }
@@ -552,7 +595,7 @@
     font-size: 1rem;
 }
 
-.dash-car-tyres-content    {
+.dash-car-tyres-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -562,18 +605,17 @@
     margin: 3% 0;
 }
 
-.dash-car-tyres-title2  {
+.dash-car-tyres-title2 {
     margin: auto 0;
 }
 
-.renewal-date   {
+.renewal-date {
     color: #888;
     margin: auto 0;
 }
 
-
-
 /* Break Pad */
+
 .dash-break-pad {
     margin: 5% 0;
 }
@@ -583,7 +625,7 @@
     font-size: 1rem;
 }
 
-.dash-break-pad-content    {
+.dash-break-pad-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -593,11 +635,11 @@
     margin: 3% 0;
 }
 
-.dash-break-pad-title2  {
+.dash-break-pad-title2 {
     margin: auto 0;
 }
 
-.renewal-date   {
+.renewal-date {
     color: #888;
     margin: auto 0;
 }
@@ -614,9 +656,9 @@
     background-color: #222;
 }
 
-
 /* Footer */
-#dash-footer    {
+
+#dash-footer {
     background-color: #ebebeb;
     padding: 1% 5%;
 }
@@ -625,14 +667,14 @@
     text-align: center;
 }
 
-#dash-footer footer p{
+#dash-footer footer p {
     margin: auto;
     color: #777;
 }
 
-
 /* Dashboard Modal */
-.transaprent-modal  {
+
+.transaprent-modal {
     background-color: rgba(0, 0, 0, 0.5);
     height: 100vh;
     width: 100%;
@@ -645,8 +687,7 @@
     transition: all 1000ms ease-out;
 }
 
-
-.modal-container    {
+.modal-container {
     background-color: #fff;
     border-radius: 10px;
     width: 80%;
@@ -658,7 +699,7 @@
     transition: all 500ms ease-in-out;
 }
 
-.scroller{
+.scroller {
     scrollbar-width: none;
     scrollbar-color: #eee #fff;
 }
@@ -674,37 +715,37 @@
     background: #eee;
 }
 
-.modal-close    {
+.modal-close {
     margin: -1rem 0rem;
     font-size: 1.5rem;
     cursor: pointer;
     position: fixed;
     right: 15rem;
-    transition: all 300ms ease-in-out;    
+    transition: all 300ms ease-in-out;
 }
 
-.modal-close:hover   {
+.modal-close:hover {
     font-size: 2rem;
     cursor: pointer;
     color: #555;
 }
 
-.modal-container .car-name  {
+.modal-container .car-name {
     font-size: 2.5rem;
     font-weight: 600;
     color: #545454;
 }
 
-.modal-container img    {
+.modal-container img {
     width: 300px;
     padding: 20px;
 }
 
-.element1 .type1, .element2 .type2, .element3 .type3, .element4 .type1, .element5 .type2   {
+.element1 .type1, .element2 .type2, .element3 .type3, .element4 .type1, .element5 .type2 {
     font-weight: 600;
 }
 
-.color-containers   {
+.color-containers {
     display: flex;
 }
 
@@ -740,7 +781,7 @@
     left: 120px;
 }
 
-.modal-divider  {
+.modal-divider {
     background-color: #000;
     color: #000;
     height: 1px;
@@ -748,9 +789,434 @@
     width: 80%;
 }
 
-.modal-footer   {
+.modal-footer {
     text-align: center;
     margin: auto;
     display: block;
     margin: 2rem;
+}
+
+/**************************************** User Dashboard Page **************************************/
+#profile-main-content {
+    padding: 10rem;
+    display: flex;
+}
+
+.profile-side-menu {
+    background-color: #fff;
+    padding: 12.5rem 5rem 0 10rem;
+    display: block;
+    margin-right: 10rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.profile-side-menu a {
+    color: #000;
+    display: block;
+    padding: 1rem 0;
+    margin: 2rem;
+}
+
+.profile-side-menu a:hover {
+    text-decoration: none;
+    background-color: #DAFFE0;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.profile-side-menu a.active {
+    text-decoration: none;
+    background-color: #DAFFE0;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/*********************************** User Info **************************/
+.user-personal-informations {
+    margin: 1rem 0;
+    display: block;
+}
+
+.profile-personal-info {
+    margin-left: 20rem;
+}
+
+.user-info  {
+    display: flex;
+}
+
+.user-profile-name  {
+    font-size: 1.3rem;
+    position: relative;
+    left: 1rem;
+    font-weight: 600;
+}
+
+.user-profile-desc  {
+    font-size: 0.9rem;
+    position: absolute;
+    top: 12.5rem;
+    left: 34.2rem;
+    color: #BEBEBE;
+    font-weight: 600;
+}
+
+
+.user-personal-informations h4.user-p-i-title   {
+    font-weight: 600;
+    margin: 4rem 0 2rem;
+}
+
+.user-personal-informations form{
+    display: flex;
+}
+
+.user-personal-informations form label{
+    display: block;
+}
+
+form input {
+    padding: 8px 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #000;
+    width: 270px;
+}
+
+form .fullname-form {
+    margin-right: 5rem;
+}
+
+p.email-notification    {
+    color: #888;
+    font-weight: 600;
+    padding: 10px 4px;
+}
+
+p.email-notification span    {
+    color: #09e62a;
+}
+
+form .number-form   {
+    margin-right: 5rem;
+}
+
+.profile-edit-btn   {
+    margin: 2rem 0 0 29.5rem;
+    width: 150px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+
+/**************** Security Section **************************/
+.security-section   {
+    padding: 5rem 0;
+    display: none;
+}
+
+.security-section .change-pass   {
+    margin-right: 2rem;
+    padding: 10px;
+    width: 15rem;
+    background-color: #C4C4C4;
+}
+
+.security-section .change-pass:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.security-section .two-factor    {
+    margin-right: 2rem;
+    padding: 10px;
+    width: 15rem;
+    background-color: transparent;
+    border: 1px solid #000;
+}
+
+.security-section .two-factor:hover {
+    background-color: #C4C4C4;
+    border: 1px solid #C4C4C4;
+}
+
+
+/************************ Messages ********************************/
+.message-section    {
+    margin-top: 4rem;
+    display: none;
+}
+
+.firstClosed-msg  {
+    background-color: #f1f1f1;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: #5E5E5E;
+    font-weight: 600;
+}
+
+.firstClosed-msg p.closed-msg {
+    margin: auto 0;
+}
+
+.firstOpen-msg  {
+    background-color: #f1f1f1;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: #5E5E5E;
+    font-weight: 600;
+    display: none;
+}
+
+.firstOpen-msg p.opened-msg, .secondClosed-msg p.closed-unread-msg, .thirdClosed-msg p.read-msg {
+    margin: auto 0;
+}
+
+.date-and-time  {
+    color: #CCCCCC;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: end;
+    margin: 0.7rem 0 1rem;
+}
+
+.date   {
+    margin-right: 1rem;
+}
+
+/* Second Message */
+.unread-label   {
+    background-color: red;
+    height: 15px;
+    width: 15px;
+    border-radius: 20px;
+    position: absolute;
+    left: 72rem;
+    top: 20.7rem;
+}
+
+.secondClosed-msg  {
+    background-color: #f1f1f1;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: #5E5E5E;
+    font-weight: 600;
+}
+
+.secondOpen-msg  {
+    background-color: #f1f1f1;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: #5E5E5E;
+    font-weight: 600;
+    display: none;
+}
+
+.secondOpen-msg p.opened-msg {
+    margin: auto 0;
+}
+
+/* Third Message */
+.thirdClosed-msg  {
+    background-color: #f1f1f1;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: #5E5E5E;
+    font-weight: 600;
+}
+
+.thirdOpen-msg  {
+    background-color: #f1f1f1;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: #5E5E5E;
+    font-weight: 600;
+    display: none;
+}
+
+
+/******************************** Settings section ***********************/
+.settings-section   {
+    margin-top: 5rem;
+    display: none;
+}
+
+.notification-settings, .account-settings, .language-settings, .theme-settings  {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 2rem;
+    width: 45rem;
+}
+
+.notification-settings p, .account-settings p, .language-settings p, .theme-settings p  {
+    margin: auto 0;
+}
+
+.settings-section i {
+    position: absolute;
+    left: 74rem;
+}
+
+.delete-btn {
+    background-color: red;
+    color: #fff;
+    width: 200px;
+}
+
+
+/* Cart Page */
+.cart-title {
+    padding: 5rem 3rem 1rem;
+}
+
+.order-details  {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 6rem;
+}
+
+.order-details-left {
+    border: 1px solid #D9D9D9;
+    padding: 0;
+    width: 700px;
+    border-radius: 5px;
+    margin-bottom: 5rem;
+}
+
+.order-table-title  {
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    padding: 10px 30px;
+}
+
+.order-service, .order-price {
+    margin: auto 0;
+}
+
+.order-product  {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2rem 0;
+    font-size: 1.5rem;
+}
+
+.order-product i {
+    margin: auto 0;
+    cursor: pointer;
+}
+
+.order-divider  {
+    width: 550px;
+    margin: auto;
+}
+
+.order-btns {
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 1.5rem 0;
+    margin-bottom: 2rem;
+}
+
+.order-btns .continue-shopping  {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 40px;
+}
+
+.order-btns .empty-cart {
+    background-color: transparent;
+    color: #000;
+    padding: 10px 40px;
+    border: 1px solid #000;
+}
+
+/* Order Summary */
+.order-summary  {
+    background-color: #53FF6E;
+    padding: 20px 50px;
+    margin: 0 30px;
+    width: 400px;
+    border-radius: 5px;
+    position: fixed;
+    right: 2rem;
+    top: 8rem;
+}
+
+.order-summary-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.product-summary    {
+    display: flex;
+    justify-content: space-between;
+}
+
+hr.order-summary-divider {
+    width: 300px;
+}
+
+.total-due  {
+    margin: 1rem 0 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.total-price    {
+    font-size: 3rem;
+}
+
+.order-summary .btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    width: 300px;
+    margin: 0 0 1rem;
+}
+
+/* Billing Details */
+.billing-details    {
+    padding: 2rem 6rem;
+}
+
+.billing-details-title  {
+    margin-bottom: 2rem;
+}
+
+/* Checkout */
+.checkout-billing-details   {
+    padding: 0 2rem 1rem;
+}
+
+.total-amount-order {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.order-summary button.paystack {
+    background-color: #0077BA;
+}
+
+.order-summary button.paga {
+    background-color: #b0e2ff;
+    color: #000;
+}
+
+.order-summary button.paystack {
+    background-color: #0077BA;
+}
+
+.order-summary button.transfer {
+    background-color: #e0e0e0;
+    color: #000;
 }
