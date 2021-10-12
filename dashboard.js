@@ -5,8 +5,8 @@ const countdown = () => {
     const gap = countDate - now;
 
     //How the time really work
-    const second = 1000;
-    const minute = second * 60;
+    const seconds = 1000;
+    const minute = seconds * 60;
     const hour = minute * 60;
     const day = hour * 24;
 
@@ -14,13 +14,13 @@ const countdown = () => {
     const textDay = Math.floor(gap / day);
     const textHour = Math.floor((gap % day) / hour);
     const textMinute = Math.floor((gap % hour) / minute);
-    const textSecond = Math.floor((gap % minute) / second);
+    const textSecond = Math.floor((gap % minute) / seconds);
 
-    //Updating our html page witht the time
+    //Updating our html page with the time
     document.querySelector(".day").innerText = textDay;
     document.querySelector(".hour").innerText = textHour;
     document.querySelector(".minute").innerText = textMinute;
-    document.querySelector(".second").innerText = textSecond;
+    document.querySelector(".seconds").innerText = textSecond;
 }
 
 setInterval(countdown, 1000);
@@ -89,3 +89,61 @@ function closeDetails() {
 }
 
 
+//User Profile
+// Personal Info for Users
+var security = document.getElementsByClassName(".security");
+var message = document.getElementsByClassName(".message");
+var settings = document.getElementsByClassName(".settings");
+
+
+function personalInfo () {
+    
+    document.querySelector(".user-personal-informations").style.display = "block";
+    document.querySelector(".security-section").style.display = "none";
+    document.querySelector(".message-section").style.display = "none";
+    document.querySelector(".settings-section").style.display = "none";
+
+    var personalInformation = document.querySelector(".personal-info");
+    personalInformation.classList.toggle("active");
+}
+
+function security () {
+    document.querySelector(".user-personal-informations").style.display = "none";
+    document.querySelector(".security-section").style.display = "block";
+    document.querySelector(".message-section").style.display = "none";
+    document.querySelector(".settings-section").style.display = "none";
+}
+
+function message () {
+    document.querySelector(".user-personal-informations").style.display = "none";
+    document.querySelector(".security-section").style.display = "none";
+    document.querySelector(".message-section").style.display = "block";
+    document.querySelector(".settings-section").style.display = "none";
+}
+
+function settings () {
+    document.querySelector(".user-personal-informations").style.display = "none";
+    document.querySelector(".security-section").style.display = "none";
+    document.querySelector(".message-section").style.display = "none";
+    document.querySelector(".settings-section").style.display = "block";
+}
+
+
+// Add Car 
+function addCarModal() {
+    document.querySelector(".car-transparent-bg").style.display = "block";
+}
+
+function closeCarModal() {
+    document.querySelector(".car-transparent-bg").style.display = "none";
+}
+
+
+// Dashboard Side Nav
+$(".open-nav").on("click", function() {
+    $(".dash-side-navigation").css("display", "block");
+})
+
+$(".close-nav").on("click", function() {
+    $(".dash-side-navigation").css("display", "none");
+})
