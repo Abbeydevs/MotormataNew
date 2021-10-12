@@ -115,31 +115,139 @@
       <h1 class="mc-title">Maintenance & Repair</h1>
       <hr class="service-divider">
       <div class="row services-box">
+
         <div class="col-lg-6 mc-period-services">
           <span>Periodic Services</span>
-          <button class="btn p-service-box-btn">Select Car <i class="fas fa-plus"></i></button>
-            <i class="fas fa-chevron-down ps-select-car-drpdwn"></i>
+          <button type="button" class="btn p-service-box-btn">Select Car <i class="fas fa-plus"></i></button>
+          <i class="fas fa-chevron-down ps-select-car-drpdwn"></i>
+          <i class="fas fa-chevron-up ps-select-car-drop-up"></i>
         </div>
 
         <div class="col-lg-6 mc-ac-repair">
           <span>A/C Repair</span>
           <button class="btn ac-btn">Select Car <i class="fas fa-plus"></i></button>
-          <i class="fas fa-chevron-down ps-select-car-drpdwn"></i>
+          <i class="fas fa-chevron-down ps-select-car-drpdwn ac-drop"></i>
+          <i class="fas fa-chevron-up ps-select-car-drop-up"></i>
         </div>
 
         <div class="col-lg-6 mc-body-repair">
           <span>Body Repair</span>
           <button class="btn br-btn">Select Car <i class="fas fa-plus"></i></button>
           <i class="fas fa-chevron-down ps-select-car-drpdwn"></i>
+          <i class="fas fa-chevron-up ps-select-car-drop-up"></i>
         </div>
 
-        <div class="col-lg-6 mc-custom-repair">
+        <div class="col-lg-6 col-sm-12 mc-custom-repair">
           <span>Custom Repair</span>
           <button class="btn cr-btn">Select Car <i class="fas fa-plus"></i></button>
           <i class="fas fa-chevron-down ps-select-car-drpdwn"></i>
+          <i class="fas fa-chevron-up ps-select-car-drop-up"></i>
         </div>
       </div>
     </div>
+
+
+
+    <!-- The Plan Service Modal -->
+    <!-- Periodic Service -->
+    <!-- Basic Service -->
+    <div class="service-container">
+      <div class="basic-service">
+        <i class="fas fa-angle-left"></i>
+        <p class="bs-title">Basic Service</p>
+        <i class="fas fa-angle-right"></i>
+        <hr class="service-divider">
+        <ul>
+          <li>1000 kms or 1 month Warranty</li>
+          <li>Every 5000 kms or 3 months </li>
+          <li>Engine oil replacement</li>
+          <li>Air Filter replacement</li>
+          <li>Wiper Fluid Replacement</li>
+          <li>Heater / Spark Plugs Checking</li>
+          <li>Interior Vacumming (Carpets & Seats)</li>
+        </ul>
+        <button class="btn">Add to cart</button>
+      </div>
+
+      <!-- Standard Service -->
+      <div class="standard-service">
+        <i class="fas fa-angle-left"></i>
+        <p class="standard-service-title">Standard Service</p>
+        <i class="fas fa-angle-right"></i>
+        <hr class="service-divider">
+        <ul>
+          <li>1000 kms or 1 month Warranty</li>
+          <li>Every 5000 kms or 3 months </li>
+          <li>Engine oil replacement</li>
+          <li>Air Filter replacement</li>
+          <li>Wiper Fluid Replacement</li>
+          <li>Heater / Spark Plugs Checking</li>
+          <li>Interior Vacumming (Carpets & Seats)</li>
+        </ul>
+        <button class="btn">Add to cart</button>
+      </div>
+    </div>
+
+    <!-- AC Service -->
+    <!-- Basic Service -->
+    <div class="ac-service-container">
+      <div class="ac-basic-service">
+        <i class="fas fa-angle-left"></i>
+        <p class="abs-title">Basic Service</p>
+        <i class="fas fa-angle-right"></i>
+        <hr class="service-divider">
+        <ul>
+          <li>1000 kms or 1 month Warranty</li>
+          <li>Every 5000 kms or 3 months </li>
+          <li>Engine oil replacement</li>
+          <li>Air Filter replacement</li>
+          <li>Wiper Fluid Replacement</li>
+          <li>Heater / Spark Plugs Checking</li>
+          <li>Interior Vacumming (Carpets & Seats)</li>
+        </ul>
+        <button class="btn">Add to cart</button>
+      </div>
+
+      <!-- Standard Service -->
+      <div class="ac-standard-service">
+        <i class="fas fa-angle-left"></i>
+        <p class="ac-standard-service-title">Standard Service</p>
+        <i class="fas fa-angle-right"></i>
+        <hr class="service-divider">
+        <ul>
+          <li>1000 kms or 1 month Warranty</li>
+          <li>Every 5000 kms or 3 months </li>
+          <li>Engine oil replacement</li>
+          <li>Air Filter replacement</li>
+          <li>Wiper Fluid Replacement</li>
+          <li>Heater / Spark Plugs Checking</li>
+          <li>Interior Vacumming (Carpets & Seats)</li>
+        </ul>
+        <button type="button" class="btn">Add to cart</button>
+      </div>
+    </div>
+
+
+    <!-- Added to Cart response -->
+    <div class="added-to-cart-container">
+      <i class="far fa-check-circle"></i>
+      <p class="atc-texts">Your items has been added to cart</p>
+      <button class="btn atc-checkout-btn">Go to Cart</button>
+      <button class="btn atc-back-btn">Back to Service Page</button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
   </section>
 
   <!-- Motormata Benefits -->
@@ -353,9 +461,10 @@
     </p>
   </section>
 
-
-  <script src="index.js"></script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="dashboard.js"></script>
+  <script src="index.js"></script> 
+  <script src="jquery.js"></script>
 </body>
 
 </html>
