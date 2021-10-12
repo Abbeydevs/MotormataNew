@@ -1,93 +1,89 @@
 /*********************************************** Bigger Display ********************************/
+
 /* 1500px display width */
+
 @media (max-width: 1500px) {
-  /********************************** Maintenance & Repair *****************************/
+    /********************************** Maintenance & Repair *****************************/
     #hero-video {
         height: 100vh;
     }
-
-    #hero-video::after  {
+    #hero-video::after {
         height: 100%;
         top: 14%;
     }
-
-    #hero-video video{
+    #hero-video video {
         height: 100%;
         top: 14%;
     }
-
     /* The Service Modal */
-    .basic-service, .standard-service  {
+    .basic-service, .standard-service {
         padding: 30px 60px;
         top: 79rem;
         left: 9rem;
     }
-
     .basic-service .bs-title, .standard-service .standard-service-title {
         margin-left: 2rem;
     }
-
     .basic-service i, .standard-service i {
         top: 2.2rem;
         left: 25rem;
     }
-
-    .basic-service i:first-child, .standard-service i:first-child   {
+    .basic-service i:first-child, .standard-service i:first-child {
         top: 2.2rem;
         left: 2rem;
     }
-
-    .basic-service hr.service-divider, .standard-service hr.service-divider   {
+    .basic-service hr.service-divider, .standard-service hr.service-divider {
         left: 2rem;
     }
-    
     /* AC Service */
     .ac-basic-service, .ac-standard-service {
         padding: 30px 60px;
         top: 79rem;
         left: 45rem;
     }
-
     .ac-basic-service .abs-title, .ac-standard-service .ac-standard-service-title {
         margin-left: 2rem;
-     }
-
-    .ac-basic-service i:first-child, .ac-standard-service i:first-child   {
+    }
+    .ac-basic-service i:first-child, .ac-standard-service i:first-child {
         top: 2.2rem;
     }
-
-    .ac-basic-service hr.service-divider, .ac-standard-service hr.service-divider   {
+    .ac-basic-service hr.service-divider, .ac-standard-service hr.service-divider {
         left: 2rem;
     }
-
     /* Added to cart container */
-    .added-to-cart-container    {
+    .added-to-cart-container {
         top: 85rem;
         left: 23rem;
     }
 }
 
 /* 1300px display width */
+
 @media (max-width: 1300px) {
     /********************************** Maintenance & Repair *****************************/
-
     /* The Service Modal */
-    .basic-service, .standard-service  {
+    .basic-service, .standard-service {
         top: 71.7rem;
         left: 6rem;
     }
-    
     /* AC Service */
     .ac-basic-service, .ac-standard-service {
         padding: 30px 60px;
         top: 71.7rem;
         left: 38rem;
     }
-
     /* Added to cart container */
-    .added-to-cart-container    {
+    .added-to-cart-container {
         top: 78rem;
         left: 20rem;
+    }
+    /* AddCar Modal Dashboard */
+    .car-type-clsBtn {
+        left: 75rem;
+    }
+    /* Product Detail Btn for Car Parts */
+    .product-details-btn {
+        margin: 5rem 0 0 54.5rem;
     }
 }
 
@@ -98,55 +94,44 @@
     ul.navbar-nav {
         margin: 0 2px;
     }
-
-    .nav-item   {
+    .nav-item {
         padding: 0 40px;
     }
-
-    .drop-down-links    {
+    .drop-down-links {
         position: absolute;
         left: 14rem;
     }
-
     .drive-green {
         font-size: 28px;
     }
-
-    .hero-title   {
+    .hero-title {
         font-size: 42px;
     }
-
     .hero-paragraph {
         font-size: 17px;
     }
-
-    img.hero-illustration   {
+    img.hero-illustration {
         max-width: 55%;
         left: 120px;
         top: 50px;
     }
-
     /* register your vehicle container */
-    .reg-vehicle    {
+    .reg-vehicle {
         background-color: #fff;
         width: 324px;
         top: 20rem;
         left: 4rem;
     }
-
-    .reg-text   {
+    .reg-text {
         font-size: 18px;
     }
-
-    .reg-vehicle input{
+    .reg-vehicle input {
         width: 260px;
     }
-
-    .hero-car-icon  {
+    .hero-car-icon {
         top: 93px;
         left: 45px;
     }
-    
     .hero-call-icon {
         position: absolute;
         top: 155px;
@@ -154,213 +139,187 @@
         color: #9D9D9D;
         font-size: 15px;
     }
-
-    .reg-veh-btn   {
+    .reg-veh-btn {
         width: 260px;
     }
-
-    h1.join-us  {
+    h1.join-us {
         font-size: 14px;
     }
-
-
     /* Services section */
-    .maintenance-title, .autocare-title, .insurance-title  {
+    .maintenance-title, .autocare-title, .insurance-title {
         font-size: 18px;
     }
-
-    .periodic-check-icon    {
+    .periodic-check-icon {
         top: 112px;
     }
-
-    .ac-check-icon    {
+    .ac-check-icon {
         top: 160px;
     }
-    
-    .repair-check-icon    {
+    .repair-check-icon {
         top: 207px;
     }
-    
-    .crepair-check-icon    {
+    .crepair-check-icon {
         top: 255px;
     }
-    
-    .service-divider    {
+    .service-divider {
         background-color: #53FF6E;
         width: 70px;
     }
-
-
     /* Review Section */
-    .review-text  {
+    .review-text {
         font-size: 10px;
         top: 5px;
         max-width: 300px;
     }
-
     .sec-text {
         left: 2rem;
     }
-
     .review-image {
         position: absolute;
         left: 40px;
         max-width: 80px;
     }
-
-    .sec-img  {
+    .sec-img {
         left: -50px;
     }
-
-    .reviewer-name    {
+    .reviewer-name {
         top: 0.6rem;
         font-size: 12px;
     }
-
-    .reviewer-name2   {
+    .reviewer-name2 {
         top: 0.6rem;
         left: 2rem;
         font-size: 12px;
-      }
-
-
-/********************************* Sign up ***************************/
+    }
+    /********************************* Sign up ***************************/
     #signup .container-fluid {
         margin-top: 20%;
     }
-
-    .signup-image   {
+    .signup-image {
         display: none;
     }
-
-    .signup-container   {
+    .signup-container {
         padding: 10% 7%;
         width: 100%;
     }
-
-    .create-acct-title  {
+    .create-acct-title {
         font-size: 2rem;
     }
-    
-    .create-acct-paragraph  {
+    .create-acct-paragraph {
         color: #6F6F6F;
         margin-bottom: 10%;
     }
-
-    .signup-container input  {
+    .signup-container input {
         margin: 3% 0;
         padding: 10px;
     }
-
-    .create-acct-btn    {
+    .create-acct-btn {
         margin-top: 0.4rem;
         font-size: 1rem;
         display: inline-block;
     }
-
-    .already-have-acct  {
+    .already-have-acct {
         text-align: right;
         width: 50%;
         font-size: 1rem;
         float: right;
     }
-
-    .go-home-link   {
+    .go-home-link {
         left: 7.5rem;
         top: 12rem;
     }
-    
     /*************************************** Sign in **********************************/
     .signin-divider, .signin-divider2 {
         width: 45%;
     }
-    
-    .signup-container span  {
+    .signup-container span {
         top: -10px;
         left: 23px;
     }
-
-    .sign-with-email-btn    {
+    .sign-with-email-btn {
         margin: 5% 0;
         padding: 10px;
         background-color: #000;
         color: #fff;
     }
-
     /********************************** Maintenance & Repair *****************************/
     #hero-video {
         height: 50vh;
     }
-
-    #hero-video::after  {
+    #hero-video::after {
         height: 50%;
         top: 7%;
     }
-
-    #hero-video video{
+    #hero-video video {
         height: 50%;
         top: 7%;
     }
-
     /* The Service Modal */
-    .basic-service, .standard-service  {
+    .basic-service, .standard-service {
         padding: 30px;
         top: 62.8rem;
         left: 5rem;
     }
-
     .basic-service .bs-title, .standard-service .standard-service-title {
         margin-left: 2rem;
     }
-
     .basic-service i, .standard-service i {
         top: 2.2rem;
         left: 22rem;
     }
-
-    .basic-service i:first-child, .standard-service i:first-child   {
+    .basic-service i:first-child, .standard-service i:first-child {
         top: 2.2rem;
         left: 2rem;
     }
-
-    .basic-service hr.service-divider, .standard-service hr.service-divider   {
+    .basic-service hr.service-divider, .standard-service hr.service-divider {
         left: 2rem;
     }
-
     /* AC Service */
     .ac-basic-service, .ac-standard-service {
         padding: 30px;
         top: 62.8rem;
         left: 30rem;
     }
-
     .ac-basic-service .abs-title, .ac-standard-service .ac-standard-service-title {
         margin-left: 2rem;
-     }
-
-     .ac-basic-service i, .ac-standard-service i {
+    }
+    .ac-basic-service i, .ac-standard-service i {
         top: 2.2rem;
         left: 21rem;
     }
-
-    .ac-basic-service i:first-child, .ac-standard-service i:first-child   {
+    .ac-basic-service i:first-child, .ac-standard-service i:first-child {
         top: 2.2rem;
     }
-
-    .ac-basic-service hr.service-divider, .ac-standard-service hr.service-divider   {
+    .ac-basic-service hr.service-divider, .ac-standard-service hr.service-divider {
         left: 2rem;
     }
-
     /* Added to cart container */
-    .added-to-cart-container    {
+    .added-to-cart-container {
         left: 12rem;
+    }
+    /******************************************** Dashboard ********************************/
+    /* My Car section */
+    #dash-myCar {
+        padding: 15% 5% 0;
+    }
+    /* AddCar Modal Dashboard */
+    .car-type-clsBtn {
+        left: 60rem;
+    }
+    /* Recommendation */
+    .dash-recommendation-modal-container {
+        margin: 20rem 0;
+    }
+    /* Product Detail Btn for Car Parts */
+    .product-details-btn {
+        margin: 5rem 0 0 40rem;
     }
 }
 
 /* 834px display width */
-@media (max-width: 834px) {
 
-    #sideNav    {
+@media (max-width: 834px) {
+    #sideNav {
         width: 40%;
         background-color: rgb(255, 255, 255);
         display: none;
@@ -374,54 +333,43 @@
         z-index: 10;
         box-shadow: 10px 8px 20px 6px rgba(0, 0, 0, 0.2);
     }
-
     #sideNav a.nav-link:hover {
         background-color: #f7f7f7;
     }
-
-    .drop-down-links2    {
+    .drop-down-links2 {
         display: none;
         background-color: #eee;
         border-radius: 0;
         position: relative;
         top: -1rem;
         left: 0;
-   
     }
-
     .drop-down-links2 a {
         color: #9D9D9D;
         padding: 15px 30px !important;
         border-bottom: 1px solid #ddd;
         text-decoration: none;
     }
-
-    .drop-down-links2 a:last-child   {
+    .drop-down-links2 a:last-child {
         border-bottom: none;
     }
-    
-    #sideNavHomeDropDown a:hover  {
+    #sideNavHomeDropDown a:hover {
         background-color: #97ffa6 !important;
         color: #000;
     }
-    
     .show {
         display: block;
-    } 
-
+    }
     .nav-signin-btn {
         display: none;
     }
-
     .nav-createacct-btn {
         display: none;
     }
-
     .sticky-top {
         background-color: #fff;
         z-index: 3;
     }
-
     /* The menu Icon to open sidenav */
     .openNavBtn {
         display: block;
@@ -433,259 +381,282 @@
         left: 43rem;
         z-index: 3;
     }
-
     /* Hero */
     .drive-green {
         font-size: 23px;
     }
-
-    .hero-title   {
+    .hero-title {
         font-size: 35px;
         margin-bottom: 0;
     }
-
-    .hero-title p  {
+    .hero-title p {
         margin-bottom: 0;
     }
-
     .hero-paragraph {
         font-size: 12px;
         padding-top: 0;
         margin-top: 0;
     }
-
     /* register vehicle container */
-    .reg-vehicle    {
+    .reg-vehicle {
         width: 250px;
         top: 16rem;
         left: 3rem;
     }
-
-    .reg-text   {
+    .reg-text {
         font-size: 12px;
     }
-    
-    .reg-vehicle input{
+    .reg-vehicle input {
         font-size: 12px;
         width: 200px;
         padding: 7px 20px 7px 40px;
     }
-
-    .hero-car-icon  {
+    .hero-car-icon {
         top: 72px;
         left: 38px;
         font-size: 15px;
     }
-    
     .hero-call-icon {
         top: 117px;
         left: 38px;
         font-size: 13px;
     }
-
-    .reg-veh-btn   {
+    .reg-veh-btn {
         width: 200px;
         padding: 7px;
         font-size: 13px;
     }
-
-    h1.join-us  {
+    h1.join-us {
         font-size: 10px;
     }
-
     /* How we work */
-    .abstract-image   {
+    .abstract-image {
         right: 200px;
         width: 10%;
-      }
-
+    }
     /* Review Section */
-
-    .the-guy    {
+    .the-guy {
         display: none;
     }
-
-    .the-lady   {
+    .the-lady {
         display: none;
     }
-
     .second {
         position: relative;
         left: 100px;
     }
-
     /* App download */
     #download {
         text-align: center;
     }
-
     .app-download {
         margin-top: 5%;
     }
-
     .download-title {
         margin-bottom: 5%;
     }
-
     #download img.googlePlay {
         width: 200px;
     }
-
     #download img.appStore {
         width: 176px;
     }
-
     /***************************** Sign up ************************************/
     #signup .container-fluid {
         margin-top: 30%;
     }
-
-    .create-acct-title  {
+    .create-acct-title {
         font-size: 2rem;
     }
-
-    .already-have-acct  {
+    .already-have-acct {
         width: 60%;
     }
-
-    .go-home-link   {
+    .go-home-link {
         left: 6rem;
     }
-
     /********************************** Maintenance & Repair *****************************/
-    #hero-video::after  {
+    #hero-video::after {
         top: 9%;
     }
-
-    #hero-video video{
+    #hero-video video {
         top: 9%;
     }
-
-    .mc-whiteBox    {
+    .mc-whiteBox {
         background-color: rgb(243, 243, 243);
         box-shadow: 1px 1px 20px 6px rgba(170, 170, 170, 0.2);
         padding: 10px 50px;
         border-radius: 5px;
         font-size: 0.9rem;
     }
-
     .p-service-box-btn, .ac-btn, .br-btn, .cr-btn {
         font-size: 0.8rem;
     }
-
     /* The Service Modal */
-    .basic-service, .standard-service  {
+    .basic-service, .standard-service {
         padding: 30px;
         top: 50.8rem;
         left: 3.5rem;
     }
-
     .basic-service .bs-title, .standard-service .standard-service-title {
         font-size: 0.8rem;
         margin-left: 2rem;
     }
-
     .basic-service i, .standard-service i {
         top: 1.9rem;
         left: 14.5rem;
     }
-
-    .basic-service i:first-child, .standard-service i:first-child   {
+    .basic-service i:first-child, .standard-service i:first-child {
         top: 1.9rem;
     }
-
-    .basic-service hr.service-divider, .standard-service hr.service-divider   {
+    .basic-service hr.service-divider, .standard-service hr.service-divider {
         left: 2rem;
         width: 30px;
     }
-
-    .basic-service ul li, .standard-service ul li  {
+    .basic-service ul li, .standard-service ul li {
         padding: 5px;
         font-size: 0.6rem;
     }
-
-    .basic-service button.btn, .standard-service button.btn  {
+    .basic-service button.btn, .standard-service button.btn {
         margin: 0 1.5rem;
         padding: 5px 10px;
         font-size: 0.6rem;
     }
-
     /* AC Service */
     .ac-basic-service, .ac-standard-service {
         padding: 30px;
         top: 50.8rem;
         left: 22.5rem;
     }
-
     .ac-basic-service .abs-title, .ac-standard-service .ac-standard-service-title {
         font-size: 0.8rem;
         margin-left: 2rem;
-     }
-
-     .ac-basic-service i, .ac-standard-service i {
+    }
+    .ac-basic-service i, .ac-standard-service i {
         top: 1.9rem;
         left: 14.5rem;
     }
-
-    .ac-basic-service i:first-child, .ac-standard-service i:first-child   {
+    .ac-basic-service i:first-child, .ac-standard-service i:first-child {
         top: 1.9rem;
     }
-
-    .ac-basic-service hr.service-divider, .ac-standard-service hr.service-divider   {
+    .ac-basic-service hr.service-divider, .ac-standard-service hr.service-divider {
         left: 2rem;
         width: 30px;
     }
-
     .ac-basic-service ul, .ac-standard-service ul {
         margin-left: 1.7rem;
     }
-
-    .ac-basic-service ul li, .ac-standard-service ul li  {
+    .ac-basic-service ul li, .ac-standard-service ul li {
         padding: 5px;
         font-size: 0.6rem;
     }
-
-    .ac-basic-service button.btn, .ac-standard-service button.btn  {
+    .ac-basic-service button.btn, .ac-standard-service button.btn {
         margin: 0 1.5rem;
         padding: 5px 10px;
         font-size: 0.6rem
     }
-
     /* Added to cart container */
-    .added-to-cart-container    {
+    .added-to-cart-container {
         width: 30rem;
         top: 50rem;
         left: 8rem;
     }
-
-    .added-to-cart-container i  {
+    .added-to-cart-container i {
         font-size: 2rem;
     }
-
     .added-to-cart-container p.atc-texts {
         font-size: 1.5rem;
     }
-
     .added-to-cart-container button {
         margin: 1rem 0 3rem;
     }
-
     .added-to-cart-container button.atc-checkout-btn {
         font-size: 0.8rem;
         padding: 8px 20px;
     }
-
     .added-to-cart-container button.atc-checkout-btn:hover {
         padding: 8px 20px;
     }
-
     .added-to-cart-container button.atc-back-btn {
         font-size: 0.8rem;
         padding: 8px 20px;
     }
-
     .added-to-cart-container button.atc-back-btn:hover {
         padding: 8px 20px;
+    }
+}
+
+/* 810px display width */
+@media (max-width: 810px) {
+    .car-type-clsBtn {
+        left: 45rem;
+    }
+    /* Car Type Modal */
+    .addCar-modal {
+        width: 80%;
+    }
+    /* My Car Modal */
+    .modal-container {
+        width: 100%;
+        height: 50vh;
+    }
+    .modal-close {
+        margin: -1rem 0rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+        position: fixed;
+        right: 7rem;
+        transition: all 300ms ease-in-out;
+    }
+    /* Recommendation modal */
+    .dash-recommendation-modal-container {
+        top: 20rem;
+        border-radius: 5px;
+    }
+    /* Product Detail Btn for Car Parts */
+    .product-details-btn {
+        margin: 5rem 0 0 28rem;
+    }
+}
+
+/* 800px display width */
+@media (max-width: 800px) {
+    #dash-myCar {
+        padding: 20% 5% 0;
+    }
+    /* Car Type Modal */
+    .addCar-modal {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 6rem auto;
+        background-color: #ebebeb;
+        padding: 50px;
+        border-radius: 5px;
+    }
+    .car-type-clsBtn {
+        left: 46rem;
+    }
+    /* My Car Modal */
+    .modal-container {
+        width: 100%;
+        height: 40vh;
+    }
+    .modal-close {
+        margin: -1rem 0rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+        position: fixed;
+        right: 7rem;
+        transition: all 300ms ease-in-out;
+    }
+    /* Recommendation modal */
+    .dash-recommendation-modal-container {
+        top: 20rem;
+        border-radius: 5px;
+    }
+    /* Product Detail Btn for Car Parts */
+    .product-details-btn {
+        margin: 5rem 0 0 28rem;
     }
 }
 
@@ -696,535 +667,447 @@
         left: 40rem;
         z-index: 3;
     }
-
-    .closeBtn   {
+    .closeBtn {
         left: 17rem;
     }
-
     .signin-side-navBtn {
         left: 0.5rem;
     }
-    
     .signup-side-navBtn {
         top: 2rem;
         left: 0.5rem;
     }
-
     /* Assurance */
-    .assurance-title    {
+    .assurance-title {
         font-size: 30px;
     }
-
     .motormata-assurance li {
         font-size: 20px;
     }
-
     /* How we work */
-    .abstract-image   {
+    .abstract-image {
         right: 250px;
         width: 10%;
-      }
-
-    .hw-we-wrk-title  {
+    }
+    .hw-we-wrk-title {
         font-size: 30px;
     }
-
-    #how-we-work .ordered-list{
-        font-size: 15px;  
-      }
-
-    .ordered-list li{
+    #how-we-work .ordered-list {
+        font-size: 15px;
+    }
+    .ordered-list li {
         font-size: 12px;
     }
-
     /* Review */
-    .review-title   {
+    .review-title {
         font-size: 30px;
     }
-
     /* Benefits */
-    .benefit-title    {
+    .benefit-title {
         font-size: 30px;
     }
-
     .benefit-icon {
         top: 8px;
         font-size: 15px;
     }
-
     /* Technicians */
     .technician-title {
         font-size: 30px;
     }
-
-
     /********************************** Maintenance & Repair *****************************/
-    #hero-video::after  {
+    #hero-video::after {
         top: 9%;
     }
-
-    #hero-video video{
+    #hero-video video {
         top: 9%;
     }
-
-    .mc-whiteBox    {
+    .mc-whiteBox {
         background-color: rgb(243, 243, 243);
         box-shadow: 1px 1px 20px 6px rgba(170, 170, 170, 0.2);
         padding: 10px 50px;
         border-radius: 5px;
         font-size: 0.9rem;
     }
-
     .p-service-box-btn, .ac-btn, .br-btn, .cr-btn {
         font-size: 0.8rem;
     }
-
     /* The Service Modal */
-    .basic-service, .standard-service  {
+    .basic-service, .standard-service {
         padding: 30px;
         top: 50.8rem;
         left: 2rem;
     }
-
     .basic-service .bs-title, .standard-service .standard-service-title {
         font-size: 0.8rem;
         margin-left: 2rem;
     }
-
     .basic-service i, .standard-service i {
         top: 1.9rem;
         left: 14.5rem;
     }
-
-    .basic-service i:first-child, .standard-service i:first-child   {
+    .basic-service i:first-child, .standard-service i:first-child {
         top: 1.9rem;
     }
-
-    .basic-service hr.service-divider, .standard-service hr.service-divider   {
+    .basic-service hr.service-divider, .standard-service hr.service-divider {
         left: 2rem;
         width: 30px;
     }
-
-    .basic-service ul li, .standard-service ul li  {
+    .basic-service ul li, .standard-service ul li {
         padding: 5px;
         font-size: 0.6rem;
     }
-
-    .basic-service button.btn, .standard-service button.btn  {
+    .basic-service button.btn, .standard-service button.btn {
         margin: 0 1.5rem;
         padding: 5px 10px;
         font-size: 0.6rem;
     }
-
     /* AC Service */
     .ac-basic-service, .ac-standard-service {
         padding: 30px;
         top: 50.8rem;
         left: 20rem;
     }
-
     .ac-basic-service .abs-title, .ac-standard-service .ac-standard-service-title {
         font-size: 0.8rem;
         margin-left: 2rem;
-     }
-
-     .ac-basic-service i, .ac-standard-service i {
+    }
+    .ac-basic-service i, .ac-standard-service i {
         top: 1.9rem;
         left: 14.5rem;
     }
-
-    .ac-basic-service i:first-child, .ac-standard-service i:first-child   {
+    .ac-basic-service i:first-child, .ac-standard-service i:first-child {
         top: 1.9rem;
     }
-
-    .ac-basic-service hr.service-divider, .ac-standard-service hr.service-divider   {
+    .ac-basic-service hr.service-divider, .ac-standard-service hr.service-divider {
         left: 2rem;
         width: 30px;
     }
-
     .ac-basic-service ul, .ac-standard-service ul {
         margin-left: 1.7rem;
     }
-
-    .ac-basic-service ul li, .ac-standard-service ul li  {
+    .ac-basic-service ul li, .ac-standard-service ul li {
         padding: 5px;
         font-size: 0.6rem;
     }
-
-    .ac-basic-service button.btn, .ac-standard-service button.btn  {
+    .ac-basic-service button.btn, .ac-standard-service button.btn {
         margin: 0 1.5rem;
         padding: 5px 10px;
         font-size: 0.6rem
     }
-
     /* Added to cart container */
-    .added-to-cart-container    {
+    .added-to-cart-container {
         width: 30rem;
         top: 50rem;
         left: 8rem;
     }
-
-    .added-to-cart-container i  {
+    .added-to-cart-container i {
         font-size: 2rem;
     }
-
     .added-to-cart-container p.atc-texts {
         font-size: 1.5rem;
     }
-
     .added-to-cart-container button {
         margin: 1rem 0 3rem;
     }
-
     .added-to-cart-container button.atc-checkout-btn {
         font-size: 0.8rem;
         padding: 8px 20px;
     }
-
     .added-to-cart-container button.atc-checkout-btn:hover {
         padding: 8px 20px;
     }
-
     .added-to-cart-container button.atc-back-btn {
         font-size: 0.8rem;
         padding: 8px 20px;
     }
-
     .added-to-cart-container button.atc-back-btn:hover {
         padding: 8px 20px;
     }
-    
-
+    /******************************** Dashboard ********************************/
+    .car-type-clsBtn {
+        left: 44rem;
+    }
+    /* Recommendation modal */
+    .dash-recommendation-modal-container {
+        top: 2rem;
+        border-radius: 5px;
+    }
+    /* Product Detail Btn for Car Parts */
+    .product-details-btn {
+        margin: 5rem 0 0 25.5rem;
+    }
 }
 
 /************************** MOBILE DISPLAY *****************/
 
-/* 428px display width */
+/* 430px display width */
 @media (max-width: 430px) {
-
-    body    {
+    body {
         text-align: center;
     }
-
     /* nav */
     .openNavBtn {
         left: 22rem;
         z-index: 3;
     }
-
-    #sideNav    {
+    #sideNav {
         width: 80%;
     }
-
     .signin-side-navBtn {
         left: 5rem;
     }
-    
     .signup-side-navBtn {
         top: 3.5rem;
         left: -5.2rem;
     }
-
     /* Hero */
     .drive-green {
         font-size: 35px;
     }
-
-    .hero-title   {
+    .hero-title {
         font-size: 48px;
     }
-
-    img.hero-illustration   {
+    img.hero-illustration {
         display: none;
     }
-
-    .reg-vehicle    {
+    .reg-vehicle {
         position: unset;
         margin: 1% auto 15%;
         width: 320px;
     }
-
-    .reg-text   {
+    .reg-text {
         font-size: 20px;
     }
-
-    .reg-vehicle input{
+    .reg-vehicle input {
         font-size: 12px;
         width: 250px;
         padding: 10px 10px 10px 40px;
     }
-
-    .hero-car-icon  {
+    .hero-car-icon {
         top: 348px;
         left: 95px;
         font-size: 12px;
     }
-    
     .hero-call-icon {
         top: 405px;
         left: 95px;
         font-size: 13px;
     }
-
-    .reg-veh-btn   {
+    .reg-veh-btn {
         width: 250px;
         padding: 10px;
         font-size: 13px;
     }
-
-    h1.join-us  {
+    h1.join-us {
         font-size: 15px;
     }
-
     /* Services */
     #services li {
         text-align: left;
         padding-left: 4.5rem;
     }
-
-    .periodic-check-icon   {
+    .periodic-check-icon {
         left: 6rem;
         top: 10.9rem;
     }
-
-    .ac-check-icon  {
+    .ac-check-icon {
         left: 6rem;
         top: 13.9rem;
     }
-
-    .repair-check-icon  {
+    .repair-check-icon {
         left: 6rem;
         top: 16.9rem;
     }
-
     .crepair-check-icon {
         left: 6rem;
         top: 7.9rem;
     }
-    
-    .service-divider    {
+    .service-divider {
         margin: 5% auto 10%;
         background-color: #53FF6E;
         width: 70px;
     }
-
     /* Assurance */
-    .assurance-title    {
+    .assurance-title {
         padding-top: 10%;
         font-size: 30px;
     }
-
     .download-title {
         font-size: 30px;
         padding: 5%;
     }
-
-    img.googlePlay  {
+    img.googlePlay {
         max-width: 130px;
     }
-
-    img.appStore  {
+    img.appStore {
         max-width: 110px;
     }
-
     /* How we work */
     .abstract-image {
         position: unset;
         margin: auto 0;
         padding: 5%;
-      }
-
-    .abstract-image img  {
+    }
+    .abstract-image img {
         max-width: 330px;
-      }
-
+    }
     /* Reviews */
-    .review-text  {
+    .review-text {
         text-align: left;
         width: 220px;
         top: 10px;
         left: 120px;
     }
-
     .sec-text {
         left: 1.8rem;
     }
-
     .reviewer-name {
         position: relative;
         top: 20%;
         left: -0.8rem;
     }
-
     .reviewer-name2 {
         position: relative;
         top: 20%;
         left: -6.2rem;
     }
-
     /* Benefits */
     #benefits {
         padding: 3% 10% 4%;
     }
-
     .c-icon {
         position: absolute;
         left: 55px;
         top: 5.6px;
         font-size: 18px;
     }
-
     .a-icon {
         position: absolute;
         left: 58px;
         top: 5.6px;
         font-size: 18px;
     }
-
     .t-icon {
         position: absolute;
         left: 58px;
         top: 5.6px;
         font-size: 18px;
     }
-
     .q-icon {
         position: absolute;
         left: 85px;
         top: 7px;
         font-size: 18px;
     }
-
-    .convinience, .affordable, .transparent, .quality  {
+    .convinience, .affordable, .transparent, .quality {
         margin: 2% 5% 0;
         max-width: 100%;
         text-align: center;
     }
-
     /* Subscribe */
-    #subscription   {
+    #subscription {
         padding: 10% 7%;
         text-align: center;
     }
-
     .subscription-title {
         font-size: 2rem;
         text-align: center;
         padding: 0;
     }
-
     #subscription input {
         width: 50%;
         padding: 5px 10px;
         outline: none;
     }
-
-    .subscribe-btn    {
+    .subscribe-btn {
         width: 40%;
         padding: 5px 10px;
         font-size: 1.2rem;
     }
-
     /* Technicians */
     .technician-title {
         text-align: center;
     }
-
-    .first-tech img{
+    .first-tech img {
         max-width: 20%;
         margin-right: 5%;
         position: relative;
         top: -30px;
     }
-
     .staff-name {
         font-size: 15px;
         position: relative;
         top: 0.4rem;
     }
-
     .experience {
         font-size: 13px;
     }
-
-    .staff-content i  {
+    .staff-content i {
         font-size: 10px;
         position: relative;
         top: -0.2rem;
     }
-
     /* FAQs */
-    #faqs   {
+    #faqs {
         text-align: left;
     }
-
-    .faq-title    {
+    .faq-title {
         font-size: 30px;
         padding-top: 40px;
     }
-
     .faq-drop-btn1, .faq-drop-btn2, .faq-drop-btn3, .faq-drop-btn4, .faq-drop-btn5 {
         font-size: 0.7rem;
         position: relative;
         top: 0.2rem;
     }
-
-    #headingOne, #headingTwo, #headingThree, #headingFour, #headingFive   {
+    #headingOne, #headingTwo, #headingThree, #headingFour, #headingFive {
         padding: 0.5rem 0;
     }
-
     h5 span {
         font-size: 0.7rem;
     }
-
     .answer {
         font-size: 0.7rem;
     }
-
     /* Footer */
-    .footer-brand img{
+    .footer-brand img {
         margin: 5% auto;
     }
-
-    .footer-brand i   {
+    .footer-brand i {
         padding: 0 8px 10%;
         color: #9D9D9D;
     }
-
     .ft-about-title, .ft-service-title, .ft-legal-title {
         padding: 6% 0 0;
     }
-
-    #copyright  {
+    #copyright {
         padding: 6% 5% 1%;
     }
-
-    .copyright-content  {
+    .copyright-content {
         font-size: 0.7rem;
     }
-
     /***************************** Sign up ************************************/
     #signup {
         padding: 5% 4%;
         height: 100vh
     }
 
-    .create-acct-title  {
+    .create-acct-title {
         font-size: 1.5rem;
     }
 
-    .create-acct-paragraph  {
+    .create-acct-paragraph {
         font-size: 0.9rem;
     }
 
-    .create-acct-btn    {
+    .create-acct-btn {
         background-color: #53FF6E;
         display: block;
         margin: 2rem auto 2rem;
         width: 100%;
     }
-    
-    .already-have-acct  {
+
+    .already-have-acct {
         display: block;
         padding: 0;
         text-align: center;
@@ -1232,53 +1115,53 @@
         margin: auto;
     }
 
-    .go-home-link   {
+    .go-home-link {
         top: 5rem;
         left: 3rem;
     }
 
     /********************************************** Sign in *******************************************/
-    .signin-acct-btn    {
+    .signin-acct-btn {
         width: 100%;
         display: block;
     }
 
-    .signup-container span  {
+    .signup-container span {
         top: -10px;
         left: 1px;
     }
 
-    /********************************** Maintenance & Repair *****************************/ 
-    #hero-video::after  {
+    /********************************** Maintenance & Repair *****************************/
+    #hero-video::after {
         top: 11.5%;
     }
 
-    #hero-video video{
+    #hero-video video {
         top: 11.5%;
     }
 
-    .hero-vid-caption   {
+    .hero-vid-caption {
         font-size: 0.8rem;
     }
 
-    .hero-vid-caption h1  {
+    .hero-vid-caption h1 {
         font-size: 2rem;
     }
 
-    .mc-whiteBox    {
+    .mc-whiteBox {
         padding: auto;
         width: 100%;
     }
 
-    h1.mc-title   {
+    h1.mc-title {
         margin-top: 2rem;
         font-size: 1.2rem;
     }
 
-    .services-box   {
-        margin: auto; 
+    .services-box {
+        margin: auto;
     }
-    
+
     .mc-period-services, .mc-ac-repair, .mc-body-repair, .mc-custom-repair {
         max-width: 100%;
     }
@@ -1294,7 +1177,7 @@
     }
 
     /* The Service Modal */
-    .basic-service, .standard-service  {
+    .basic-service, .standard-service {
         top: 43.8rem;
         left: 1.4rem;
     }
@@ -1309,23 +1192,23 @@
         left: 15.7rem;
     }
 
-    .basic-service i:first-child, .standard-service i:first-child   {
+    .basic-service i:first-child, .standard-service i:first-child {
         top: 1.9rem;
         left: 1.5rem;
     }
 
-    .basic-service hr.service-divider, .standard-service hr.service-divider   {
+    .basic-service hr.service-divider, .standard-service hr.service-divider {
         position: unset;
         margin: 0.3rem auto;
     }
 
-    .basic-service ul li, .standard-service ul li  {
+    .basic-service ul li, .standard-service ul li {
         padding: 5px;
         font-size: 0.7rem;
         text-align: left;
     }
 
-    .basic-service button.btn, .standard-service button.btn  {
+    .basic-service button.btn, .standard-service button.btn {
         margin: 0 1.5rem;
         padding: 5px 20px;
         font-size: 0.9rem;
@@ -1340,43 +1223,43 @@
     .ac-basic-service .abs-title, .ac-standard-service .ac-standard-service-title {
         font-size: 1rem;
         margin: auto;
-     }
+    }
 
-     .ac-basic-service i, .ac-standard-service i {
+    .ac-basic-service i, .ac-standard-service i {
         top: 1.9rem;
         left: 15.7rem;
     }
 
-    .ac-basic-service i:first-child, .ac-standard-service i:first-child   {
+    .ac-basic-service i:first-child, .ac-standard-service i:first-child {
         top: 1.9rem;
         left: 1.5rem;
     }
 
-    .ac-basic-service hr.service-divider, .ac-standard-service hr.service-divider   {
+    .ac-basic-service hr.service-divider, .ac-standard-service hr.service-divider {
         position: unset;
         margin: 0.3rem auto;
     }
 
-    .ac-basic-service ul li, .ac-standard-service ul li  {
+    .ac-basic-service ul li, .ac-standard-service ul li {
         padding: 5px;
         font-size: 0.7rem;
         text-align: left;
     }
 
-    .ac-basic-service button.btn, .ac-standard-service button.btn  {
+    .ac-basic-service button.btn, .ac-standard-service button.btn {
         margin: 0 1.5rem;
         padding: 5px 20px;
         font-size: 0.9rem;
     }
 
     /* Added to cart container */
-    .added-to-cart-container    {
+    .added-to-cart-container {
         width: 250px;
         top: 50rem;
         left: 6rem;
     }
 
-    .added-to-cart-container i  {
+    .added-to-cart-container i {
         font-size: 2rem;
     }
 
@@ -1406,1361 +1289,1402 @@
         padding: 8px 17px;
     }
 
+    /********************* Dashboard *************************/
+    #dash-nav {
+        display: none;
+    }
+
+    .new-dash-nav {
+        padding: 10px;
+        background-color: #fff;
+        color: #000;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .new-dash-nav .new-dashboard-title {
+        font-size: 1.4rem;
+        margin: auto 0;
+        padding: 20px;
+        font-weight: 600;
+    }
+
+    .new-dash-nav i.open-nav {
+        font-size: 1.4rem;
+        margin: auto 0;
+        padding: 20px;
+        cursor: pointer;
+    }
+
+    /* My Car section */
+    #dash-myCar {
+        padding: 7%;
+    }
+
+    .mycar-top-content {
+        margin-bottom: 1rem;
+    }
+
+    .mycar-top-title {
+        font-size: 1.3rem;
+        margin: auto 0;
+    }
+
+    button.mycar-btn, button.mycar-btn2 {
+        padding: 8px 13px;
+        font-size: 0.7rem;
+        border: none;
+    }
+
+    .dash-mycar-details {
+        padding: 1rem;
+        border-radius: 3px;
+    }
+
+    .dash-mycar-details .car-name {
+        font-size: 1rem;
+    }
+
+    .dash-mycar-details button {
+        padding: 8px 13px;
+    }
+
+    /* Add Car Modal */
+    .car-type-clsBtn {
+        font-size: 1.2rem;
+        left: 24rem;
+    }
+
+    .car-type-btn {
+        margin: 0.1rem auto;
+        width: 240px;
+        background-color: #000;
+        color: #fff;
+        padding: 10px 0;
+    }
+
+    /* My Car Type */
+    .modal-container {
+        border-radius: 5px;
+        width: 100%;
+        height: 50vh;
+    }
+
+    .modal-close {
+        font-size: 1rem;
+        right: 5rem;
+    }
+
+    .modal-close:hover {
+        font-size: 1.4rem;
+    }
+
+    .modal-container .car-name {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #545454;
+    }
+
+    .modal-container img {
+        width: 200px;
+        padding: 10px;
+    }
+
+    .modal-divider {
+        display: none;
+    }
+
+    /* Due Service */
+    #dash-dueServices {
+        padding: 5% 7%;
+    }
+
+    h1.dueservice-title {
+        font-size: 1.3rem;
+    }
+
+    .dueservice-duedate-content {
+        border-radius: 5px;
+    }
+
+    .day-remain .car-service-duedate {
+        font-size: 1rem;
+    }
+
+    .day, .hour, .minute, .seconds {
+        font-size: 1rem;
+    }
+
+    /* Other Services */
+    .dash-other-services {
+        margin: 3rem 0;
+        padding: 2rem 0;
+        border-radius: 5px;
+    }
+    .dash-other-services-title {
+        font-size: 1.2rem;
+        padding: 0 0 2rem;
+    }
+
+    /* History Section */
+    #dash-history {
+        padding: 2% 7%;
+    }
+
+    .history-top-title {
+        font-size: 1.3rem;
+    }
+
+    .history-main-contents {
+        border-radius: 5px;
+    }
+
+    .htry-btry-change .history-battery-change-title {
+        font-size: 1rem;
+    }
+
+    .htry-oil-change .history-battery-change-title {
+        font-size: 1rem;
+    }
+
+    .htry-body-repair .history-body-repair-title {
+        font-size: 1rem;
+    }
+
+    .selected {
+        width: 100px;
+        padding: 10px 2px;
+        font-size: 0.7rem;
+    }
+
+    /* Battery Modal Box */
+    .battery-change-box {
+        border-radius: 5px;
+        top: -1rem;
+    }
+
+    .battery-change-box .product h5.product-name, .battery-change-box .done-transaction-box h5.done-transaction, .transaction-price, .product-type {
+        font-size: 0.8rem;
+    }
+
+    .battery-change-box .status .transaction-status, .transaction-update{
+        font-size: 1rem;
+    }
+
+    /* Recommendation Section */
+    #dash-recommendations {
+        padding: 10% 7%;
+    }
+
+    .recom-top-content-title {
+        font-size: 1.3rem;
+    }
+
+    .recom-main-contents {
+        border-radius: 5px;
+    }
+
+    .recom-btry-change-title, .recom-oil-change-title, .recom-ac-service-title, .recom-tyre-change-title {
+        font-size: 1rem;
+    }
+
+    .recom-main-contents button {
+        padding: 8px 10px;
+        font-size: 0.8rem;
+    }
+
+    /* Recommendation Modal */
+    .dash-recommendation-modal-container {
+        margin: 2rem auto;
+        top: 4rem;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .recom-modal-close {
+        font-size: 1.2rem;
+        top: 1rem;
+    }
+
+    .product-recommended {
+        font-size: 1rem;
+    }
+
+    /* Your Car Parts */
+    #dash-carParts {
+        padding: 10% 7%;
+    }
+
+    .carparts-top-content-title {
+        font-size: 1.3rem;
+    }
+
+    .carparts-main-contents {
+        border-radius: 5px;
+        padding: 1.2rem 2rem;
+    }
+
+    .carparts-btry-title, .carparts-oil-title, .carparts-bumper-title {
+        font-size: 1rem;
+        margin: auto 0;
+    }
+
+    .battry-detail-btn, .oil-detail-btn, .bumper-detail-btn {
+        padding: 8px 10px;
+        font-size: 0.8rem;
+    }
+
+    .carparts-btry span {
+        font-size: 0.4rem;
+        left: 14.5rem;
+        top: 126.2rem;
+        padding: 0.2rem 0.3rem;
+        color: #fff;
+    }
+
+    .closeDetail-btn {
+        width: 80px;
+        padding: 8px 6px;
+        font-size: 0.6rem;
+    }
+
+    .product-name, .product-type, .product-amount{
+        font-size: 0.7rem;
+    }
+
+    .product1 .product {
+        font-size: 0.7rem;
+    }
+
+    .carPart-container {
+        background-color: #fff;
+        padding: 50px 10px 0;
+    }
+
+    /* Footer */
+    .dash-copyrights {
+        font-size: 0.7rem;
+    }
 }
 
 /* 415px display width */
 @media (max-width: 415px) {
-
-    body    {
+    body {
         text-align: center;
     }
-
     /* nav */
     .openNavBtn {
         left: 20rem;
         z-index: 3;
     }
-
-    #sideNav    {
+    #sideNav {
         width: 80%;
     }
-
     .signin-side-navBtn {
         left: 5rem;
     }
-    
     .signup-side-navBtn {
         top: 3.5rem;
         left: -5.2rem;
     }
-
     /* Hero */
     .drive-green {
         font-size: 35px;
     }
-
-    .hero-title   {
+    .hero-title {
         font-size: 48px;
     }
-
-    img.hero-illustration   {
+    img.hero-illustration {
         display: none;
     }
-
-    .reg-vehicle    {
+    .reg-vehicle {
         position: unset;
         margin: 1% auto 15%;
         width: 320px;
     }
-
-    .reg-text   {
+    .reg-text {
         font-size: 20px;
     }
-
-    .reg-vehicle input{
+    .reg-vehicle input {
         font-size: 12px;
         width: 250px;
         padding: 10px 10px 10px 40px;
     }
-
-    .hero-car-icon  {
+    .hero-car-icon {
         top: 348px;
         left: 95px;
         font-size: 12px;
     }
-    
     .hero-call-icon {
         top: 405px;
         left: 95px;
         font-size: 13px;
     }
-
-    .reg-veh-btn   {
+    .reg-veh-btn {
         width: 250px;
         padding: 10px;
         font-size: 13px;
     }
-
-    h1.join-us  {
+    h1.join-us {
         font-size: 15px;
     }
-
     /* Services */
     #services li {
         text-align: left;
         padding-left: 4.5rem;
     }
-
-    .periodic-check-icon   {
+    .periodic-check-icon {
         left: 6rem;
         top: 10.9rem;
     }
-
-    .ac-check-icon  {
+    .ac-check-icon {
         left: 6rem;
         top: 13.9rem;
     }
-
-    .repair-check-icon  {
+    .repair-check-icon {
         left: 6rem;
         top: 16.9rem;
     }
-
     .crepair-check-icon {
         left: 6rem;
         top: 7.9rem;
     }
-    
-    .service-divider    {
+    .service-divider {
         margin: 5% auto 10%;
         background-color: #53FF6E;
         width: 70px;
     }
-
     /* Assurance */
-    .assurance-title    {
+    .assurance-title {
         padding-top: 10%;
         font-size: 30px;
     }
-
     .download-title {
         font-size: 30px;
         padding: 5%;
     }
-
-    img.googlePlay  {
+    img.googlePlay {
         max-width: 130px;
     }
-
-    img.appStore  {
+    img.appStore {
         max-width: 110px;
     }
-
     /* How we work */
     .abstract-image {
         position: unset;
         margin: auto 0;
         padding: 5%;
-      }
-
-    .abstract-image img  {
+    }
+    .abstract-image img {
         max-width: 330px;
-      }
-
+    }
     /* Reviews */
-    .review-text  {
+    .review-text {
         text-align: left;
         width: 220px;
         top: 10px;
         left: 120px;
     }
-
     .sec-text {
         left: 1.8rem;
     }
-
     .reviewer-name {
         position: relative;
         top: 20%;
         left: -0.8rem;
     }
-
     .reviewer-name2 {
         position: relative;
         top: 20%;
         left: -6.2rem;
     }
-
     /* Benefits */
     #benefits {
         padding: 3% 10% 4%;
     }
-
     .c-icon {
         position: absolute;
         left: 55px;
         top: 5.6px;
         font-size: 18px;
     }
-
     .a-icon {
         position: absolute;
         left: 58px;
         top: 5.6px;
         font-size: 18px;
     }
-
     .t-icon {
         position: absolute;
         left: 58px;
         top: 5.6px;
         font-size: 18px;
     }
-
     .q-icon {
         position: absolute;
         left: 85px;
         top: 7px;
         font-size: 18px;
     }
-
-    .convinience, .affordable, .transparent, .quality  {
+    .convinience, .affordable, .transparent, .quality {
         margin: 2% 5% 0;
         max-width: 100%;
         text-align: center;
     }
-
     /* Subscribe */
-    #subscription   {
+    #subscription {
         padding: 10% 7%;
         text-align: center;
     }
-
     .subscription-title {
         font-size: 2rem;
         text-align: center;
         padding: 0;
     }
-
     #subscription input {
         width: 50%;
         padding: 5px 10px;
         outline: none;
     }
-
-    .subscribe-btn    {
+    .subscribe-btn {
         width: 40%;
         padding: 5px 10px;
         font-size: 1.2rem;
     }
-
     /* Technicians */
     .technician-title {
         text-align: center;
     }
-
-    .first-tech img{
+    .first-tech img {
         max-width: 20%;
         margin-right: 5%;
         position: relative;
         top: -30px;
     }
-
     .staff-name {
         font-size: 15px;
         position: relative;
         top: 0.4rem;
     }
-
     .experience {
         font-size: 13px;
     }
-
-    .staff-content i  {
+    .staff-content i {
         font-size: 10px;
         position: relative;
         top: -0.2rem;
     }
-
     /* FAQs */
-    #faqs   {
+    #faqs {
         text-align: left;
     }
-
-    .faq-title    {
+    .faq-title {
         font-size: 30px;
         padding-top: 40px;
     }
-
     .faq-drop-btn1, .faq-drop-btn2, .faq-drop-btn3, .faq-drop-btn4, .faq-drop-btn5 {
         font-size: 0.7rem;
         position: relative;
         top: 0.2rem;
     }
-
-    #headingOne, #headingTwo, #headingThree, #headingFour, #headingFive   {
+    #headingOne, #headingTwo, #headingThree, #headingFour, #headingFive {
         padding: 0.5rem 0;
     }
-
     h5 span {
         font-size: 0.7rem;
     }
-
     .answer {
         font-size: 0.7rem;
     }
-
     /* Footer */
-    .footer-brand img{
+    .footer-brand img {
         margin: 5% auto;
     }
-
-    .footer-brand i   {
+    .footer-brand i {
         padding: 0 8px 10%;
         color: #9D9D9D;
     }
-
     .ft-about-title, .ft-service-title, .ft-legal-title {
         padding: 6% 0 0;
     }
-
-    #copyright  {
+    #copyright {
         padding: 6% 5% 1%;
     }
-
-    .copyright-content  {
+    .copyright-content {
         font-size: 0.7rem;
     }
-
     /***************************** Sign up ************************************/
     #signup {
         padding: 5% 4%;
         height: 100vh
     }
-
-    .create-acct-title  {
+    .create-acct-title {
         font-size: 1.5rem;
     }
-
-    .create-acct-paragraph  {
+    .create-acct-paragraph {
         font-size: 0.9rem;
     }
-
-    .create-acct-btn    {
+    .create-acct-btn {
         background-color: #53FF6E;
         display: block;
         margin: 2rem auto 2rem;
         width: 100%;
     }
-    
-    .already-have-acct  {
+    .already-have-acct {
         display: block;
         padding: 0;
         text-align: center;
         float: unset;
         margin: auto;
     }
-
-    .go-home-link   {
+    .go-home-link {
         top: 5rem;
         left: 3rem;
     }
-
     /********************************************** Sign in *******************************************/
-    .signin-acct-btn    {
+    .signin-acct-btn {
         width: 100%;
         display: block;
     }
-
-    .signup-container span  {
+    .signup-container span {
         top: -10px;
         left: 1px;
     }
-
-    /********************************** Maintenance & Repair *****************************/ 
-    #hero-video::after  {
+    /********************************** Maintenance & Repair *****************************/
+    #hero-video::after {
         top: 11.5%;
     }
-
-    #hero-video video{
+    #hero-video video {
         top: 11.5%;
     }
-
-    .hero-vid-caption   {
+    .hero-vid-caption {
         font-size: 0.8rem;
     }
-
-    .hero-vid-caption h1  {
+    .hero-vid-caption h1 {
         font-size: 2rem;
     }
-
-    .mc-whiteBox    {
+    .mc-whiteBox {
         padding: auto;
         width: 100%;
     }
-
-    h1.mc-title   {
+    h1.mc-title {
         margin-top: 2rem;
         font-size: 1.2rem;
     }
-
-    .services-box   {
-        margin: auto; 
+    .services-box {
+        margin: auto;
     }
-    
     .mc-period-services, .mc-ac-repair, .mc-body-repair, .mc-custom-repair {
         max-width: 100%;
     }
-
     .mc-period-services span {
         text-align: left;
         width: 60px;
     }
-
     .p-service-box-btn, .ac-btn, .br-btn, .cr-btn {
         font-size: 0.8rem;
         margin: auto;
     }
-
     /* The Service Modal */
-    .basic-service, .standard-service  {
+    .basic-service, .standard-service {
         top: 42.8rem;
         left: 0.7rem;
     }
-
     .basic-service .bs-title, .standard-service .standard-service-title {
         font-size: 1rem;
         margin: auto;
     }
-
     .basic-service i, .standard-service i {
         top: 1.9rem;
         left: 16.4rem;
     }
-
-    .basic-service i:first-child, .standard-service i:first-child   {
+    .basic-service i:first-child, .standard-service i:first-child {
         top: 1.9rem;
         left: 1.5rem;
     }
-
-    .basic-service hr.service-divider, .standard-service hr.service-divider   {
+    .basic-service hr.service-divider, .standard-service hr.service-divider {
         position: unset;
         margin: 0.3rem auto;
     }
-
-    .basic-service ul li, .standard-service ul li  {
+    .basic-service ul li, .standard-service ul li {
         padding: 5px;
         font-size: 0.7rem;
         text-align: left;
     }
-
-    .basic-service button.btn, .standard-service button.btn  {
+    .basic-service button.btn, .standard-service button.btn {
         margin: 0 1.5rem;
         padding: 5px 20px;
         font-size: 0.9rem;
     }
-
     /* AC Service */
     .ac-basic-service, .ac-standard-service {
         top: 47.8rem;
         left: 0.7rem;
     }
-
     .ac-basic-service .abs-title, .ac-standard-service .ac-standard-service-title {
         font-size: 1rem;
         margin: auto;
-     }
-
-     .ac-basic-service i, .ac-standard-service i {
+    }
+    .ac-basic-service i, .ac-standard-service i {
         top: 1.9rem;
         left: 16.4rem;
     }
-
-    .ac-basic-service i:first-child, .ac-standard-service i:first-child   {
+    .ac-basic-service i:first-child, .ac-standard-service i:first-child {
         top: 1.9rem;
         left: 1.5rem;
     }
-
-    .ac-basic-service hr.service-divider, .ac-standard-service hr.service-divider   {
+    .ac-basic-service hr.service-divider, .ac-standard-service hr.service-divider {
         position: unset;
         margin: 0.3rem auto;
     }
-
-    .ac-basic-service ul li, .ac-standard-service ul li  {
+    .ac-basic-service ul li, .ac-standard-service ul li {
         padding: 5px;
         font-size: 0.7rem;
         text-align: left;
     }
-
-    .ac-basic-service button.btn, .ac-standard-service button.btn  {
+    .ac-basic-service button.btn, .ac-standard-service button.btn {
         margin: 0 1.5rem;
         padding: 5px 20px;
         font-size: 0.9rem;
     }
-
     /* Added to cart container */
-    .added-to-cart-container    {
+    .added-to-cart-container {
         width: 250px;
         top: 44rem;
         left: 6rem;
     }
-
-    .added-to-cart-container i  {
+    .added-to-cart-container i {
         font-size: 2rem;
     }
-
     .added-to-cart-container p.atc-texts {
         font-size: 1rem;
     }
-
     .added-to-cart-container button {
         margin: 1rem 0 0;
     }
-
     .added-to-cart-container button.atc-checkout-btn {
         font-size: 0.8rem;
         padding: 8px 50px;
     }
-
     .added-to-cart-container button.atc-checkout-btn:hover {
         padding: 8px 50px;
     }
-
     .added-to-cart-container button.atc-back-btn {
         font-size: 0.8rem;
         padding: 8px 17px;
     }
-
     .added-to-cart-container button.atc-back-btn:hover {
         padding: 8px 17px;
     }
 
+    /* Dashboard Side Nav */
+    .dash-side-navigation i.close-nav {
+        left: 22rem;
+    }
+
+    .carparts-btry span {
+        font-size: 0.4rem;
+        left: 14.5rem;
+        top: 125.3rem;
+        padding: 0.2rem 0.3rem;
+        color: #fff;
+    }
 }
 
 /* 412px display width */
 @media (max-width: 412px) {
-    /********************************** Maintenance & Repair *****************************/ 
-    #hero-video::after  {
+    /********************************** Maintenance & Repair *****************************/
+    #hero-video::after {
         top: 11.5%;
     }
-
-    #hero-video video{
+    #hero-video video {
         top: 11.5%;
     }
-
-    .hero-vid-caption   {
+    .hero-vid-caption {
         font-size: 0.8rem;
     }
-
-    .hero-vid-caption h1  {
+    .hero-vid-caption h1 {
         font-size: 2rem;
     }
-
-    .mc-whiteBox    {
+    .mc-whiteBox {
         padding: auto;
         width: 100%;
     }
-
-    h1.mc-title   {
+    h1.mc-title {
         margin-top: 2rem;
         font-size: 1.2rem;
     }
-
-    .services-box   {
-        margin: auto; 
+    .services-box {
+        margin: auto;
     }
-    
     .mc-period-services, .mc-ac-repair, .mc-body-repair, .mc-custom-repair {
         max-width: 100%;
     }
-
     .mc-period-services span {
         text-align: left;
         width: 60px;
     }
-
     .p-service-box-btn, .ac-btn, .br-btn, .cr-btn {
         font-size: 0.8rem;
         margin: auto;
     }
-
     /* The Service Modal */
-    .basic-service, .standard-service  {
+    .basic-service, .standard-service {
         top: 42.8rem;
         left: 0.7rem;
     }
-
     .basic-service .bs-title, .standard-service .standard-service-title {
         font-size: 1rem;
         margin: auto;
     }
-
     .basic-service i, .standard-service i {
         top: 1.9rem;
         left: 16.4rem;
     }
-
-    .basic-service i:first-child, .standard-service i:first-child   {
+    .basic-service i:first-child, .standard-service i:first-child {
         top: 1.9rem;
         left: 1.5rem;
     }
-
-    .basic-service hr.service-divider, .standard-service hr.service-divider   {
+    .basic-service hr.service-divider, .standard-service hr.service-divider {
         position: unset;
         margin: 0.3rem auto;
     }
-
-    .basic-service ul li, .standard-service ul li  {
+    .basic-service ul li, .standard-service ul li {
         padding: 5px;
         font-size: 0.7rem;
         text-align: left;
     }
-
-    .basic-service button.btn, .standard-service button.btn  {
+    .basic-service button.btn, .standard-service button.btn {
         margin: 0 1.5rem;
         padding: 5px 20px;
         font-size: 0.9rem;
     }
-
     /* AC Service */
     .ac-basic-service, .ac-standard-service {
         top: 49rem;
         left: 0.7rem;
     }
-
     .ac-basic-service .abs-title, .ac-standard-service .ac-standard-service-title {
         font-size: 1rem;
         margin: auto;
-     }
-
-     .ac-basic-service i, .ac-standard-service i {
+    }
+    .ac-basic-service i, .ac-standard-service i {
         top: 1.9rem;
         left: 16.4rem;
     }
-
-    .ac-basic-service i:first-child, .ac-standard-service i:first-child   {
+    .ac-basic-service i:first-child, .ac-standard-service i:first-child {
         top: 1.9rem;
         left: 1.5rem;
     }
-
-    .ac-basic-service hr.service-divider, .ac-standard-service hr.service-divider   {
+    .ac-basic-service hr.service-divider, .ac-standard-service hr.service-divider {
         position: unset;
         margin: 0.3rem auto;
     }
-
-    .ac-basic-service ul li, .ac-standard-service ul li  {
+    .ac-basic-service ul li, .ac-standard-service ul li {
         padding: 5px;
         font-size: 0.7rem;
         text-align: left;
     }
-
-    .ac-basic-service button.btn, .ac-standard-service button.btn  {
+    .ac-basic-service button.btn, .ac-standard-service button.btn {
         margin: 0 1.5rem;
         padding: 5px 20px;
         font-size: 0.9rem;
     }
-
     /* Added to cart container */
-    .added-to-cart-container    {
+    .added-to-cart-container {
         width: 250px;
         top: 50rem;
         left: 5rem;
     }
-
-    .added-to-cart-container i  {
+    .added-to-cart-container i {
         font-size: 2rem;
     }
-
     .added-to-cart-container p.atc-texts {
         font-size: 1rem;
     }
-
     .added-to-cart-container button {
         margin: 1rem 0 0;
     }
-
     .added-to-cart-container button.atc-checkout-btn {
         font-size: 0.8rem;
         padding: 8px 50px;
     }
-
     .added-to-cart-container button.atc-checkout-btn:hover {
         padding: 8px 50px;
     }
-
     .added-to-cart-container button.atc-back-btn {
         font-size: 0.8rem;
         padding: 8px 17px;
     }
-
     .added-to-cart-container button.atc-back-btn:hover {
         padding: 8px 17px;
     }
-
 }
 
 /* 411px display width */
 @media (max-width: 411px) {
-
-    body    {
+    body {
         text-align: center;
     }
-
     /* nav */
     .openNavBtn {
         left: 20rem;
         z-index: 3;
     }
-
-    #sideNav    {
+    #sideNav {
         width: 80%;
     }
-
     .signin-side-navBtn {
         left: 5rem;
     }
-    
     .signup-side-navBtn {
         top: 3.5rem;
         left: -5.2rem;
     }
-
     /* Hero */
     .drive-green {
         font-size: 35px;
     }
-
-    .hero-title   {
+    .hero-title {
         font-size: 48px;
     }
-
-    img.hero-illustration   {
+    img.hero-illustration {
         display: none;
     }
-
-    .reg-vehicle    {
+    .reg-vehicle {
         position: unset;
         margin: 1% auto 15%;
         width: 320px;
     }
-
-    .reg-text   {
+    .reg-text {
         font-size: 20px;
     }
-
-    .reg-vehicle input{
+    .reg-vehicle input {
         font-size: 12px;
         width: 250px;
         padding: 10px 10px 10px 40px;
     }
-
-    .hero-car-icon  {
+    .hero-car-icon {
         top: 348px;
         left: 95px;
         font-size: 12px;
     }
-    
     .hero-call-icon {
         top: 405px;
         left: 95px;
         font-size: 13px;
     }
-
-    .reg-veh-btn   {
+    .reg-veh-btn {
         width: 250px;
         padding: 10px;
         font-size: 13px;
     }
-
-    h1.join-us  {
+    h1.join-us {
         font-size: 15px;
     }
-
     /* Services */
     #services li {
         text-align: left;
         padding-left: 4.5rem;
     }
-
-    .periodic-check-icon   {
+    .periodic-check-icon {
         left: 6rem;
         top: 10.9rem;
     }
-
-    .ac-check-icon  {
+    .ac-check-icon {
         left: 6rem;
         top: 13.9rem;
     }
-
-    .repair-check-icon  {
+    .repair-check-icon {
         left: 6rem;
         top: 16.9rem;
     }
-
     .crepair-check-icon {
         left: 6rem;
         top: 7.9rem;
     }
-    
-    .service-divider    {
+    .service-divider {
         margin: 5% auto 10%;
         background-color: #53FF6E;
         width: 70px;
     }
-
     /* Assurance */
-    .assurance-title    {
+    .assurance-title {
         padding-top: 10%;
         font-size: 30px;
     }
-
     .download-title {
         font-size: 30px;
         padding: 5%;
     }
-
-    img.googlePlay  {
+    img.googlePlay {
         max-width: 130px;
     }
-
-    img.appStore  {
+    img.appStore {
         max-width: 110px;
     }
-
     /* How we work */
     .abstract-image {
         position: unset;
         margin: auto 0;
         padding: 5%;
-      }
-
-    .abstract-image img  {
+    }
+    .abstract-image img {
         max-width: 330px;
-      }
-
+    }
     /* Reviews */
-    .review-text  {
+    .review-text {
         text-align: left;
         width: 220px;
         top: 10px;
         left: 120px;
     }
-
     .sec-text {
         left: 1.8rem;
     }
-
     .reviewer-name {
         position: relative;
         top: 20%;
         left: -0.8rem;
     }
-
     .reviewer-name2 {
         position: relative;
         top: 20%;
         left: -6.2rem;
     }
-
     /* Benefits */
     #benefits {
         padding: 3% 10% 4%;
     }
-
     .c-icon {
         position: absolute;
         left: 55px;
         top: 5.6px;
         font-size: 18px;
     }
-
     .a-icon {
         position: absolute;
         left: 58px;
         top: 5.6px;
         font-size: 18px;
     }
-
     .t-icon {
         position: absolute;
         left: 58px;
         top: 5.6px;
         font-size: 18px;
     }
-
     .q-icon {
         position: absolute;
         left: 85px;
         top: 7px;
         font-size: 18px;
     }
-
-    .convinience, .affordable, .transparent, .quality  {
+    .convinience, .affordable, .transparent, .quality {
         margin: 2% 5% 0;
         max-width: 100%;
         text-align: center;
     }
-
     /* Subscribe */
-    #subscription   {
+    #subscription {
         padding: 10% 7%;
         text-align: center;
     }
-
     .subscription-title {
         font-size: 2rem;
         text-align: center;
         padding: 0;
     }
-
     #subscription input {
         width: 50%;
         padding: 5px 10px;
         outline: none;
     }
-
-    .subscribe-btn    {
+    .subscribe-btn {
         width: 40%;
         padding: 5px 10px;
         font-size: 1.2rem;
     }
-
     /* Technicians */
     .technician-title {
         text-align: center;
     }
-
-    .first-tech img{
+    .first-tech img {
         max-width: 20%;
         margin-right: 5%;
         position: relative;
         top: -30px;
     }
-
     .staff-name {
         font-size: 15px;
         position: relative;
         top: 0.4rem;
     }
-
     .experience {
         font-size: 13px;
     }
-
-    .staff-content i  {
+    .staff-content i {
         font-size: 10px;
         position: relative;
         top: -0.2rem;
     }
-
     /* FAQs */
-    #faqs   {
+    #faqs {
         text-align: left;
     }
-
-    .faq-title    {
+    .faq-title {
         font-size: 30px;
         padding-top: 40px;
     }
-
     .faq-drop-btn1, .faq-drop-btn2, .faq-drop-btn3, .faq-drop-btn4, .faq-drop-btn5 {
         font-size: 0.7rem;
         position: relative;
         top: 0.2rem;
     }
-
-    #headingOne, #headingTwo, #headingThree, #headingFour, #headingFive   {
+    #headingOne, #headingTwo, #headingThree, #headingFour, #headingFive {
         padding: 0.5rem 0;
     }
-
     h5 span {
         font-size: 0.7rem;
     }
-
     .answer {
         font-size: 0.7rem;
     }
-
     /* Footer */
-    .footer-brand img{
+    .footer-brand img {
         margin: 5% auto;
     }
-
-    .footer-brand i   {
+    .footer-brand i {
         padding: 0 8px 10%;
         color: #9D9D9D;
     }
-
     .ft-about-title, .ft-service-title, .ft-legal-title {
         padding: 6% 0 0;
     }
-
-    #copyright  {
+    #copyright {
         padding: 6% 5% 1%;
     }
-
-    .copyright-content  {
+    .copyright-content {
         font-size: 0.7rem;
     }
-
     /***************************** Sign up ************************************/
     #signup {
         padding: 5% 4%;
         height: 100vh
     }
-
-    .create-acct-title  {
+    .create-acct-title {
         font-size: 1.5rem;
     }
-
-    .create-acct-paragraph  {
+    .create-acct-paragraph {
         font-size: 0.9rem;
     }
-
-    .create-acct-btn    {
+    .create-acct-btn {
         background-color: #53FF6E;
         display: block;
         margin: 2rem auto 2rem;
         width: 100%;
     }
-    
-    .already-have-acct  {
+    .already-have-acct {
         display: block;
         padding: 0;
         text-align: center;
         float: unset;
         margin: auto;
     }
-
-    .go-home-link   {
+    .go-home-link {
         top: 5rem;
         left: 3rem;
     }
-
     /********************************************** Sign in *******************************************/
-    .signin-acct-btn    {
+    .signin-acct-btn {
         width: 100%;
         display: block;
     }
-
-    .signup-container span  {
+    .signup-container span {
         top: -10px;
         left: 1px;
     }
-
-    /********************************** Maintenance & Repair *****************************/ 
-    #hero-video::after  {
+    /********************************** Maintenance & Repair *****************************/
+    #hero-video::after {
         top: 11.5%;
     }
-
-    #hero-video video{
+    #hero-video video {
         top: 11.5%;
     }
-
-    .hero-vid-caption   {
+    .hero-vid-caption {
         font-size: 0.8rem;
     }
-
-    .hero-vid-caption h1  {
+    .hero-vid-caption h1 {
         font-size: 2rem;
     }
-
-    .mc-whiteBox    {
+    .mc-whiteBox {
         padding: auto;
         width: 100%;
     }
-
-    h1.mc-title   {
+    h1.mc-title {
         margin-top: 2rem;
         font-size: 1.2rem;
     }
-
-    .services-box   {
-        margin: auto; 
+    .services-box {
+        margin: auto;
     }
-    
     .mc-period-services, .mc-ac-repair, .mc-body-repair, .mc-custom-repair {
         max-width: 100%;
     }
-
     .mc-period-services span {
         text-align: left;
         width: 60px;
     }
-
     .p-service-box-btn, .ac-btn, .br-btn, .cr-btn {
         font-size: 0.8rem;
         margin: auto;
     }
-
     /* The Service Modal */
-    .basic-service, .standard-service  {
+    .basic-service, .standard-service {
         top: 40rem;
         left: 0.7rem;
     }
-
     .basic-service .bs-title, .standard-service .standard-service-title {
         font-size: 1rem;
         margin: auto;
     }
-
     .basic-service i, .standard-service i {
         top: 1.9rem;
         left: 16.4rem;
     }
-
-    .basic-service i:first-child, .standard-service i:first-child   {
+    .basic-service i:first-child, .standard-service i:first-child {
         top: 1.9rem;
         left: 1.5rem;
     }
-
-    .basic-service hr.service-divider, .standard-service hr.service-divider   {
+    .basic-service hr.service-divider, .standard-service hr.service-divider {
         position: unset;
         margin: 0.3rem auto;
     }
-
-    .basic-service ul li, .standard-service ul li  {
+    .basic-service ul li, .standard-service ul li {
         padding: 5px;
         font-size: 0.7rem;
         text-align: left;
     }
-
-    .basic-service button.btn, .standard-service button.btn  {
+    .basic-service button.btn, .standard-service button.btn {
         margin: 0 1.5rem;
         padding: 5px 20px;
         font-size: 0.9rem;
     }
-
     /* AC Service */
     .ac-basic-service, .ac-standard-service {
         top: 45.8rem;
         left: 0.7rem;
     }
-
     .ac-basic-service .abs-title, .ac-standard-service .ac-standard-service-title {
         font-size: 1rem;
         margin: auto;
-     }
-
-     .ac-basic-service i, .ac-standard-service i {
+    }
+    .ac-basic-service i, .ac-standard-service i {
         top: 1.9rem;
         left: 16.4rem;
     }
-
-    .ac-basic-service i:first-child, .ac-standard-service i:first-child   {
+    .ac-basic-service i:first-child, .ac-standard-service i:first-child {
         top: 1.9rem;
         left: 1.5rem;
     }
-
-    .ac-basic-service hr.service-divider, .ac-standard-service hr.service-divider   {
+    .ac-basic-service hr.service-divider, .ac-standard-service hr.service-divider {
         position: unset;
         margin: 0.3rem auto;
     }
-
-    .ac-basic-service ul li, .ac-standard-service ul li  {
+    .ac-basic-service ul li, .ac-standard-service ul li {
         padding: 5px;
         font-size: 0.7rem;
         text-align: left;
     }
-
-    .ac-basic-service button.btn, .ac-standard-service button.btn  {
+    .ac-basic-service button.btn, .ac-standard-service button.btn {
         margin: 0 1.5rem;
         padding: 5px 20px;
         font-size: 0.9rem;
     }
-
     /* Added to cart container */
-    .added-to-cart-container    {
+    .added-to-cart-container {
         width: 250px;
         top: 45rem;
         left: 5rem;
     }
-
-    .added-to-cart-container i  {
+    .added-to-cart-container i {
         font-size: 2rem;
     }
-
     .added-to-cart-container p.atc-texts {
         font-size: 1rem;
     }
-
     .added-to-cart-container button {
         margin: 1rem 0 0;
     }
-
     .added-to-cart-container button.atc-checkout-btn {
         font-size: 0.8rem;
         padding: 8px 50px;
     }
-
     .added-to-cart-container button.atc-checkout-btn:hover {
         padding: 8px 50px;
     }
-
     .added-to-cart-container button.atc-back-btn {
         font-size: 0.8rem;
         padding: 8px 17px;
     }
-
     .added-to-cart-container button.atc-back-btn:hover {
         padding: 8px 17px;
     }
+}
 
+/* 390px display width */
+@media (max-width: 390px) {
+    .car-type-clsBtn {
+        left: 22rem;
+    }
+
+    .carparts-btry span {
+        font-size: 0.4rem;
+        left: 14rem;
+        top: 123.7rem;
+        padding: 0.2rem 0.3rem;
+        color: #fff;
+    }
 }
 
 /* 384px display width */
 @media (max-width: 384px) {
-    #sideNav    {
+    #sideNav {
         width: 80%;
     }
-
     .signin-side-navBtn {
         left: -0.1rem;
     }
-    
     .signup-side-navBtn {
         top: 1.5rem;
         left: -0.1rem;
     }
-
-    /********************************** Maintenance & Repair *****************************/ 
-    #hero-video::after  {
+    /********************************** Maintenance & Repair *****************************/
+    #hero-video::after {
         top: 11.5%;
     }
-
-    #hero-video video{
+    #hero-video video {
         top: 11.5%;
     }
-
-    .hero-vid-caption   {
+    .hero-vid-caption {
         font-size: 0.8rem;
     }
-
-    .hero-vid-caption h1  {
+    .hero-vid-caption h1 {
         font-size: 2rem;
     }
-
-    .mc-whiteBox    {
+    .mc-whiteBox {
         padding: auto;
         width: 100%;
     }
-
-    h1.mc-title   {
+    h1.mc-title {
         margin-top: 2rem;
         font-size: 1.2rem;
     }
-
-    .services-box   {
-        margin: auto; 
+    .services-box {
+        margin: auto;
     }
-    
     .mc-period-services, .mc-ac-repair, .mc-body-repair, .mc-custom-repair {
         max-width: 100%;
     }
-
     .mc-period-services span {
         text-align: left;
         width: 60px;
     }
-
     .p-service-box-btn, .ac-btn, .br-btn, .cr-btn {
         font-size: 0.8rem;
         margin: auto;
     }
-
     /* The Service Modal */
-    .basic-service, .standard-service  {
+    .basic-service, .standard-service {
         top: 40.8rem;
         left: 0.7rem;
     }
-
     .basic-service .bs-title, .standard-service .standard-service-title {
         font-size: 1rem;
         margin: auto;
     }
-
     .basic-service i, .standard-service i {
         top: 1.9rem;
         left: 14.4rem;
     }
-
-    .basic-service i:first-child, .standard-service i:first-child   {
+    .basic-service i:first-child, .standard-service i:first-child {
         top: 1.9rem;
         left: 1.5rem;
     }
-
-    .basic-service hr.service-divider, .standard-service hr.service-divider   {
+    .basic-service hr.service-divider, .standard-service hr.service-divider {
         position: unset;
         margin: 0.3rem auto;
     }
-
-    .basic-service ul li, .standard-service ul li  {
+    .basic-service ul li, .standard-service ul li {
         padding: 5px;
         font-size: 0.7rem;
         text-align: left;
     }
-
-    .basic-service button.btn, .standard-service button.btn  {
+    .basic-service button.btn, .standard-service button.btn {
         margin: 0 1.5rem;
         padding: 5px 20px;
         font-size: 0.9rem;
     }
-
     /* AC Service */
     .ac-basic-service, .ac-standard-service {
         top: 46rem;
         left: 0.7rem;
     }
-
     .ac-basic-service .abs-title, .ac-standard-service .ac-standard-service-title {
         font-size: 1rem;
         margin: auto;
-     }
-
-     .ac-basic-service i, .ac-standard-service i {
+    }
+    .ac-basic-service i, .ac-standard-service i {
         top: 1.9rem;
         left: 14.4rem;
     }
-
-    .ac-basic-service i:first-child, .ac-standard-service i:first-child   {
+    .ac-basic-service i:first-child, .ac-standard-service i:first-child {
         top: 1.9rem;
         left: 1.5rem;
     }
-
-    .ac-basic-service hr.service-divider, .ac-standard-service hr.service-divider   {
+    .ac-basic-service hr.service-divider, .ac-standard-service hr.service-divider {
         position: unset;
         margin: 0.3rem auto;
     }
-
-    .ac-basic-service ul li, .ac-standard-service ul li  {
+    .ac-basic-service ul li, .ac-standard-service ul li {
         padding: 5px;
         font-size: 0.7rem;
         text-align: left;
     }
-
-    .ac-basic-service button.btn, .ac-standard-service button.btn  {
+    .ac-basic-service button.btn, .ac-standard-service button.btn {
         margin: 0 1.5rem;
         padding: 5px 20px;
         font-size: 0.9rem;
     }
-
     /* Added to cart container */
-    .added-to-cart-container    {
+    .added-to-cart-container {
         width: 250px;
         top: 45rem;
         left: 4.5rem;
     }
-
-    .added-to-cart-container i  {
+    .added-to-cart-container i {
         font-size: 2rem;
     }
-
     .added-to-cart-container p.atc-texts {
         font-size: 1rem;
     }
-
     .added-to-cart-container button {
         margin: 1rem 0 0;
     }
-
     .added-to-cart-container button.atc-checkout-btn {
         font-size: 0.8rem;
         padding: 8px 50px;
     }
-
     .added-to-cart-container button.atc-checkout-btn:hover {
         padding: 8px 50px;
     }
-
     .added-to-cart-container button.atc-back-btn {
         font-size: 0.8rem;
         padding: 8px 17px;
     }
-
     .added-to-cart-container button.atc-back-btn:hover {
         padding: 8px 17px;
     }
-
 }
 
 /* 375px display width */
@@ -2770,392 +2694,338 @@
         left: 18rem;
         z-index: 3;
     }
-
     .signin-side-navBtn {
         left: -0.1rem;
     }
-    
     .signup-side-navBtn {
         top: 1rem;
         left: -0.2rem;
     }
-
     /* Hero */
-    .hero-car-icon  {
+    .hero-car-icon {
         top: 345px;
         left: 5rem;
     }
-    
     .hero-call-icon {
         top: 400px;
         left: 5rem;
         font-size: 13px;
     }
-
     /* Services */
-    .periodic-check-icon   {
+    .periodic-check-icon {
         left: 6rem;
         top: 7.7rem;
     }
-
-    .ac-check-icon  {
+    .ac-check-icon {
         left: 6rem;
         top: 10.7rem;
     }
-
-    .repair-check-icon  {
+    .repair-check-icon {
         left: 6rem;
-        top: 13.6rem;;
+        top: 13.6rem;
+        ;
     }
-
     .crepair-check-icon {
         left: 6rem;
         top: 16.5rem;
     }
-    
     /* How we work */
     .abstract-image {
         position: unset;
         margin: auto 0;
         padding: 5%;
-      }
-
-    .abstract-image img  {
+    }
+    .abstract-image img {
         max-width: 330px;
-      }
-
+    }
     /* Review */
-    .review-text  {
+    .review-text {
         width: 220px;
         top: 10px;
         left: 110px;
     }
-
-    .sec-img    {
+    .sec-img {
         left: -60px;
     }
-
     .sec-text {
         left: 0.8rem;
     }
-
     .reviewer-name {
         position: relative;
         top: 20%;
         left: -0.5rem;
     }
-
     .reviewer-name2 {
         position: relative;
         top: 20%;
         left: -6.4rem;
     }
-
     /* FAQs */
     h5 span {
         font-size: 0.6rem;
     }
-
-    /********************************** Maintenance & Repair *****************************/ 
-    #hero-video::after  {
+    /********************************** Maintenance & Repair *****************************/
+    #hero-video::after {
         top: 13%;
     }
-
-    #hero-video video{
+    #hero-video video {
         top: 13%;
     }
-
-    .hero-vid-caption   {
+    .hero-vid-caption {
         font-size: 0.6rem;
     }
-
-    .hero-vid-caption h1  {
+    .hero-vid-caption h1 {
         font-size: 1rem;
     }
-
-    .mc-whiteBox    {
+    .mc-whiteBox {
         padding: 10px 30px;
         width: 100%;
     }
-
     /* The Service Modal */
-    .basic-service, .standard-service  {
+    .basic-service, .standard-service {
         top: 39.9rem;
         left: 0.6rem;
     }
-
     .basic-service .bs-title, .standard-service .standard-service-title {
         font-size: 0.8rem;
     }
-
     .basic-service i, .standard-service i {
         font-size: 0.9rem;
         top: 2rem;
         left: 14.4rem;
     }
-
-    .basic-service i:first-child, .standard-service i:first-child   {
+    .basic-service i:first-child, .standard-service i:first-child {
         top: 2rem;
         left: 1.5rem;
     }
-
-    .basic-service ul li, .standard-service ul li  {
+    .basic-service ul li, .standard-service ul li {
         padding: 3px;
         font-size: 0.6rem;
     }
-
     /* AC Service */
     .ac-basic-service, .ac-standard-service {
         top: 46rem;
         left: 0.6rem;
     }
-
     .ac-basic-service .abs-title, .ac-standard-service .ac-standard-service-title {
         font-size: 0.8rem;
-     }
-
-     .ac-basic-service i, .ac-standard-service i {
+    }
+    .ac-basic-service i, .ac-standard-service i {
         font-size: 0.9rem;
         top: 2rem;
-        left: 14.4rem;;
+        left: 14.4rem;
+        ;
     }
-
-    .ac-basic-service i:first-child, .ac-standard-service i:first-child   {
+    .ac-basic-service i:first-child, .ac-standard-service i:first-child {
         top: 2rem;
         left: 1.5rem;
     }
-
     /* Added to cart container */
-    .added-to-cart-container    {
+    .added-to-cart-container {
         width: 250px;
         top: 50rem;
         left: 4.5rem;
     }
 
-}
-
-@media (max-width: 360px) {
-    /* Nav */
-    .closeBtn   {
-        left: 15rem;
+    .car-type-clsBtn {
+        left: 20rem;
     }
 
+    .carparts-btry span {
+        display: none;
+    }
+
+    .dash-side-navigation i.close-nav {
+        left: 20rem;
+    }
+
+    .addCar-modal   {
+        width: 90%;
+        padding: 50px 20px;
+    }
+}
+
+/* 360px display width */
+@media (max-width: 360px) {
+    /* Nav */
+    .closeBtn {
+        left: 15rem;
+    }
     /* Hero */
-    .hero-car-icon  {
+    .hero-car-icon {
         top: 346px;
         left: 70px;
     }
-    
     .hero-call-icon {
         top: 400px;
         left: 70px;
         font-size: 10px;
     }
-
     /* Services */
     #services li {
         padding-left: 4rem;
     }
-
-    .periodic-check-icon   {
+    .periodic-check-icon {
         left: 5rem;
         top: 7.7rem;
     }
-
-    .ac-check-icon  {
+    .ac-check-icon {
         left: 5rem;
         top: 10.7rem;
     }
-
-    .repair-check-icon  {
+    .repair-check-icon {
         left: 5rem;
         top: 13.6rem;
     }
-
     .crepair-check-icon {
         left: 5rem;
         top: 16.7rem;
     }
-
-    .maintenance-container, .autocare-container, .insurance-container    {
+    .maintenance-container, .autocare-container, .insurance-container {
         padding: 30px 10px;
     }
-
     /* How we work */
-    .abstract-image img  {
+    .abstract-image img {
         max-width: 320px;
         margin: auto;
         text-align: center;
     }
-
     /* Review Section */
-    .review-text  {
+    .review-text {
         font-size: 10px;
         width: 190px;
         top: 4px;
         left: 94px;
     }
-
     .sec-text {
         left: -0.4rem;
     }
-
     .review-image {
         top: 3px;
         left: 40px;
         max-width: 60px;
     }
-
-    .sec-img  {
+    .sec-img {
         left: -60px;
     }
-
-    .reviewer-name    {
+    .reviewer-name {
         top: 0.6rem;
         left: -1.4rem;
         font-size: 10px;
     }
-
-    .reviewer-name2   {
+    .reviewer-name2 {
         top: 0.6rem;
         left: -7.8rem;
         font-size: 9px;
     }
-
     /* Subscribe */
     .subscription-title {
         font-size: 1.6rem;
     }
-
     #subscription input {
         width: 50%;
         padding: 5px 10px;
         outline: none;
         font-size: 0.7rem;
     }
-
-    .subscribe-btn    {
+    .subscribe-btn {
         width: 40%;
         padding: 5px 10px;
         font-size: 0.7rem;
     }
-
     /***************************** Sign up ************************************/
     #signup {
         padding: 20% 2%;
         height: 100vh
     }
-
     #signup .container-fluid {
         margin-top: 2%;
     }
-
-    .create-acct-title  {
+    .create-acct-title {
         font-size: 1rem;
     }
-
-    .create-acct-paragraph  {
+    .create-acct-paragraph {
         font-size: 0.6rem;
     }
-
-    .signup-container input  {
+    .signup-container input {
         padding: 5px;
     }
-
-    .create-acct-btn    {
+    .create-acct-btn {
         margin: 1rem auto 2rem;
         width: 100%;
         padding: 5px;
     }
-    
-    .already-have-acct  {
+    .already-have-acct {
         float: unset;
         margin: auto;
-        font-size: 0.7rem; 
+        font-size: 0.7rem;
     }
-
-    .go-home-link   {
+    .go-home-link {
         top: 2rem;
         left: 3rem;
     }
-
-    
-    /********************************** Maintenance & Repair *****************************/ 
-    #hero-video::after  {
+    /********************************** Maintenance & Repair *****************************/
+    #hero-video::after {
         top: 13%;
     }
-
-    #hero-video video{
+    #hero-video video {
         top: 13%;
     }
-
-    .hero-vid-caption   {
+    .hero-vid-caption {
         font-size: 0.6rem;
     }
-
-    .hero-vid-caption h1  {
+    .hero-vid-caption h1 {
         font-size: 1rem;
     }
-
-    .mc-whiteBox    {
+    .mc-whiteBox {
         padding: 10px 30px;
         width: 100%;
     }
-
     /* The Service Modal */
-    .basic-service, .standard-service  {
+    .basic-service, .standard-service {
         top: 39rem;
         left: 0.3rem;
     }
-
     .basic-service .bs-title, .standard-service .standard-service-title {
         font-size: 0.8rem;
     }
-
     .basic-service i, .standard-service i {
         font-size: 0.9rem;
         top: 2rem;
         left: 14.4rem;
     }
-
-    .basic-service i:first-child, .standard-service i:first-child   {
+    .basic-service i:first-child, .standard-service i:first-child {
         top: 2rem;
         left: 1.5rem;
     }
-
-    .basic-service ul li, .standard-service ul li  {
+    .basic-service ul li, .standard-service ul li {
         padding: 3px;
         font-size: 0.6rem;
     }
-
     /* AC Service */
     .ac-basic-service, .ac-standard-service {
         top: 44.8rem;
         left: 0.3rem;
     }
-
     .ac-basic-service .abs-title, .ac-standard-service .ac-standard-service-title {
         font-size: 0.8rem;
-     }
-
-     .ac-basic-service i, .ac-standard-service i {
+    }
+    .ac-basic-service i, .ac-standard-service i {
         font-size: 0.9rem;
         top: 2rem;
-        left: 14.4rem;;
+        left: 14.4rem;
+        ;
     }
-
-    .ac-basic-service i:first-child, .ac-standard-service i:first-child   {
+    .ac-basic-service i:first-child, .ac-standard-service i:first-child {
         top: 2rem;
         left: 1.5rem;
     }
-
     /* Added to cart container */
-    .added-to-cart-container    {
+    .added-to-cart-container {
         width: 250px;
         top: 50rem;
         left: 3.8rem;
     }
-
 }
 
 /* 320px display width */
@@ -3165,300 +3035,289 @@
         left: 16rem;
         z-index: 3;
     }
-
-    .closeBtn   {
+    .closeBtn {
         left: 14rem;
     }
-
     /* Hero */
     .drive-green {
         font-size: 25px;
     }
-
-    .hero-title   {
+    .hero-title {
         font-size: 35px;
     }
-
-    .reg-vehicle    {
+    .reg-vehicle {
         position: unset;
         margin: 1% auto 15%;
         width: 250px;
     }
-
-    .reg-text   {
+    .reg-text {
         font-size: 15px;
     }
-
-    .reg-vehicle input{
+    .reg-vehicle input {
         width: 200px;
         padding: 10px 10px 10px 30px;
     }
-
-    .hero-car-icon  {
+    .hero-car-icon {
         top: 295px;
         left: 70px;
     }
-    
     .hero-call-icon {
         top: 346px;
         left: 70px;
         font-size: 10px;
     }
-
-    .reg-veh-btn   {
+    .reg-veh-btn {
         width: 200px;
         padding: 10px;
         font-size: 13px;
     }
-
-    h1.join-us  {
+    h1.join-us {
         font-size: 15px;
     }
-
     /* Services */
     #services li {
         padding-left: 2.5rem;
     }
-
-    .periodic-check-icon   {
+    .periodic-check-icon {
         left: 3.7rem;
         top: 7.4rem;
     }
-
-    .ac-check-icon  {
+    .ac-check-icon {
         left: 3.7rem;
         top: 10.3rem;
     }
-
-    .repair-check-icon  {
+    .repair-check-icon {
         left: 3.7rem;
         top: 13.3rem;
     }
-
     .crepair-check-icon {
         left: 3.7rem;
         top: 16.2rem;
     }
-
-    .maintenance-container, .autocare-container, .insurance-container    {
+    .maintenance-container, .autocare-container, .insurance-container {
         padding: 30px 10px;
     }
-
     /* Assurance */
-    .assurance-title    {
+    .assurance-title {
         padding-top: 10%;
         font-size: 30px;
     }
-
     .motormata-assurance li {
         font-size: 18px;
     }
-
     /* How we work */
     .abstract-image {
         position: unset;
         margin: auto 0;
     }
-
-    .abstract-image img  {
+    .abstract-image img {
         max-width: 270px;
         margin: auto;
         text-align: center;
     }
-
     /* Review Section */
-    .review-text  {
+    .review-text {
         font-size: 7px;
         width: 160px;
         top: 10px;
         left: 94px;
     }
-
     .sec-text {
         left: -0.4rem;
     }
-
     .review-image {
         top: 3px;
         left: 40px;
         max-width: 60px;
     }
-
-    .sec-img  {
+    .sec-img {
         left: -60px;
     }
-
-    .reviewer-name    {
+    .reviewer-name {
         top: 0.6rem;
         font-size: 9px;
     }
-
-    .reviewer-name2   {
+    .reviewer-name2 {
         top: 0.6rem;
         left: -6.8rem;
         font-size: 9px;
     }
-
     /* Benefits */
     .c-icon {
         left: 40px;
     }
-
     .a-icon {
         left: 45px;
     }
-
     .t-icon {
         left: 40px;
     }
-
     .q-icon {
         left: 70px;
     }
-
     /* App download */
-    .screenshot img{
+    .screenshot img {
         max-width: 250px;
     }
-
     /* Subscribe */
     .subscription-title {
         font-size: 1.6rem;
     }
-
     #subscription input {
         width: 50%;
         padding: 5px 10px;
         outline: none;
         font-size: 0.7rem;
     }
-
-    .subscribe-btn    {
+    .subscribe-btn {
         width: 40%;
         padding: 5px 10px;
         font-size: 0.7rem;
     }
-
     /* FAQs */
     h5 span {
         font-size: 0.5rem;
     }
-
-
     /***************************** Sign up ************************************/
-     #signup {
+    #signup {
         padding: 20% 2%;
         height: 100vh
     }
-
     #signup .container-fluid {
         margin-top: 2%;
     }
-
-    .create-acct-title  {
+    .create-acct-title {
         font-size: 1rem;
     }
-
-    .create-acct-paragraph  {
+    .create-acct-paragraph {
         font-size: 0.6rem;
     }
-
-    .signup-container input  {
+    .signup-container input {
         padding: 5px;
     }
-
-    .create-acct-btn    {
+    .create-acct-btn {
         margin: 1rem auto 2rem;
         width: 100%;
         padding: 5px;
     }
-    
-    .already-have-acct  {
+    .already-have-acct {
         float: unset;
         margin: auto;
-        font-size: 0.7rem; 
+        font-size: 0.7rem;
     }
-
-    .go-home-link   {
+    .go-home-link {
         top: 2rem;
         left: 3rem;
     }
-
-     /********************************** Maintenance & Repair *****************************/ 
-     #hero-video::after  {
+    /********************************** Maintenance & Repair *****************************/
+    #hero-video::after {
         top: 13%;
     }
-
-    #hero-video video{
+    #hero-video video {
         top: 13%;
     }
-
-    .hero-vid-caption   {
+    .hero-vid-caption {
         font-size: 0.6rem;
     }
-
-    .hero-vid-caption h1  {
+    .hero-vid-caption h1 {
         font-size: 1rem;
     }
-
-    .mc-whiteBox    {
+    .mc-whiteBox {
         padding: 10px 30px;
         width: 100%;
     }
-
     /* The Service Modal */
-    .basic-service, .standard-service  {
+    .basic-service, .standard-service {
         top: 30.9rem;
         left: 0rem;
     }
-
     .basic-service .bs-title, .standard-service .standard-service-title {
         font-size: 0.8rem;
     }
-
     .basic-service i, .standard-service i {
         font-size: 0.9rem;
         top: 2rem;
         left: 12.4rem;
     }
-
-    .basic-service i:first-child, .standard-service i:first-child   {
+    .basic-service i:first-child, .standard-service i:first-child {
         top: 2rem;
         left: 1.5rem;
     }
-
-    .basic-service ul li, .standard-service ul li  {
+    .basic-service ul li, .standard-service ul li {
         padding: 3px;
         font-size: 0.6rem;
     }
-
     /* AC Service */
     .ac-basic-service, .ac-standard-service {
         top: 36.8rem;
         left: 0;
     }
-
     .ac-basic-service .abs-title, .ac-standard-service .ac-standard-service-title {
         font-size: 0.8rem;
-     }
-
-     .ac-basic-service i, .ac-standard-service i {
+    }
+    .ac-basic-service i, .ac-standard-service i {
         font-size: 0.9rem;
         top: 2rem;
-        left: 12.4rem;;
+        left: 12.4rem;
+        ;
     }
-
-    .ac-basic-service i:first-child, .ac-standard-service i:first-child   {
+    .ac-basic-service i:first-child, .ac-standard-service i:first-child {
         top: 2rem;
         left: 1.5rem;
     }
-
     /* Added to cart container */
-    .added-to-cart-container    {
+    .added-to-cart-container {
         width: 250px;
         top: 40rem;
         left: 2.5rem;
     }
+
+    /* Dashboard Side Nav */
+    .dash-side-navigation i.close-nav {
+        left: 17rem;
+    }
+
+    .dash-side-navigation a img {
+        width: 100px;
+        margin-top: 1rem; 
+    }
+
+    .dash-side-navigation .dash-side-link {
+        display: block;
+        text-align: left;
+        padding: 15px 70px;
+        color: #000;
+        font-size: 0.9rem;
+    }
+
+    .car-type-clsBtn    {
+        position: fixed;
+        top: 2rem;
+        left: 17rem;
+        cursor: pointer;
+    }
+
+    .modal-close {
+        right: 3rem;
+        top: 6rem;
+    }
+
+    .transaprent-modal {
+        padding: 50px 20px;
+    }
+
+    .modal-container {
+        width: 100%;
+        height: 70vh;
+        margin: auto;
+        text-align: center;
+        overflow-y: scroll;
+        padding: 50px;
+        transition: all 500ms ease-in-out;
+    }
+
+    .carparts-btry-title {
+        font-size: 0.8rem;
+    }
+    
 }
-
-
