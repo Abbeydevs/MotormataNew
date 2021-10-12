@@ -33,15 +33,15 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/mediaqueries.css">
     <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
 </head>
 
 <body>
 
     <!-- Dashboard navbar -->
     <section id="dash-nav">
-        <a href="#">
+        <a href="profile.html">
             <img src="images/user-profile.png" alt="">
         </a>
         <h2 class="userName">Emmanuel Adesanya</h2>
@@ -58,12 +58,90 @@
         </div>
     </section>
 
+    <!-- Dash Side Navigationbar -->
+    <div class="new-dash-nav">
+        <h1 class="new-dashboard-title">Dashboard</h1>
+        <i class="fas fa-bars open-nav"></i>
+    </div>
+    <div class="dash-side-navigation">
+        <i class="fas fa-times close-nav"></i>
+        <a href="profile.html">
+            <img src="images/user-profile.png" alt="">
+        </a>
+        <h2 class="userName">Emmanuel Adesanya</h2>
+        <a class="dash-side-link" href="#"><i class="fas fa-comment-alt"></i> &nbsp;&nbsp;&nbsp;Messages</a>
+        <a class="dash-side-link" href="#"><i class="fas fa-shopping-bag"></i> &nbsp;&nbsp;&nbsp;Shopping Cart</a>
+        <a class="dash-side-link" href="#"><i class="fas fa-sign-out-alt"></i></i> &nbsp;&nbsp;&nbsp;Log out</a>
+    </div>
+
     <!-- My Car section -->
     <section id="dash-myCar">
         <div class="mycar-top-content">
             <h1 class="mycar-top-title">My Car</h1>
             <button class="btn mycar-btn">Renew Papers</button>
-            <button class="btn mycar-btn2">Add Car <i class="fas fa-plus"></i></button>
+
+            <div class="renew-paper-modal">
+
+            </div>
+            <button class="btn mycar-btn2" onclick="addCarModal();">Add Car <i class="fas fa-plus"></i></button>
+        </div>
+
+        <!-- Add Car Modal -->
+        <div class="car-transparent-bg">
+            <i class="fas fa-times-circle car-type-clsBtn" onclick="closeCarModal();"></i>
+            <div class="addCar-modal">
+                <label for="cars">What Kind of Car do you drive?</label>
+                <select id="car-options" name="cars" id="cars">
+                    <option value="" disabled selected>Select your car name here</option>
+                    <option value="acura">Acura</option>
+                    <option value="astonmartin">Aston Martin</option>
+                    <option value="audi">Audi</option>
+                    <option value="bentley">Bentley</option>
+                    <option value="bmw">BMW</option>
+                    <option value="bugatti">Bugatti</option>
+                    <option value="chevrolet">Chevrolet</option>
+                    <option value="chrysler">Chrysler</option>
+                    <option value="ferrari">Ferrari</option>
+                    <option value="ford">Ford</option>
+                    <option value="geely">Geely</option>
+                    <option value="honda">Honda</option>
+                    <option value="hyundai">HyundaiS</option>
+                    <option value="infiniti">Infiniti</option>
+                    <option value="kia">Kia</option>
+                    <option value="landRover">Land Rover</option>
+                    <option value="lexus">Lexus</option>
+                    <option value="benz">Mercedez Benz</option>
+                    <option value="mitsubishi">Mitsubishi</option>
+                    <option value="nissan">Nissam</option>
+                    <option value="tesla">Tesla</option>
+                    <option value="toyota">Toyota</option>
+                    <option value="ultima">Ultima</option>
+                    <option value="volkswagen">Volkswagen</option>
+                    <option value="volvo">Volvo</option>
+                </select>
+
+                <label for="car-model">What is your car Model?</label>
+                <select id="choices">
+                    <option value="" disabled selected>Please select an option</option>
+                    <option value="lcvt">L CVT</option>
+                    <option value="lcvt">Corolla</option>
+                    <option value="lcvt">Big Daddy</option>
+                    <option value="lcvt">Pavillion</option>
+                    <option value="lcvt">Camry</option>
+                </select>
+
+                <label for="car-model">What year is your model?</label>
+                <select id="choices">
+                    <option value="" disabled selected>Please select an option</option>
+                    <option value="lcvt">2001</option>
+                    <option value="lcvt">2010</option>
+                    <option value="lcvt">2011</option>
+                    <option value="lcvt">2002</option>
+                    <option value="lcvt">2015</option>
+                </select>
+
+                <button type="submit" class="btn car-type-btn">Done</button>
+            </div>
         </div>
 
         <div class="dash-mycar-details">
@@ -71,6 +149,7 @@
             <button class="btn" onclick="openModal()">Details &nbsp;&nbsp;<i class="fas fa-caret-down"></i></button>
         </div>
 
+        <!-- My Car Modal details -->
         <div class="transaprent-modal">
             <div class="modal-container scroller">
                 <i class="fas fa-times modal-close" onclick="closeModal()"></i>
@@ -80,33 +159,24 @@
 
                 <div class="car-elements">
                     <div class="row">
-                        <div class="element1 col-lg-4">
+                        <div class="element1 col-lg-4 col-md-4 col-sm-2">
                             <h5 class="type1">Engine</h5>
                             <p class="car-desc">4 Cylinder Engine</p>
                         </div>
-                        <div class="element2 col-lg-4">
+                        <div class="element2 col-lg-4 col-md-4 col-sm-2">
                             <h5 class="type2">Transmission</h5>
                             <p class="car-desc">Automatic</p>
                         </div>
-                        <div class="element3 col-lg-4">
-                            <h5 class="type3">Colors</h5>
-                            <div class="color-containers">
-                                <div class="color-box1"></div>
-                                <div class="color-box2"></div>
-                                <div class="color-box3"></div>
-                                <div class="color-box4"></div>
-                            </div>
+                        <div class="element4 col-lg-4 col-md-4 col-sm-2">
+                            <h5 class="type1">Battery Type</h5>
+                            <p class="car-desc">4 Cylinder Engine</p>
                         </div>
                     </div>
 
                     <div class="modal-divider"></div>
 
                     <div class="row">
-                        <div class="element4 col-lg-4">
-                            <h5 class="type1">Battery Type</h5>
-                            <p class="car-desc">4 Cylinder Engine</p>
-                        </div>
-                        <div class="element5 col-lg-4">
+                        <div class="element5 col-lg-4 col-md-4 col-sm-2">
                             <h5 class="type2">Brakes</h5>
                             <p class="car-desc">4 - Wheel ABS</p>
                         </div>
@@ -117,6 +187,67 @@
                     <p class="date-serviced">Motormata Engineers Started working on this Car since August 12, 2021</p>
                 </div> -->
             </div>
+        </div>
+    </section>
+
+    <!-- Due Services section -->
+    <section id="dash-dueServices">
+        <div class="dueservice-top-contents">
+            <h1 class="dueservice-title">Due Services</h1>
+        </div>
+
+        <div class="dueservice-duedate-content">
+            <div class="day-remain">
+                <h3 class="car-service-duedate">Remaining days to due date</h3>
+            </div>
+            <div class="countdown">
+                <div class="container-day">
+                    <h3 class="day">Time</h3>
+                    <p>Day</p>
+                </div>
+                <div class="container-hour">
+                    <h3 class="hour">Time</h3>
+                    <p>hour</p>
+                </div>
+                <div class="container-minute">
+                    <h3 class="minute">Time</h3>
+                    <p>minutes</p>
+                </div>
+                <div class="container-second">
+                    <h3 class="seconds">Time</h3>
+                    <p>seconds</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- other Services -->
+        <div class="dash-other-services">
+            <h3 class="dash-other-services-title">Other Services</h3>
+            <div class="dash-paper-renewal">
+                <h1 class="paper-renewal-title">Paper Renewal</h1>
+                <div class="d-p-renewal-content">
+                    <p class="d-p-renewal-title">Next renewal date</p>
+                    <p class="renewal-date">Sept. 20, 2024</p>
+                </div>
+            </div>
+
+            <div class="dash-car-tyres">
+                <h1 class="dash-car-tyres-title">Car Tyres</h1>
+                <div class="dash-car-tyres-content">
+                    <p class="dash-car-tyres-title2">Expiry Date</p>
+                    <p class="renewal-date">Sept. 20, 2022</p>
+                </div>
+            </div>
+
+            <div class="dash-break-pad">
+                <h1 class="dash-break-pad-title">Break Pad</h1>
+                <div class="dash-break-pad-content">
+                    <p class="dash-break-pad-title2">Next renewal date</p>
+                    <p class="renewal-date">Sept. 20, 2025</p>
+                </div>
+            </div>
+
+            <button class="btn">Check all</button>
         </div>
     </section>
 
@@ -207,6 +338,7 @@
                     <button class="btn" onclick="openRecommendationModal()">Book now</button>
                 </div>
 
+                <!-- Recom Modal -->
                 <div class="dash-recommendation-modal">
                     <div class="dash-recommendation-modal-container scroller">
                         <i class="fas fa-times recom-modal-close" onclick="closeRecommendationModal()"></i>
@@ -283,67 +415,6 @@
         </div>
     </section>
 
-    <!-- Due Services section -->
-    <section id="dash-dueServices">
-        <div class="dueservice-top-contents">
-            <h1 class="dueservice-title">Due Services</h1>
-        </div>
-
-        <div class="dueservice-duedate-content">
-            <div class="day-remain">
-                <h3 class="car-service-duedate">Remaining days to due date</h3>
-            </div>
-            <div class="countdown">
-                <div class="container-day">
-                    <h3 class="day">Time</h3>
-                    <p>Day</p>
-                </div>
-                <div class="container-hour">
-                    <h3 class="hour">Time</h3>
-                    <p>hour</p>
-                </div>
-                <div class="container-minute">
-                    <h3 class="minute">Time</h3>
-                    <p>minutes</p>
-                </div>
-                <div class="container-second">
-                    <h3 class="second">Time</h3>
-                    <p>seconds</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- other Services -->
-        <div class="dash-other-services">
-            <h3 class="dash-other-services-title">Other Services</h3>
-            <div class="dash-paper-renewal">
-                <h1 class="paper-renewal-title">Paper Renewal</h1>
-                <div class="d-p-renewal-content">
-                    <p class="d-p-renewal-title">Next renewal date</p>
-                    <p class="renewal-date">Sept. 20, 2024</p>
-                </div>
-            </div>
-
-            <div class="dash-car-tyres">
-                <h1 class="dash-car-tyres-title">Car Tyres</h1>
-                <div class="dash-car-tyres-content">
-                    <p class="dash-car-tyres-title2">Expiry Date</p>
-                    <p class="renewal-date">Sept. 20, 2022</p>
-                </div>
-            </div>
-
-            <div class="dash-break-pad">
-                <h1 class="dash-break-pad-title">Break Pad</h1>
-                <div class="dash-break-pad-content">
-                    <p class="dash-break-pad-title2">Next renewal date</p>
-                    <p class="renewal-date">Sept. 20, 2025</p>
-                </div>
-            </div>
-
-            <button class="btn">Check all</button>
-        </div>
-    </section>
-
     <!-- Footer section -->
     <section id="dash-footer">
         <footer class="dash-footer-copyrights">
@@ -351,8 +422,9 @@
         </footer>
     </section>
 
-    <script>$('[data-toggle="tooltip"]').tooltip()</script>
+    
     <script src="dashboard.js"></script>
+    <script>$('[data-toggle="tooltip"]').tooltip()</script>
 </body>
 
 </html>
